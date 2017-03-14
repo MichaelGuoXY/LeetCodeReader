@@ -106,4 +106,5 @@ for tr in trs:
     # upload to firebase
     result = firebase.put('/problems', str(id), record)
 
+driver_des.close()
 driver.close()
