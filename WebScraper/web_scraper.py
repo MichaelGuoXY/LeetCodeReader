@@ -4,9 +4,13 @@ from firebase import firebase
 
 # firebase init
 firebase = firebase.FirebaseApplication('https://leetcodereader.firebaseio.com/', None)
+# TODO:
+# need auth for firebase
 
 # web driver init
 driver = webdriver.Chrome()
+driver_des = webdriver.Chrome()
+# driver_solv = webdriver.Chrome()
 driver.get("https://leetcode.com/problemset/algorithms/")
 # wait for webpage loading completely
 driver.implicitly_wait(10)
@@ -28,6 +32,8 @@ for tr in trs:
     acceptance = -0.00001
     difficulty = 'Default'
     frequency = 'idk'
+    description = "hola this is the description for the problem"
+    solutions = {}
     i = 0
     for td in tr.find_elements_by_tag_name('td'):
         i += 1
@@ -45,6 +51,37 @@ for tr in trs:
             title = str(td.get_attribute('value'))
             # to get problem_link
             problem_link = str(td.find_element_by_tag_name('div').find_element_by_tag_name('a').get_attribute('href'))
+            # open the problem description link
+            driver_des.get(problem_link + '/#/description')
+            driver_des.implicitly_wait(5)
+            #
+            # TODO: obtain the description of the problem, in the format of HTML
+            description = driver_des.find_element_by_class_name('question-content').get_attribute('innerHTML')
+            # print(description)
+            # done obtaining
+            #
+            # open the peoblem solution link
+            driver_des.get(problem_link + '/#/solutions')
+            driver_des.implicitly_wait(5)
+            #
+            # TODO: obtain the solutions of the problem, normally 3 items, also in the format of HTML
+            pre_solutions = driver_des.find_elements_by_class_name('list-group-item')
+            count = len(pre_solutions)
+            for j in range(0, count):
+                print(j + 1)
+                print(pre_solutions[j].text)
+                pre_solutions[j].click()
+            # obtain the solution
+                solution = driver_des.find_element_by_class_name('panel-body').get_attribute('innerHTML')
+                print(solution)
+                solutions[j] = solution
+            # end
+            # go back to solution page
+                driver_des.get(problem_link + '/#/solutions')
+                pre_solutions = driver_des.find_elements_by_class_name('list-group-item')
+                driver_des.implicitly_wait(5)
+            # done obtaining
+            #
         # elif i == 4:
             # try:
             #     editorial_link = str(td.find_element_by_tag_name('a').get_attribute('href'))
@@ -54,9 +91,19 @@ for tr in trs:
             acceptance = float(td.get_attribute('value'))
         elif i == 6:
             difficulty = td.text
+    # print out
     print(str(id) + ' ' + title + ' ' + problem_link + ' editorial_link ' + editorial_link + ' ' + str(acceptance) + ' ' + difficulty)
+    # record for each problem
+    record = {}
+    record['id'] = id
+    record['title'] = title
+    record['problem_link'] = problem_link
+    record['editorial_link'] = editorial_link
+    record['acceptance'] = acceptance
+    record['difficulty'] = difficulty
+    record['description'] = description
+    record['solutions'] = solutions
+    # upload to firebase
+    result = firebase.put('/problems', str(id), record)
 
-
-# result = firebase.post('/users', new_user, {'print': 'pretty'}, {'X_FANCY_HEADER': 'VERY FANCY'})
-
-#driver.close()
+driver.close()
