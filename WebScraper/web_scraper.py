@@ -1,11 +1,17 @@
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from firebase import firebase
+import time
 
 # firebase init
 firebase = firebase.FirebaseApplication('https://leetcodereader.firebaseio.com/', None)
-# TODO:
-# need auth for firebase
+# TODO: need auth for firebase
+#
+
+# create or append to a log file
+log = open("log.txt", "a")
+log.write('LOCAL TIME: ------ ' + time.asctime(time.localtime()) + ' ------ \n')
+log.write('\n')
 
 # web driver init
 driver = webdriver.Chrome()
@@ -53,10 +59,15 @@ for tr in trs:
             problem_link = str(td.find_element_by_tag_name('div').find_element_by_tag_name('a').get_attribute('href'))
             # open the problem description link
             driver_des.get(problem_link + '/#/description')
-            driver_des.implicitly_wait(5)
+            driver_des.implicitly_wait(3)
             #
             # TODO: obtain the description of the problem, in the format of HTML
-            description = driver_des.find_element_by_class_name('question-content').get_attribute('innerHTML')
+            try:
+                description = driver_des.find_element_by_class_name('question-content').get_attribute('innerHTML')
+            except Exception:
+                print('ATTENTION ===>>>' + str(id) + ' problem description not found, please manually update it later.')
+                log.write(
+                    'ATTENTION ===>>>' + str(id) + ' problem description not found, please manually update it later.\n')
             # print(description)
             # done obtaining
             #
@@ -68,13 +79,17 @@ for tr in trs:
             pre_solutions = driver_des.find_elements_by_class_name('list-group-item')
             count = len(pre_solutions)
             for j in range(0, count):
-                print(j + 1)
-                print(pre_solutions[j].text)
+                # print(j + 1)
+                # print(pre_solutions[j].text)
                 pre_solutions[j].click()
             # obtain the solution
-                solution = driver_des.find_element_by_class_name('panel-body').get_attribute('innerHTML')
-                print(solution)
-                solutions[j] = solution
+                try:
+                    solution = driver_des.find_element_by_class_name('panel-body').get_attribute('innerHTML')
+                # print(solution)
+                    solutions[j] = solution
+                except Exception:
+                    print('ATTENTION ===>>>' + str(id) + ' problem solutions not found, please manually update it later.')
+                    log.write('ATTENTION ===>>>' + str(id) + ' problem solutions not found, please manually update it later.\n')
             # end
             # go back to solution page
                 driver_des.get(problem_link + '/#/solutions')
@@ -93,6 +108,7 @@ for tr in trs:
             difficulty = td.text
     # print out
     print(str(id) + ' ' + title + ' ' + problem_link + ' editorial_link ' + editorial_link + ' ' + str(acceptance) + ' ' + difficulty)
+    log.write(str(id) + ' ' + title + ' ' + problem_link + ' editorial_link ' + editorial_link + ' ' + str(acceptance) + ' ' + difficulty +'\n')
     # record for each problem
     record = {}
     record['id'] = id
@@ -104,7 +120,7 @@ for tr in trs:
     record['description'] = description
     record['solutions'] = solutions
     # upload to firebase
-    result = firebase.put('/problems', str(id), record)
+    result = firebase.post('/problems', record)
 
 driver_des.close()
 driver.close()
