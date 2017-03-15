@@ -14,7 +14,7 @@ class FirebaseManager: NSObject{
     static var ref = FIRDatabase.database().reference()
     static let realm = try! Realm()
     
-    static func fetchAllProblems() {
+    static func fetchAllProblems(reloadTableView: @escaping () -> ()) {
         ref.child("problems").observeSingleEvent(of: .value, with: { (snapshot) in
             let val = snapshot.value as! NSDictionary
             for (_, dict) in val {
@@ -31,6 +31,7 @@ class FirebaseManager: NSObject{
                 try! realm.write {
                     realm.add(problem)
                 }
+                reloadTableView()
             }
         }) { (error) in
             print(error.localizedDescription)

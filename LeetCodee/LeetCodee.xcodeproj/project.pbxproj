@@ -17,6 +17,7 @@
 		805D05471E788C3D00B8C682 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 805D05461E788C3D00B8C682 /* GoogleService-Info.plist */; };
 		805D05491E788FA300B8C682 /* Problem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805D05481E788FA300B8C682 /* Problem.swift */; };
 		805D054B1E78B38E00B8C682 /* ProblemTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805D054A1E78B38E00B8C682 /* ProblemTVCell.swift */; };
+		808EA8121E791B3A00AD6F96 /* ProblemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808EA8111E791B3A00AD6F96 /* ProblemDetailViewController.swift */; };
 		B9EAB066297D5C871FB473D4 /* Pods_LeetCodee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD46ACAA72717A9836A7C9D /* Pods_LeetCodee.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		805D05461E788C3D00B8C682 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		805D05481E788FA300B8C682 /* Problem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem.swift; sourceTree = "<group>"; };
 		805D054A1E78B38E00B8C682 /* ProblemTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemTVCell.swift; sourceTree = "<group>"; };
+		808EA8111E791B3A00AD6F96 /* ProblemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemDetailViewController.swift; sourceTree = "<group>"; };
 		B8A0CF793844C9B96D73147C /* Pods-LeetCodee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeetCodee.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeetCodee/Pods-LeetCodee.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 				805D054A1E78B38E00B8C682 /* ProblemTVCell.swift */,
 				805D05421E78710F00B8C682 /* TableViewSample.swift */,
 				805D05401E78702B00B8C682 /* HomeViewController.swift */,
+				808EA8111E791B3A00AD6F96 /* ProblemDetailViewController.swift */,
 				805D05351E784FAB00B8C682 /* Assets.xcassets */,
 				805D05371E784FAB00B8C682 /* LaunchScreen.storyboard */,
 				805D053A1E784FAB00B8C682 /* Info.plist */,
@@ -234,6 +237,7 @@
 				805D05491E788FA300B8C682 /* Problem.swift in Sources */,
 				805D05411E78702B00B8C682 /* HomeViewController.swift in Sources */,
 				805D054B1E78B38E00B8C682 /* ProblemTVCell.swift in Sources */,
+				808EA8121E791B3A00AD6F96 /* ProblemDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

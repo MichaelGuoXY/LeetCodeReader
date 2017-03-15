@@ -9,11 +9,16 @@
 import UIKit
 import RealmSwift
 
-class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    @IBOutlet weak var searchBar: UISearchBar!
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating, UISearchBarDelegate {
     @IBOutlet weak var tableView: UITableView!
     
     var problems = [Problem]()
+    var filteredProblems = [Problem]()
+    var shouldShowSearchResults = false
+    
+    var searchController: UISearchController!
+    
+    let realm = try! Realm()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,18 +28,72 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.dataSource = self
         
         // download from Firebase
-        FirebaseManager.fetchAllProblems()
+        FirebaseManager.fetchAllProblems(reloadTableView: reloadTableView)
         
+        // configure search controller
+        configureSearchController()
+        
+    }
+    
+    func reloadTableView() {
         // get all problems from Realm
-        let realm = try! Realm()
+        problems = [Problem]()
         for problem in realm.objects(Problem.self).sorted(byKeyPath: "id") {
             problems.append(problem)
         }
+        tableView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func configureSearchController() {
+        // Initialize and perform a minimum configuration to the search controller.
+        searchController = UISearchController(searchResultsController: nil)
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search here..."
+        searchController.searchBar.delegate = self
+        searchController.searchBar.sizeToFit()
+        
+        // Place the search bar view to the tableview headerview.
+        tableView.tableHeaderView = searchController.searchBar
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        shouldShowSearchResults = true
+        tableView.reloadData()
+    }
+    
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        shouldShowSearchResults = false
+        tableView.reloadData()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        if !shouldShowSearchResults {
+            shouldShowSearchResults = true
+            tableView.reloadData()
+        }
+        
+        searchController.searchBar.resignFirstResponder()
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        let searchString = searchController.searchBar.text
+        
+        // TODO filter
+        filteredProblems = [Problem]()
+        for problem in realm.objects(Problem.self).sorted(byKeyPath: "id").filter("title contains %@", searchString!) {
+            filteredProblems.append(problem)
+        }
+        // ...
+        
+        // Reload the tableview.
+        tableView.reloadData()
     }
     
     // MARK: - Table view data source
@@ -46,7 +105,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return problems.count
+        if shouldShowSearchResults {
+            return filteredProblems.count
+        } else {
+            return problems.count
+        }
     }
     
     
@@ -54,7 +117,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProblemTVCell", for: indexPath) as! ProblemTVCell
         
         // Configure the cell...
-        cell.problem = problems[indexPath.row]
+        if shouldShowSearchResults {
+            cell.problem = filteredProblems[indexPath.row]
+        } else {
+            cell.problem = problems[indexPath.row]
+        }
+        
+        
         
         return cell
     }
@@ -97,14 +166,38 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        if segue.identifier == "ShowProblemDetail" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                var problem: Problem
+                if shouldShowSearchResults {
+                    problem = filteredProblems[indexPath.row]
+                } else {
+                    problem = problems[indexPath.row]
+                }
+                let destController = segue.destination as! ProblemDetailViewController
+                destController.curProblem = problem
+            }
+        }
+    }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
