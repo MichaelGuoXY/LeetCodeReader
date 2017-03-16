@@ -78,23 +78,26 @@ for tr in trs:
             # TODO: obtain the solutions of the problem, normally 3 items, also in the format of HTML
             pre_solutions = driver_des.find_elements_by_class_name('list-group-item')
             count = len(pre_solutions)
-            for j in range(0, count):
+            j = 0
+            while j < count:
                 # print(j + 1)
-                # print(pre_solutions[j].text)
+                solution_title = pre_solutions[j].text.split("\n")[1]
                 pre_solutions[j].click()
             # obtain the solution
                 try:
                     solution = driver_des.find_element_by_class_name('panel-body').get_attribute('innerHTML')
                 # print(solution)
-                    solutions[j] = solution
+                    solutions[j] = solution_title + "FORSPLITROF" + solution
                 except Exception:
                     print('ATTENTION ===>>>' + str(id) + ' problem solutions not found, please manually update it later.')
                     log.write('ATTENTION ===>>>' + str(id) + ' problem solutions not found, please manually update it later.\n')
             # end
             # go back to solution page
                 driver_des.get(problem_link + '/#/solutions')
-                pre_solutions = driver_des.find_elements_by_class_name('list-group-item')
                 driver_des.implicitly_wait(5)
+                pre_solutions = driver_des.find_elements_by_class_name('list-group-item')
+                count = len(pre_solutions)
+                j += 1
             # done obtaining
             #
         # elif i == 4:

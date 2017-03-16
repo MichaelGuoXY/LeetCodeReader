@@ -33,10 +33,10 @@ class ProblemTVCell: UITableViewCell {
     
     func updateUI() {
         // update UI immediately after "problem" being set
-        id.text = String(problem.id)
+        id.text = "No." + String(problem.id)
         title.text = problem.title
-        acceptance.text = String(problem.acceptance)
-        difficulty.text = problem.difficulty
+        acceptance.text = "acceptance: " + String(problem.acceptance) + "%"
+        difficulty.text = "difficulty: " + problem.difficulty
     }
 
 }

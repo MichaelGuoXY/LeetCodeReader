@@ -128,6 +128,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
     
     /*
      // Override to support conditional editing of the table view.
@@ -181,7 +185,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 } else {
                     problem = problems[indexPath.row]
                 }
-                let destController = segue.destination as! ProblemDetailViewController
+                let destController = segue.destination as! ProblemDetailTableViewController
                 destController.curProblem = problem
             }
         }

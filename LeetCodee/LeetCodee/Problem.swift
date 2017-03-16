@@ -30,11 +30,20 @@ class Problem: Object {
         self.problemLink = problemLink
     }
     
+    // get solutions
+    func updateSolutions(solutions: List<RString>, fetch: ([String]) -> ()) {
+        self.solutions = solutions
+        var solus = [String]()
+        for solution in solutions {
+            solus.append(solution.stringValue)
+        }
+        fetch(solus)
+    }
+    
     // fetch solutions
-//    func fetchSolutions(id: Int) -> [String] {
-//        solutions = FirebaseManager.fetchSolutionsWithID(id: id)
-//        return solutions
-//    }
+    func fetchSolutions(fetch: @escaping ([String]) -> ()) {
+        FirebaseManager.fetchSolutionsWithID(id: id, updateSolutions: updateSolutions, fetch: fetch)
+    }
 }
 
 class RString: Object {

@@ -244,3 +244,105 @@ LOCAL TIME: ------ Tue Mar 14 16:44:16 2017 ------
 20 Valid Parentheses https://leetcode.com/problems/valid-parentheses editorial_link idk 32.63141119670843 Easy
 21 Merge Two Sorted Lists https://leetcode.com/problems/merge-two-sorted-lists editorial_link idk 38.37437578622346 Easy
 22 Generate Parentheses https://leetcode.com/problems/generate-parentheses editorial_link idk 42.79047209142475 Medium
+LOCAL TIME: ------ Wed Mar 15 13:30:18 2017 ------ 
+
+1 Two Sum https://leetcode.com/problems/two-sum editorial_link idk 31.605140913971415 Easy
+2 Add Two Numbers https://leetcode.com/problems/add-two-numbers editorial_link idk 26.894215226025025 Medium
+3 Longest Substring Without Repeating Characters https://leetcode.com/problems/longest-substring-without-repeating-characters editorial_link idk 23.951581541532825 Medium
+4 Median of Two Sorted Arrays https://leetcode.com/problems/median-of-two-sorted-arrays editorial_link idk 21.115466607806926 Hard
+LOCAL TIME: ------ Wed Mar 15 13:33:48 2017 ------ 
+
+1 Two Sum https://leetcode.com/problems/two-sum editorial_link idk 31.605140913971415 Easy
+2 Add Two Numbers https://leetcode.com/problems/add-two-numbers editorial_link idk 26.894215226025025 Medium
+LOCAL TIME: ------ Wed Mar 15 13:37:28 2017 ------ 
+
+1 Two Sum https://leetcode.com/problems/two-sum editorial_link idk 31.605140913971415 Easy
+2 Add Two Numbers https://leetcode.com/problems/add-two-numbers editorial_link idk 26.894215226025025 Medium
+3 Longest Substring Without Repeating Characters https://leetcode.com/problems/longest-substring-without-repeating-characters editorial_link idk 23.951581541532825 Medium
+4 Median of Two Sorted Arrays https://leetcode.com/problems/median-of-two-sorted-arrays editorial_link idk 21.115466607806926 Hard
+5 Longest Palindromic Substring https://leetcode.com/problems/longest-palindromic-substring editorial_link idk 24.944922345284343 Medium
+6 ZigZag Conversion https://leetcode.com/problems/zigzag-conversion editorial_link idk 26.239586207925296 Medium
+7 Reverse Integer https://leetcode.com/problems/reverse-integer editorial_link idk 23.885793871866294 Easy
+8 String to Integer (atoi) https://leetcode.com/problems/string-to-integer-atoi editorial_link idk 13.88633835592893 Medium
+9 Palindrome Number https://leetcode.com/problems/palindrome-number editorial_link idk 34.3653073255341 Easy
+10 Regular Expression Matching https://leetcode.com/problems/regular-expression-matching editorial_link idk 23.84628061289241 Hard
+11 Container With Most Water https://leetcode.com/problems/container-with-most-water editorial_link idk 36.21885381436678 Medium
+12 Integer to Roman https://leetcode.com/problems/integer-to-roman editorial_link idk 43.45408275472054 Medium
+LOCAL TIME: ------ Thu Mar 16 00:43:14 2017 ------ 
+
+LOCAL TIME: ------ Thu Mar 16 00:45:48 2017 ------ 
+
+1 Two Sum https://leetcode.com/problems/two-sum editorial_link idk 31.61893715421581 Easy
+2 Add Two Numbers https://leetcode.com/problems/add-two-numbers editorial_link idk 26.899053969663033 Medium
+3 Longest Substring Without Repeating Characters https://leetcode.com/problems/longest-substring-without-repeating-characters editorial_link idk 23.951572175384797 Medium
+4 Median of Two Sorted Arrays https://leetcode.com/problems/median-of-two-sorted-arrays editorial_link idk 21.116939896812813 Hard
+5 Longest Palindromic Substring https://leetcode.com/problems/longest-palindromic-substring editorial_link idk 24.951881563852584 Medium
+6 ZigZag Conversion https://leetcode.com/problems/zigzag-conversion editorial_link idk 26.24261772045271 Medium
+7 Reverse Integer https://leetcode.com/problems/reverse-integer editorial_link idk 23.892042463066275 Easy
+LOCAL TIME: ------ Thu Mar 16 00:49:03 2017 ------ 
+
+1 Two Sum https://leetcode.com/problems/two-sum editorial_link idk 31.61927908304238 Easy
+2 Add Two Numbers https://leetcode.com/problems/add-two-numbers editorial_link idk 26.8996739302093 Medium
+3 Longest Substring Without Repeating Characters https://leetcode.com/problems/longest-substring-without-repeating-characters editorial_link idk 23.95151823980636 Medium
+4 Median of Two Sorted Arrays https://leetcode.com/problems/median-of-two-sorted-arrays editorial_link idk 21.11695378271497 Hard
+5 Longest Palindromic Substring https://leetcode.com/problems/longest-palindromic-substring editorial_link idk 24.952259880840664 Medium
+6 ZigZag Conversion https://leetcode.com/problems/zigzag-conversion editorial_link idk 26.242422096449264 Medium
+7 Reverse Integer https://leetcode.com/problems/reverse-integer editorial_link idk 23.892970503818916 Easy
+8 String to Integer (atoi) https://leetcode.com/problems/string-to-integer-atoi editorial_link idk 13.888238754328338 Medium
+9 Palindrome Number https://leetcode.com/problems/palindrome-number editorial_link idk 34.36919142901143 Easy
+10 Regular Expression Matching https://leetcode.com/problems/regular-expression-matching editorial_link idk 23.84989749734515 Hard
+11 Container With Most Water https://leetcode.com/problems/container-with-most-water editorial_link idk 36.217164447643036 Medium
+12 Integer to Roman https://leetcode.com/problems/integer-to-roman editorial_link idk 43.452944369428984 Medium
+13 Roman to Integer https://leetcode.com/problems/roman-to-integer editorial_link idk 44.328483154668255 Easy
+14 Longest Common Prefix https://leetcode.com/problems/longest-common-prefix editorial_link idk 30.938726701824386 Easy
+15 3Sum https://leetcode.com/problems/3sum editorial_link idk 21.308054802255523 Medium
+16 3Sum Closest https://leetcode.com/problems/3sum-closest editorial_link idk 30.69244985680853 Medium
+17 Letter Combinations of a Phone Number https://leetcode.com/problems/letter-combinations-of-a-phone-number editorial_link idk 33.22284674744299 Medium
+18 4Sum https://leetcode.com/problems/4sum editorial_link idk 26.017246870566435 Medium
+19 Remove Nth Node From End of List https://leetcode.com/problems/remove-nth-node-from-end-of-list editorial_link idk 32.53398536503976 Medium
+20 Valid Parentheses https://leetcode.com/problems/valid-parentheses editorial_link idk 32.64778981807008 Easy
+21 Merge Two Sorted Lists https://leetcode.com/problems/merge-two-sorted-lists editorial_link idk 38.38849753197773 Easy
+22 Generate Parentheses https://leetcode.com/problems/generate-parentheses editorial_link idk 42.80974658118835 Medium
+23 Merge k Sorted Lists https://leetcode.com/problems/merge-k-sorted-lists editorial_link idk 26.442734392525185 Hard
+24 Swap Nodes in Pairs https://leetcode.com/problems/swap-nodes-in-pairs editorial_link idk 37.494357442966766 Medium
+25 Reverse Nodes in k-Group https://leetcode.com/problems/reverse-nodes-in-k-group editorial_link idk 30.067820835289254 Hard
+26 Remove Duplicates from Sorted Array https://leetcode.com/problems/remove-duplicates-from-sorted-array editorial_link idk 35.43753809070553 Easy
+27 Remove Element https://leetcode.com/problems/remove-element editorial_link idk 37.66229426715145 Easy
+28 Implement strStr() https://leetcode.com/problems/implement-strstr editorial_link idk 27.360839952536477 Easy
+29 Divide Two Integers https://leetcode.com/problems/divide-two-integers editorial_link idk 15.955560068369126 Medium
+30 Substring with Concatenation of All Words https://leetcode.com/problems/substring-with-concatenation-of-all-words editorial_link idk 21.747148138484228 Hard
+31 Next Permutation https://leetcode.com/problems/next-permutation editorial_link idk 28.393328767084675 Medium
+32 Longest Valid Parentheses https://leetcode.com/problems/longest-valid-parentheses editorial_link idk 23.049951605876167 Hard
+33 Search in Rotated Sorted Array https://leetcode.com/problems/search-in-rotated-sorted-array editorial_link idk 32.09110247468856 Medium
+34 Search for a Range https://leetcode.com/problems/search-for-a-range editorial_link idk 31.031995787466716 Medium
+35 Search Insert Position https://leetcode.com/problems/search-insert-position editorial_link idk 39.211458454740324 Easy
+36 Valid Sudoku https://leetcode.com/problems/valid-sudoku editorial_link idk 34.51292085217397 Medium
+37 Sudoku Solver https://leetcode.com/problems/sudoku-solver editorial_link idk 28.807690061163356 Hard
+38 Count and Say https://leetcode.com/problems/count-and-say editorial_link idk 33.243735554712494 Easy
+39 Combination Sum https://leetcode.com/problems/combination-sum editorial_link idk 36.72245389015202 Medium
+40 Combination Sum II https://leetcode.com/problems/combination-sum-ii editorial_link idk 32.075018181369956 Medium
+41 First Missing Positive https://leetcode.com/problems/first-missing-positive editorial_link idk 25.10399225074379 Hard
+42 Trapping Rain Water https://leetcode.com/problems/trapping-rain-water editorial_link idk 35.831377673938135 Hard
+43 Multiply Strings https://leetcode.com/problems/multiply-strings editorial_link idk 26.317524262955505 Medium
+44 Wildcard Matching https://leetcode.com/problems/wildcard-matching editorial_link idk 19.43544121835121 Hard
+45 Jump Game II https://leetcode.com/problems/jump-game-ii editorial_link idk 26.037708536894293 Hard
+46 Permutations https://leetcode.com/problems/permutations editorial_link idk 41.50632442008982 Medium
+47 Permutations II https://leetcode.com/problems/permutations-ii editorial_link idk 31.53844811134126 Medium
+48 Rotate Image https://leetcode.com/problems/rotate-image editorial_link idk 37.6195033939514 Medium
+49 Group Anagrams https://leetcode.com/problems/anagrams editorial_link idk 32.79558262035845 Medium
+50 Pow(x, n) https://leetcode.com/problems/powx-n editorial_link idk 26.804554072361896 Medium
+51 N-Queens https://leetcode.com/problems/n-queens editorial_link idk 29.643680756019286 Hard
+52 N-Queens II https://leetcode.com/problems/n-queens-ii editorial_link idk 43.382630375757394 Hard
+53 Maximum Subarray https://leetcode.com/problems/maximum-subarray editorial_link idk 39.061620241267256 Easy
+54 Spiral Matrix https://leetcode.com/problems/spiral-matrix editorial_link idk 25.02362144167701 Medium
+55 Jump Game https://leetcode.com/problems/jump-game editorial_link idk 29.267962806424347 Medium
+56 Merge Intervals https://leetcode.com/problems/merge-intervals editorial_link idk 28.928203036294715 Medium
+57 Insert Interval https://leetcode.com/problems/insert-interval editorial_link idk 26.773754255648406 Hard
+58 Length of Last Word https://leetcode.com/problems/length-of-last-word editorial_link idk 31.360493010756468 Easy
+59 Spiral Matrix II https://leetcode.com/problems/spiral-matrix-ii editorial_link idk 38.45556709404785 Medium
+60 Permutation Sequence https://leetcode.com/problems/permutation-sequence editorial_link idk 27.528981655725225 Medium
+61 Rotate List https://leetcode.com/problems/rotate-list editorial_link idk 24.1778559457458 Medium
+62 Unique Paths https://leetcode.com/problems/unique-paths editorial_link idk 39.83187276451538 Medium
+63 Unique Paths II https://leetcode.com/problems/unique-paths-ii editorial_link idk 31.172994222093237 Medium
+64 Minimum Path Sum https://leetcode.com/problems/minimum-path-sum editorial_link idk 37.59543864385016 Medium
+65 Valid Number https://leetcode.com/problems/valid-number editorial_link idk 12.673994730531238 Hard

@@ -12,12 +12,15 @@
 		805D05361E784FAB00B8C682 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 805D05351E784FAB00B8C682 /* Assets.xcassets */; };
 		805D05391E784FAB00B8C682 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 805D05371E784FAB00B8C682 /* LaunchScreen.storyboard */; };
 		805D05411E78702B00B8C682 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805D05401E78702B00B8C682 /* HomeViewController.swift */; };
-		805D05431E78710F00B8C682 /* TableViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805D05421E78710F00B8C682 /* TableViewSample.swift */; };
 		805D05451E78870000B8C682 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805D05441E78870000B8C682 /* FirebaseManager.swift */; };
 		805D05471E788C3D00B8C682 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 805D05461E788C3D00B8C682 /* GoogleService-Info.plist */; };
 		805D05491E788FA300B8C682 /* Problem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805D05481E788FA300B8C682 /* Problem.swift */; };
 		805D054B1E78B38E00B8C682 /* ProblemTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805D054A1E78B38E00B8C682 /* ProblemTVCell.swift */; };
-		808EA8121E791B3A00AD6F96 /* ProblemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808EA8111E791B3A00AD6F96 /* ProblemDetailViewController.swift */; };
+		8089AEE41E79ACAE00742696 /* ProblemDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8089AEE31E79ACAE00742696 /* ProblemDetailTableViewController.swift */; };
+		80F666731E79E7450030FA1E /* DescriptionTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F666721E79E7450030FA1E /* DescriptionTVCell.swift */; };
+		80F666751E79E7E20030FA1E /* TitleTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F666741E79E7E20030FA1E /* TitleTVCell.swift */; };
+		80F666771E79E7F60030FA1E /* SolutionsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F666761E79E7F60030FA1E /* SolutionsTVCell.swift */; };
+		80F6667E1E7A417F0030FA1E /* code-style.css in Resources */ = {isa = PBXBuildFile; fileRef = 80F6667D1E7A417F0030FA1E /* code-style.css */; };
 		B9EAB066297D5C871FB473D4 /* Pods_LeetCodee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD46ACAA72717A9836A7C9D /* Pods_LeetCodee.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,12 +34,15 @@
 		805D05381E784FAB00B8C682 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		805D053A1E784FAB00B8C682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		805D05401E78702B00B8C682 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		805D05421E78710F00B8C682 /* TableViewSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewSample.swift; sourceTree = "<group>"; };
 		805D05441E78870000B8C682 /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		805D05461E788C3D00B8C682 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		805D05481E788FA300B8C682 /* Problem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem.swift; sourceTree = "<group>"; };
 		805D054A1E78B38E00B8C682 /* ProblemTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemTVCell.swift; sourceTree = "<group>"; };
-		808EA8111E791B3A00AD6F96 /* ProblemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemDetailViewController.swift; sourceTree = "<group>"; };
+		8089AEE31E79ACAE00742696 /* ProblemDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemDetailTableViewController.swift; sourceTree = "<group>"; };
+		80F666721E79E7450030FA1E /* DescriptionTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionTVCell.swift; sourceTree = "<group>"; };
+		80F666741E79E7E20030FA1E /* TitleTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleTVCell.swift; sourceTree = "<group>"; };
+		80F666761E79E7F60030FA1E /* SolutionsTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolutionsTVCell.swift; sourceTree = "<group>"; };
+		80F6667D1E7A417F0030FA1E /* code-style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = "code-style.css"; path = "../code-style.css"; sourceTree = "<group>"; };
 		B8A0CF793844C9B96D73147C /* Pods-LeetCodee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeetCodee.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeetCodee/Pods-LeetCodee.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,11 +91,14 @@
 				805D05441E78870000B8C682 /* FirebaseManager.swift */,
 				805D05481E788FA300B8C682 /* Problem.swift */,
 				805D05321E784FAB00B8C682 /* Main.storyboard */,
+				80F666741E79E7E20030FA1E /* TitleTVCell.swift */,
+				80F666761E79E7F60030FA1E /* SolutionsTVCell.swift */,
 				805D054A1E78B38E00B8C682 /* ProblemTVCell.swift */,
-				805D05421E78710F00B8C682 /* TableViewSample.swift */,
+				80F666721E79E7450030FA1E /* DescriptionTVCell.swift */,
 				805D05401E78702B00B8C682 /* HomeViewController.swift */,
-				808EA8111E791B3A00AD6F96 /* ProblemDetailViewController.swift */,
+				8089AEE31E79ACAE00742696 /* ProblemDetailTableViewController.swift */,
 				805D05351E784FAB00B8C682 /* Assets.xcassets */,
+				80F6667D1E7A417F0030FA1E /* code-style.css */,
 				805D05371E784FAB00B8C682 /* LaunchScreen.storyboard */,
 				805D053A1E784FAB00B8C682 /* Info.plist */,
 				805D05461E788C3D00B8C682 /* GoogleService-Info.plist */,
@@ -141,7 +150,7 @@
 				TargetAttributes = {
 					805D052A1E784FAB00B8C682 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 92783P2WFU;
+						DevelopmentTeam = W7PABCWTVG;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -169,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80F6667E1E7A417F0030FA1E /* code-style.css in Resources */,
 				805D05391E784FAB00B8C682 /* LaunchScreen.storyboard in Resources */,
 				805D05471E788C3D00B8C682 /* GoogleService-Info.plist in Resources */,
 				805D05361E784FAB00B8C682 /* Assets.xcassets in Resources */,
@@ -231,13 +241,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80F666751E79E7E20030FA1E /* TitleTVCell.swift in Sources */,
+				80F666771E79E7F60030FA1E /* SolutionsTVCell.swift in Sources */,
 				805D05451E78870000B8C682 /* FirebaseManager.swift in Sources */,
-				805D05431E78710F00B8C682 /* TableViewSample.swift in Sources */,
 				805D052F1E784FAB00B8C682 /* AppDelegate.swift in Sources */,
+				8089AEE41E79ACAE00742696 /* ProblemDetailTableViewController.swift in Sources */,
 				805D05491E788FA300B8C682 /* Problem.swift in Sources */,
 				805D05411E78702B00B8C682 /* HomeViewController.swift in Sources */,
 				805D054B1E78B38E00B8C682 /* ProblemTVCell.swift in Sources */,
-				808EA8121E791B3A00AD6F96 /* ProblemDetailViewController.swift in Sources */,
+				80F666731E79E7450030FA1E /* DescriptionTVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,10 +373,10 @@
 			baseConfigurationReference = 67999FF3B4CBEBF2932AB27C /* Pods-LeetCodee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 92783P2WFU;
+				DEVELOPMENT_TEAM = W7PABCWTVG;
 				INFOPLIST_FILE = LeetCodee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = michael.guo.LeetCodee;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cornell.wonderful.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -375,10 +387,10 @@
 			baseConfigurationReference = B8A0CF793844C9B96D73147C /* Pods-LeetCodee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 92783P2WFU;
+				DEVELOPMENT_TEAM = W7PABCWTVG;
 				INFOPLIST_FILE = LeetCodee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = michael.guo.LeetCodee;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cornell.wonderful.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

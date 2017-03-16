@@ -26,25 +26,41 @@ class FirebaseManager: NSObject{
                 let problemLink = value["problem_link"] as! String
                 let editorialLink = value["editorial_link"] as! String
                 let acceptance = value["acceptance"] as! Float
+                // if realm already has this problem, then skip
+                if realm.objects(Problem.self).filter("id == %@", id).count > 0 {
+                    continue
+                }
                 let problem = Problem()
                 problem.initialize(id: id, title: title, acceptance: acceptance, description: description, difficulty: difficulty, editorialLink: editorialLink, problemLink: problemLink)
                 try! realm.write {
                     realm.add(problem)
                 }
-                reloadTableView()
             }
+            reloadTableView()
         }) { (error) in
             print(error.localizedDescription)
         }
     }
     
-    static func fetchSolutionsWithID(id: Int) -> [String] {
-        var solutions = [String]()
+    static func fetchSolutionsWithID(id: Int, updateSolutions: @escaping (_ updatedSolutions: List<RString>, _ fetch: ([String]) -> ()) -> (), fetch: @escaping ([String]) -> ()) {
+        let solutions = List<RString>()
         // TODO: fetch solutions with ID given
         
-        
+        let idQuery = ref.child("problems").queryOrdered(byChild: "id").queryEqual(toValue: id)
+        idQuery.observeSingleEvent(of: .value, with: { (snapshot) in
+            var problem = snapshot.value as! NSDictionary
+            problem = problem.allValues[0] as! NSDictionary // dictionary
+            for solution in problem["solutions"] as! NSArray {
+                let solu = RString()
+                solu.stringValue = solution as! String
+                solutions.append(solu)
+            }
+            updateSolutions(solutions, fetch)
+        }) { (error) in
+            print(error.localizedDescription)
+        }
         
         // END TODO
-        return solutions
+        // return solutions
     }
 }
