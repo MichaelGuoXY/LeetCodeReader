@@ -18,6 +18,7 @@ class Problem: Object {
     dynamic var difficulty: String!
     dynamic var editorialLink: String!
     dynamic var problemLink: String!
+    dynamic var isFavorite = false
     var solutions = List<RString>()
     
     func initialize(id: Int, title: String, acceptance: Float, description: String, difficulty: String, editorialLink: String, problemLink: String) {

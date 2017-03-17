@@ -27,8 +27,8 @@ class ProblemDetailTableViewController: UITableViewController, CusTVReloadDelega
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-//        tableView.rowHeight = UITableViewAutomaticDimension
-//        tableView.estimatedRowHeight = 200
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 140
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -115,8 +115,9 @@ class ProblemDetailTableViewController: UITableViewController, CusTVReloadDelega
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
-            return 50
-        } else if indexPath.section == 1 {
+            return 70
+        } else
+        if indexPath.section == 1 {
             return 300
         } else {
             return 450
