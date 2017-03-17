@@ -18,7 +18,7 @@ class SolutionsTVCell: UITableViewCell, UIWebViewDelegate{
         }
     }
     
-    var delegate: ProblemDetailTableViewController!
+    var delegate: ProblemDetailViewController!
     var indexPath: IndexPath!
     var contentHeight = 0.0
     

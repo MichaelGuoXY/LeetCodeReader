@@ -15,9 +15,9 @@
 		805D05471E788C3D00B8C682 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 805D05461E788C3D00B8C682 /* GoogleService-Info.plist */; };
 		805D05491E788FA300B8C682 /* Problem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805D05481E788FA300B8C682 /* Problem.swift */; };
 		805D054B1E78B38E00B8C682 /* ProblemTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805D054A1E78B38E00B8C682 /* ProblemTVCell.swift */; };
-		8089AEE41E79ACAE00742696 /* ProblemDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8089AEE31E79ACAE00742696 /* ProblemDetailTableViewController.swift */; };
 		809D9C031E7B3B230091D7D5 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D9C021E7B3B230091D7D5 /* HomeTableViewController.swift */; };
 		809D9C051E7B56540091D7D5 /* FavoriteProblemTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D9C041E7B56540091D7D5 /* FavoriteProblemTVC.swift */; };
+		80BC12681E7C56C500AFE182 /* ProblemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BC12671E7C56C500AFE182 /* ProblemDetailViewController.swift */; };
 		80C2557A1E7BBDE000842459 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C255791E7BBDE000842459 /* CustomSearchBar.swift */; };
 		80C2557C1E7BC10300842459 /* CustomSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C2557B1E7BC10300842459 /* CustomSearchController.swift */; };
 		80F666731E79E7450030FA1E /* DescriptionTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F666721E79E7450030FA1E /* DescriptionTVCell.swift */; };
@@ -40,9 +40,9 @@
 		805D05461E788C3D00B8C682 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		805D05481E788FA300B8C682 /* Problem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem.swift; sourceTree = "<group>"; };
 		805D054A1E78B38E00B8C682 /* ProblemTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemTVCell.swift; sourceTree = "<group>"; };
-		8089AEE31E79ACAE00742696 /* ProblemDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemDetailTableViewController.swift; sourceTree = "<group>"; };
 		809D9C021E7B3B230091D7D5 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		809D9C041E7B56540091D7D5 /* FavoriteProblemTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteProblemTVC.swift; sourceTree = "<group>"; };
+		80BC12671E7C56C500AFE182 /* ProblemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemDetailViewController.swift; sourceTree = "<group>"; };
 		80C255791E7BBDE000842459 /* CustomSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
 		80C2557B1E7BC10300842459 /* CustomSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchController.swift; sourceTree = "<group>"; };
 		80F666721E79E7450030FA1E /* DescriptionTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionTVCell.swift; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 				80F666761E79E7F60030FA1E /* SolutionsTVCell.swift */,
 				805D054A1E78B38E00B8C682 /* ProblemTVCell.swift */,
 				80F666721E79E7450030FA1E /* DescriptionTVCell.swift */,
-				8089AEE31E79ACAE00742696 /* ProblemDetailTableViewController.swift */,
+				80BC12671E7C56C500AFE182 /* ProblemDetailViewController.swift */,
 				805D05351E784FAB00B8C682 /* Assets.xcassets */,
 				80F6667D1E7A417F0030FA1E /* code-style.css */,
 				805D05371E784FAB00B8C682 /* LaunchScreen.storyboard */,
@@ -255,9 +255,9 @@
 				80F666771E79E7F60030FA1E /* SolutionsTVCell.swift in Sources */,
 				805D05451E78870000B8C682 /* FirebaseManager.swift in Sources */,
 				809D9C051E7B56540091D7D5 /* FavoriteProblemTVC.swift in Sources */,
+				80BC12681E7C56C500AFE182 /* ProblemDetailViewController.swift in Sources */,
 				805D052F1E784FAB00B8C682 /* AppDelegate.swift in Sources */,
 				809D9C031E7B3B230091D7D5 /* HomeTableViewController.swift in Sources */,
-				8089AEE41E79ACAE00742696 /* ProblemDetailTableViewController.swift in Sources */,
 				805D05491E788FA300B8C682 /* Problem.swift in Sources */,
 				805D054B1E78B38E00B8C682 /* ProblemTVCell.swift in Sources */,
 				80C2557A1E7BBDE000842459 /* CustomSearchBar.swift in Sources */,

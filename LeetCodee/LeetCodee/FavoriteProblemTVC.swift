@@ -159,7 +159,7 @@ class FavoriteProblemTVC: UITableViewController {
             if let indexPath = tableView.indexPathForSelectedRow {
                 var problem: Problem
                 problem = problems[indexPath.row]
-                let destController = segue.destination as! ProblemDetailTableViewController
+                let destController = segue.destination as! ProblemDetailViewController
                 destController.curProblem = problem
             }
         }

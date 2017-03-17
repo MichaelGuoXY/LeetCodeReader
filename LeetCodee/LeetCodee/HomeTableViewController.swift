@@ -259,7 +259,7 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
                 } else {
                     problem = problems[indexPath.row]
                 }
-                let destController = segue.destination as! ProblemDetailTableViewController
+                let destController = segue.destination as! ProblemDetailViewController
                 destController.curProblem = problem
             }
         }
