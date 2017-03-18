@@ -35,7 +35,7 @@ class CustomSearchBar: UISearchBar {
             searchField.backgroundColor = barTintColor
         }
         
-        //super.draw(rect)
+        super.draw(rect)
         
         let startPoint = CGPoint(x: 0.0, y: frame.size.height)
         let endPoint = CGPoint(x: frame.size.width, y: frame.size.height)
@@ -68,7 +68,10 @@ class CustomSearchBar: UISearchBar {
         preferredFont = font
         preferredTextColor = textColor
         
-        searchBarStyle = UISearchBarStyle.minimal
+        self.layer.borderColor = textColor.cgColor
+        self.layer.borderWidth = 2.5
+        
+        searchBarStyle = UISearchBarStyle.default
         isTranslucent = false
     }
     

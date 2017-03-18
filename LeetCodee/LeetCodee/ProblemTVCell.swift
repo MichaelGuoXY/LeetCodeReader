@@ -23,6 +23,24 @@ class ProblemTVCell: UITableViewCell {
         }
     }
     
+    override func draw(_ rect: CGRect) {
+        
+        let startPoint = CGPoint(x: 0.0, y: frame.size.height)
+        let endPoint = CGPoint(x: CGFloat(Float(frame.width) * problem.acceptance / 100.0), y: frame.size.height)
+        let path = UIBezierPath()
+        path.move(to: startPoint)
+        path.addLine(to: endPoint)
+        
+        let shapeLayer = CAShapeLayer()
+        shapeLayer.path = path.cgPath
+        shapeLayer.strokeColor = UIColor(red: 17/255, green: 246/255, blue: 139/255, alpha: 1.0).cgColor
+        shapeLayer.lineWidth = 2.5
+        
+        layer.addSublayer(shapeLayer)
+        
+        super.draw(rect)
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

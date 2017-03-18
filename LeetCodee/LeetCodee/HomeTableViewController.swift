@@ -42,9 +42,6 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
         // download from Firebase
         FirebaseManager.fetchAllProblems(reloadTableView: reloadTableView)
         
-        // configure search controller
-        configureSearchController()
-        
         // Define the menus
         //        let menuLeftNavigationController = UISideMenuNavigationController(rootViewController: self)
         //        menuLeftNavigationController.leftSide = true
@@ -74,7 +71,10 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
         SideMenuManager.menuFadeStatusBar = false
         
         // config navi bar color
-        navigationController?.navigationBar.backgroundColor = UIColor(red: 167/255, green: 237/255, blue: 248/255, alpha: 1.0)
+        navigationController?.navigationBar.barTintColor = UIColor(red: 85/255, green: 210/255, blue: 251/255, alpha: 0.9)
+        
+        // configure search controller
+        configureSearchController()
     }
     
     func reloadTableView() {
@@ -83,7 +83,9 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
         for problem in realm.objects(Problem.self).sorted(byKeyPath: "id") {
             problems.append(problem)
         }
-        tableView.reloadData()
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -93,16 +95,19 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
     
     func configureSearchController() {
         // Initialize and perform a minimum configuration to the search controller.
-        searchController = CustomSearchController(searchResultsController: self, searchBarFrame: CGRect(x: 0.0, y: 0.0, width: tableView.frame.size.width, height: 30.0), searchBarFont: UIFont(name: "Futura", size: 16.0)!, searchBarTextColor: .orange, searchBarTintColor: .red)
+        searchController = CustomSearchController(searchResultsController: self, searchBarFrame: CGRect(x: 0.0, y: 0.0, width: tableView.bounds.width * 0.7, height: 30.0), searchBarFont: UIFont(name: "Futura", size: 16.0)!, searchBarTextColor: .white, searchBarTintColor: UIColor(red: 85/255, green: 210/255, blue: 251/255, alpha: 0.9))
 //        searchController.searchResultsUpdater = self
-//        searchController.dimsBackgroundDuringPresentation = false
+        searchController.dimsBackgroundDuringPresentation = false
         searchController.customSearchBar.placeholder = "Search here..."
 //        searchController.searchBar.delegate = self
 //        searchController.searchBar.sizeToFit()
 //        searchController.searchBar.showsCancelButton = false
-        
+        let titleView = UIView(frame: searchController.customSearchBar.frame)
+        titleView.addSubview(searchController.customSearchBar)
         // Place the search bar view to the tableview headerview.
-        navigationItem.titleView = searchController.customSearchBar
+        navigationItem.titleView = titleView
+        //navigationItem.titleView?.tintColor = UIColor(red: 51/255, green: 210/255, blue: 236/255, alpha: 1.0)
+        //navigationItem.titleView?.backgroundColor = UIColor(red: 85/255, green: 210/255, blue: 251/255, alpha: 0.9)
         //tableView.tableHeaderView = searchController.customSearchBar
         searchController.hidesNavigationBarDuringPresentation = false
         searchController.customDelegate = self
@@ -289,25 +294,25 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
     func sortByAccepDiff(ascending: Bool) {
         if ascending {
             problems = [Problem]()
-            for problem in realm.objects(Problem.self).filter("difficulty == 'Easy'").sorted(byKeyPath: "acceptance", ascending: ascending) {
+            for problem in realm.objects(Problem.self).filter("difficulty == 'Easy'").sorted(byKeyPath: "acceptance", ascending: !ascending) {
                 problems.append(problem)
             }
-            for problem in realm.objects(Problem.self).filter("difficulty == 'Medium'").sorted(byKeyPath: "acceptance", ascending: ascending) {
+            for problem in realm.objects(Problem.self).filter("difficulty == 'Medium'").sorted(byKeyPath: "acceptance", ascending: !ascending) {
                 problems.append(problem)
             }
-            for problem in realm.objects(Problem.self).filter("difficulty == 'Hard'").sorted(byKeyPath: "acceptance", ascending: ascending) {
+            for problem in realm.objects(Problem.self).filter("difficulty == 'Hard'").sorted(byKeyPath: "acceptance", ascending: !ascending) {
                 problems.append(problem)
             }
             tableView.reloadData()
         } else {
             problems = [Problem]()
-            for problem in realm.objects(Problem.self).filter("difficulty == 'Hard'").sorted(byKeyPath: "acceptance", ascending: ascending) {
+            for problem in realm.objects(Problem.self).filter("difficulty == 'Hard'").sorted(byKeyPath: "acceptance", ascending: !ascending) {
                 problems.append(problem)
             }
-            for problem in realm.objects(Problem.self).filter("difficulty == 'Medium'").sorted(byKeyPath: "acceptance", ascending: ascending) {
+            for problem in realm.objects(Problem.self).filter("difficulty == 'Medium'").sorted(byKeyPath: "acceptance", ascending: !ascending) {
                 problems.append(problem)
             }
-            for problem in realm.objects(Problem.self).filter("difficulty == 'Easy'").sorted(byKeyPath: "acceptance", ascending: ascending) {
+            for problem in realm.objects(Problem.self).filter("difficulty == 'Easy'").sorted(byKeyPath: "acceptance", ascending: !ascending) {
                 problems.append(problem)
             }
             tableView.reloadData()

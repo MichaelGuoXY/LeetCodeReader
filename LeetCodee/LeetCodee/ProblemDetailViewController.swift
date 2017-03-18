@@ -21,6 +21,8 @@ class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITabl
     
     var contentHeights = [Int: CGFloat]()
     
+    let sectionTitleArr = ["TITLE", "DESCRIPTION", "SOLUTIONS"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,6 +38,10 @@ class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITabl
         tableView.estimatedRowHeight = 140
         
         backToTopBtnConfig()
+        
+        // got back button config
+        
+//        navigationController?.navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Chalkduster", size: 20)!], for: UIControlState.normal)
     }
     
     // config floating button over table view
@@ -44,8 +50,8 @@ class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITabl
         //backToTopBtn.layer.cornerRadius = backToTopBtn.bounds.width / 2
         backToTopBtn.layer.shadowColor = UIColor.black.cgColor
         backToTopBtn.layer.shadowOpacity = 1
-        backToTopBtn.layer.shadowOffset = CGSize.zero
-        backToTopBtn.layer.shadowRadius = backToTopBtn.bounds.width / 2 + 2
+        backToTopBtn.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
+        backToTopBtn.layer.shadowRadius = 10.0
     }
     
     @IBAction func backToTopBtnClicked(_ sender: UIButton) {
@@ -106,21 +112,30 @@ class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        var sectionName: String
-        switch section {
-        case 0:
-            sectionName = "TITLE"
-            break;
-        case 1:
-            sectionName = "DESCRIPTION"
-            break;
-        case 2:
-            sectionName = "SOLUTIONS"
-            break;
-        default:
-            sectionName = "WHAT HAPPENED"
+        return sectionTitleArr[section]
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let returnedView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: 30))
+        returnedView.layer.masksToBounds = true
+        returnedView.layer.cornerRadius = 15
+        returnedView.backgroundColor = .black
+        
+        let label = UILabel(frame: CGRect(x: returnedView.bounds.width / 5, y: 0, width: tableView.bounds.width, height: 30))
+        label.text = sectionTitleArr[section]
+        label.textColor = .white
+        label.font = UIFont(name: "Chalkduster", size: 20)
+        returnedView.addSubview(label)
+        
+        if section == 1 || section == 2 {
+             return returnedView
         }
-        return sectionName
+        
+        // section == 0: TITLE
+        let returnedViewS1 = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: 40))
+        returnedView.frame = CGRect(x: 0, y: 10, width: tableView.bounds.width, height: 30)
+        returnedViewS1.addSubview(returnedView)
+        return returnedViewS1
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

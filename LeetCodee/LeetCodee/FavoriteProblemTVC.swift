@@ -27,9 +27,10 @@ class FavoriteProblemTVC: UITableViewController {
         tableView.estimatedRowHeight = 140
         
         self.title = "Favorite"
+        navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Chalkduster", size: 20)!]
         
         // config nav bar color
-        navigationController?.navigationBar.backgroundColor = UIColor(red: 167/255, green: 237/255, blue: 248/255, alpha: 1.0)
+        navigationController?.navigationBar.barTintColor = UIColor(red: 179/255, green: 136/255, blue: 250/255, alpha: 0.9)
     }
     
     override func viewWillAppear(_ animated: Bool) {

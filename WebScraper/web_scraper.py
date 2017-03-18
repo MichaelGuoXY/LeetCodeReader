@@ -53,7 +53,7 @@ for tr in trs:
         # 7 frequency
         if i == 2:
             id = int(td.text)
-            if id <= 117:
+            if id <= 272:
                 break
         elif i == 3:
             title = str(td.get_attribute('value'))
@@ -115,7 +115,7 @@ for tr in trs:
     print(str(id) + ' ' + title + ' ' + problem_link + ' editorial_link ' + editorial_link + ' ' + str(acceptance) + ' ' + difficulty)
     log.write(str(id) + ' ' + title + ' ' + problem_link + ' editorial_link ' + editorial_link + ' ' + str(acceptance) + ' ' + difficulty +'\n')
     # record for each problem
-    if id <= 117:
+    if id <= 272:
         continue
     record = {}
     record['id'] = id

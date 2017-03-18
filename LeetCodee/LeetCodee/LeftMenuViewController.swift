@@ -92,7 +92,6 @@ class LeftMenuViewController: UIViewController, UITableViewDelegate, UITableView
             let cell = tableView.cellForRow(at: indexPath) as! OptionOneTableViewCell
             cell.imgView.image = isOneToTwo ? #imageLiteral(resourceName: "1to2") : #imageLiteral(resourceName: "2to1")
             delegate.sortById(ascending: isOneToTwo)
-            
         } else if indexPath.row == 4 {
             isEToH = !isEToH
             let cell = tableView.cellForRow(at: indexPath) as! OptionOneTableViewCell
@@ -108,6 +107,11 @@ class LeftMenuViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.deselectRow(at: indexPath, animated: true)
         dismiss(animated: true, completion: nil)
     }
+    
+//    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+//        tableView.cellForRow(at: indexPath)?.backgroundColor = tableView.backgroundColor
+//    }
+    
     
     /*
     // MARK: - Navigation

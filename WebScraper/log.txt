@@ -664,3 +664,1065 @@ ATTENTION ===>>>186 problem description not found, please manually update it lat
 200 Number of Islands https://leetcode.com/problems/number-of-islands editorial_link idk 33.150866365842745 Medium
 201 Bitwise AND of Numbers Range https://leetcode.com/problems/bitwise-and-of-numbers-range editorial_link idk 33.3705160570657 Medium
 202 Happy Number https://leetcode.com/problems/happy-number editorial_link idk 39.79322037497832 Easy
+LOCAL TIME: ------ Fri Mar 17 22:06:22 2017 ------ 
+
+1 none title idk editorial_link idk -1e-05 Default
+2 none title idk editorial_link idk -1e-05 Default
+3 none title idk editorial_link idk -1e-05 Default
+4 none title idk editorial_link idk -1e-05 Default
+5 none title idk editorial_link idk -1e-05 Default
+6 none title idk editorial_link idk -1e-05 Default
+7 none title idk editorial_link idk -1e-05 Default
+8 none title idk editorial_link idk -1e-05 Default
+9 none title idk editorial_link idk -1e-05 Default
+10 none title idk editorial_link idk -1e-05 Default
+11 none title idk editorial_link idk -1e-05 Default
+12 none title idk editorial_link idk -1e-05 Default
+13 none title idk editorial_link idk -1e-05 Default
+14 none title idk editorial_link idk -1e-05 Default
+15 none title idk editorial_link idk -1e-05 Default
+16 none title idk editorial_link idk -1e-05 Default
+17 none title idk editorial_link idk -1e-05 Default
+18 none title idk editorial_link idk -1e-05 Default
+19 none title idk editorial_link idk -1e-05 Default
+20 none title idk editorial_link idk -1e-05 Default
+21 none title idk editorial_link idk -1e-05 Default
+22 none title idk editorial_link idk -1e-05 Default
+23 none title idk editorial_link idk -1e-05 Default
+24 none title idk editorial_link idk -1e-05 Default
+25 none title idk editorial_link idk -1e-05 Default
+26 none title idk editorial_link idk -1e-05 Default
+27 none title idk editorial_link idk -1e-05 Default
+28 none title idk editorial_link idk -1e-05 Default
+29 none title idk editorial_link idk -1e-05 Default
+30 none title idk editorial_link idk -1e-05 Default
+31 none title idk editorial_link idk -1e-05 Default
+32 none title idk editorial_link idk -1e-05 Default
+33 none title idk editorial_link idk -1e-05 Default
+34 none title idk editorial_link idk -1e-05 Default
+35 none title idk editorial_link idk -1e-05 Default
+36 none title idk editorial_link idk -1e-05 Default
+37 none title idk editorial_link idk -1e-05 Default
+38 none title idk editorial_link idk -1e-05 Default
+39 none title idk editorial_link idk -1e-05 Default
+40 none title idk editorial_link idk -1e-05 Default
+41 none title idk editorial_link idk -1e-05 Default
+42 none title idk editorial_link idk -1e-05 Default
+43 none title idk editorial_link idk -1e-05 Default
+44 none title idk editorial_link idk -1e-05 Default
+45 none title idk editorial_link idk -1e-05 Default
+46 none title idk editorial_link idk -1e-05 Default
+47 none title idk editorial_link idk -1e-05 Default
+48 none title idk editorial_link idk -1e-05 Default
+49 none title idk editorial_link idk -1e-05 Default
+50 none title idk editorial_link idk -1e-05 Default
+51 none title idk editorial_link idk -1e-05 Default
+52 none title idk editorial_link idk -1e-05 Default
+53 none title idk editorial_link idk -1e-05 Default
+54 none title idk editorial_link idk -1e-05 Default
+55 none title idk editorial_link idk -1e-05 Default
+56 none title idk editorial_link idk -1e-05 Default
+57 none title idk editorial_link idk -1e-05 Default
+58 none title idk editorial_link idk -1e-05 Default
+59 none title idk editorial_link idk -1e-05 Default
+60 none title idk editorial_link idk -1e-05 Default
+61 none title idk editorial_link idk -1e-05 Default
+62 none title idk editorial_link idk -1e-05 Default
+63 none title idk editorial_link idk -1e-05 Default
+64 none title idk editorial_link idk -1e-05 Default
+65 none title idk editorial_link idk -1e-05 Default
+66 none title idk editorial_link idk -1e-05 Default
+67 none title idk editorial_link idk -1e-05 Default
+68 none title idk editorial_link idk -1e-05 Default
+69 none title idk editorial_link idk -1e-05 Default
+70 none title idk editorial_link idk -1e-05 Default
+71 none title idk editorial_link idk -1e-05 Default
+72 none title idk editorial_link idk -1e-05 Default
+73 none title idk editorial_link idk -1e-05 Default
+74 none title idk editorial_link idk -1e-05 Default
+75 none title idk editorial_link idk -1e-05 Default
+76 none title idk editorial_link idk -1e-05 Default
+77 none title idk editorial_link idk -1e-05 Default
+78 none title idk editorial_link idk -1e-05 Default
+79 none title idk editorial_link idk -1e-05 Default
+80 none title idk editorial_link idk -1e-05 Default
+81 none title idk editorial_link idk -1e-05 Default
+82 none title idk editorial_link idk -1e-05 Default
+83 none title idk editorial_link idk -1e-05 Default
+84 none title idk editorial_link idk -1e-05 Default
+85 none title idk editorial_link idk -1e-05 Default
+86 none title idk editorial_link idk -1e-05 Default
+87 none title idk editorial_link idk -1e-05 Default
+88 none title idk editorial_link idk -1e-05 Default
+89 none title idk editorial_link idk -1e-05 Default
+90 none title idk editorial_link idk -1e-05 Default
+91 none title idk editorial_link idk -1e-05 Default
+92 none title idk editorial_link idk -1e-05 Default
+93 none title idk editorial_link idk -1e-05 Default
+94 none title idk editorial_link idk -1e-05 Default
+95 none title idk editorial_link idk -1e-05 Default
+96 none title idk editorial_link idk -1e-05 Default
+97 none title idk editorial_link idk -1e-05 Default
+98 none title idk editorial_link idk -1e-05 Default
+99 none title idk editorial_link idk -1e-05 Default
+100 none title idk editorial_link idk -1e-05 Default
+101 none title idk editorial_link idk -1e-05 Default
+102 none title idk editorial_link idk -1e-05 Default
+103 none title idk editorial_link idk -1e-05 Default
+104 none title idk editorial_link idk -1e-05 Default
+105 none title idk editorial_link idk -1e-05 Default
+106 none title idk editorial_link idk -1e-05 Default
+107 none title idk editorial_link idk -1e-05 Default
+108 none title idk editorial_link idk -1e-05 Default
+109 none title idk editorial_link idk -1e-05 Default
+110 none title idk editorial_link idk -1e-05 Default
+111 none title idk editorial_link idk -1e-05 Default
+112 none title idk editorial_link idk -1e-05 Default
+113 none title idk editorial_link idk -1e-05 Default
+114 none title idk editorial_link idk -1e-05 Default
+115 none title idk editorial_link idk -1e-05 Default
+116 none title idk editorial_link idk -1e-05 Default
+117 none title idk editorial_link idk -1e-05 Default
+118 none title idk editorial_link idk -1e-05 Default
+119 none title idk editorial_link idk -1e-05 Default
+120 none title idk editorial_link idk -1e-05 Default
+121 none title idk editorial_link idk -1e-05 Default
+122 none title idk editorial_link idk -1e-05 Default
+123 none title idk editorial_link idk -1e-05 Default
+124 none title idk editorial_link idk -1e-05 Default
+125 none title idk editorial_link idk -1e-05 Default
+126 none title idk editorial_link idk -1e-05 Default
+127 none title idk editorial_link idk -1e-05 Default
+128 none title idk editorial_link idk -1e-05 Default
+129 none title idk editorial_link idk -1e-05 Default
+130 none title idk editorial_link idk -1e-05 Default
+131 none title idk editorial_link idk -1e-05 Default
+132 none title idk editorial_link idk -1e-05 Default
+133 none title idk editorial_link idk -1e-05 Default
+134 none title idk editorial_link idk -1e-05 Default
+135 none title idk editorial_link idk -1e-05 Default
+136 none title idk editorial_link idk -1e-05 Default
+137 none title idk editorial_link idk -1e-05 Default
+138 none title idk editorial_link idk -1e-05 Default
+139 none title idk editorial_link idk -1e-05 Default
+140 none title idk editorial_link idk -1e-05 Default
+141 none title idk editorial_link idk -1e-05 Default
+142 none title idk editorial_link idk -1e-05 Default
+143 none title idk editorial_link idk -1e-05 Default
+144 none title idk editorial_link idk -1e-05 Default
+145 none title idk editorial_link idk -1e-05 Default
+146 none title idk editorial_link idk -1e-05 Default
+147 none title idk editorial_link idk -1e-05 Default
+148 none title idk editorial_link idk -1e-05 Default
+149 none title idk editorial_link idk -1e-05 Default
+150 none title idk editorial_link idk -1e-05 Default
+151 none title idk editorial_link idk -1e-05 Default
+152 none title idk editorial_link idk -1e-05 Default
+153 none title idk editorial_link idk -1e-05 Default
+154 none title idk editorial_link idk -1e-05 Default
+155 none title idk editorial_link idk -1e-05 Default
+156 none title idk editorial_link idk -1e-05 Default
+157 none title idk editorial_link idk -1e-05 Default
+158 none title idk editorial_link idk -1e-05 Default
+159 none title idk editorial_link idk -1e-05 Default
+160 none title idk editorial_link idk -1e-05 Default
+161 none title idk editorial_link idk -1e-05 Default
+162 none title idk editorial_link idk -1e-05 Default
+163 none title idk editorial_link idk -1e-05 Default
+164 none title idk editorial_link idk -1e-05 Default
+165 none title idk editorial_link idk -1e-05 Default
+166 none title idk editorial_link idk -1e-05 Default
+167 none title idk editorial_link idk -1e-05 Default
+168 none title idk editorial_link idk -1e-05 Default
+169 none title idk editorial_link idk -1e-05 Default
+170 none title idk editorial_link idk -1e-05 Default
+171 none title idk editorial_link idk -1e-05 Default
+172 none title idk editorial_link idk -1e-05 Default
+173 none title idk editorial_link idk -1e-05 Default
+174 none title idk editorial_link idk -1e-05 Default
+179 none title idk editorial_link idk -1e-05 Default
+186 none title idk editorial_link idk -1e-05 Default
+187 none title idk editorial_link idk -1e-05 Default
+188 none title idk editorial_link idk -1e-05 Default
+189 none title idk editorial_link idk -1e-05 Default
+190 none title idk editorial_link idk -1e-05 Default
+191 none title idk editorial_link idk -1e-05 Default
+198 none title idk editorial_link idk -1e-05 Default
+199 none title idk editorial_link idk -1e-05 Default
+200 none title idk editorial_link idk -1e-05 Default
+201 none title idk editorial_link idk -1e-05 Default
+202 none title idk editorial_link idk -1e-05 Default
+203 Remove Linked List Elements https://leetcode.com/problems/remove-linked-list-elements editorial_link idk 31.445951700225073 Easy
+204 Count Primes https://leetcode.com/problems/count-primes editorial_link idk 26.25365760302983 Easy
+205 Isomorphic Strings https://leetcode.com/problems/isomorphic-strings editorial_link idk 32.95394598471187 Easy
+206 Reverse Linked List https://leetcode.com/problems/reverse-linked-list editorial_link idk 44.26987728276161 Easy
+207 Course Schedule https://leetcode.com/problems/course-schedule editorial_link idk 30.968700265251993 Medium
+208 Implement Trie (Prefix Tree) https://leetcode.com/problems/implement-trie-prefix-tree editorial_link idk 26.548096310301812 Medium
+209 Minimum Size Subarray Sum https://leetcode.com/problems/minimum-size-subarray-sum editorial_link idk 29.390656546398162 Medium
+210 Course Schedule II https://leetcode.com/problems/course-schedule-ii editorial_link idk 26.41325488788542 Medium
+211 Add and Search Word - Data structure design https://leetcode.com/problems/add-and-search-word-data-structure-design editorial_link idk 21.0469689754308 Medium
+212 Word Search II https://leetcode.com/problems/word-search-ii editorial_link idk 22.71495948034469 Hard
+213 House Robber II https://leetcode.com/problems/house-robber-ii editorial_link idk 33.36884877041586 Medium
+214 Shortest Palindrome https://leetcode.com/problems/shortest-palindrome editorial_link idk 23.441415837747062 Hard
+215 Kth Largest Element in an Array https://leetcode.com/problems/kth-largest-element-in-an-array editorial_link idk 38.16408636534987 Medium
+216 Combination Sum III https://leetcode.com/problems/combination-sum-iii editorial_link idk 43.08793164827341 Medium
+217 Contains Duplicate https://leetcode.com/problems/contains-duplicate editorial_link idk 44.47516408227608 Easy
+218 The Skyline Problem https://leetcode.com/problems/the-skyline-problem editorial_link idk 26.3115943069698 Hard
+219 Contains Duplicate II https://leetcode.com/problems/contains-duplicate-ii editorial_link idk 31.840408979773283 Easy
+220 Contains Duplicate III https://leetcode.com/problems/contains-duplicate-iii editorial_link idk 19.328248275752536 Medium
+221 Maximal Square https://leetcode.com/problems/maximal-square editorial_link idk 27.744318760827476 Medium
+222 Count Complete Tree Nodes https://leetcode.com/problems/count-complete-tree-nodes editorial_link idk 27.075897937540255 Medium
+223 Rectangle Area https://leetcode.com/problems/rectangle-area editorial_link idk 32.263524726186525 Medium
+224 Basic Calculator https://leetcode.com/problems/basic-calculator editorial_link idk 26.101278607993024 Hard
+225 Implement Stack using Queues https://leetcode.com/problems/implement-stack-using-queues editorial_link idk 31.668529306860066 Easy
+226 Invert Binary Tree https://leetcode.com/problems/invert-binary-tree editorial_link idk 50.545702809707485 Easy
+227 Basic Calculator II https://leetcode.com/problems/basic-calculator-ii editorial_link idk 28.504006820119354 Medium
+228 Summary Ranges https://leetcode.com/problems/summary-ranges editorial_link idk 28.681188620467168 Medium
+229 Majority Element II https://leetcode.com/problems/majority-element-ii editorial_link idk 28.03076609616952 Medium
+230 Kth Smallest Element in a BST https://leetcode.com/problems/kth-smallest-element-in-a-bst editorial_link idk 42.68441885570349 Medium
+231 Power of Two https://leetcode.com/problems/power-of-two editorial_link idk 39.60690058664474 Easy
+232 Implement Queue using Stacks https://leetcode.com/problems/implement-queue-using-stacks editorial_link idk 35.560214837579345 Easy
+233 Number of Digit One https://leetcode.com/problems/number-of-digit-one editorial_link idk 27.66257768390268 Hard
+234 Palindrome Linked List https://leetcode.com/problems/palindrome-linked-list editorial_link idk 31.9761513868487 Easy
+235 Lowest Common Ancestor of a Binary Search Tree https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree editorial_link idk 38.41856769599829 Easy
+236 Lowest Common Ancestor of a Binary Tree https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree editorial_link idk 29.54322841844064 Medium
+237 Delete Node in a Linked List https://leetcode.com/problems/delete-node-in-a-linked-list editorial_link idk 45.76023778071334 Easy
+238 Product of Array Except Self https://leetcode.com/problems/product-of-array-except-self editorial_link idk 47.92260403358775 Medium
+239 Sliding Window Maximum https://leetcode.com/problems/sliding-window-maximum editorial_link idk 31.971450984120946 Hard
+240 Search a 2D Matrix II https://leetcode.com/problems/search-a-2d-matrix-ii editorial_link idk 37.92185991398227 Medium
+241 Different Ways to Add Parentheses https://leetcode.com/problems/different-ways-to-add-parentheses editorial_link idk 42.1480576074826 Medium
+242 Valid Anagram https://leetcode.com/problems/valid-anagram editorial_link idk 45.4163886505894 Easy
+ATTENTION ===>>>243 problem description not found, please manually update it later.
+243 Shortest Word Distance https://leetcode.com/problems/shortest-word-distance editorial_link idk 51.324107624701256 Easy
+LOCAL TIME: ------ Fri Mar 17 22:22:39 2017 ------ 
+
+1 none title idk editorial_link idk -1e-05 Default
+2 none title idk editorial_link idk -1e-05 Default
+3 none title idk editorial_link idk -1e-05 Default
+4 none title idk editorial_link idk -1e-05 Default
+5 none title idk editorial_link idk -1e-05 Default
+6 none title idk editorial_link idk -1e-05 Default
+7 none title idk editorial_link idk -1e-05 Default
+8 none title idk editorial_link idk -1e-05 Default
+9 none title idk editorial_link idk -1e-05 Default
+10 none title idk editorial_link idk -1e-05 Default
+11 none title idk editorial_link idk -1e-05 Default
+12 none title idk editorial_link idk -1e-05 Default
+13 none title idk editorial_link idk -1e-05 Default
+14 none title idk editorial_link idk -1e-05 Default
+15 none title idk editorial_link idk -1e-05 Default
+16 none title idk editorial_link idk -1e-05 Default
+17 none title idk editorial_link idk -1e-05 Default
+18 none title idk editorial_link idk -1e-05 Default
+19 none title idk editorial_link idk -1e-05 Default
+20 none title idk editorial_link idk -1e-05 Default
+21 none title idk editorial_link idk -1e-05 Default
+22 none title idk editorial_link idk -1e-05 Default
+23 none title idk editorial_link idk -1e-05 Default
+24 none title idk editorial_link idk -1e-05 Default
+25 none title idk editorial_link idk -1e-05 Default
+26 none title idk editorial_link idk -1e-05 Default
+27 none title idk editorial_link idk -1e-05 Default
+28 none title idk editorial_link idk -1e-05 Default
+29 none title idk editorial_link idk -1e-05 Default
+30 none title idk editorial_link idk -1e-05 Default
+31 none title idk editorial_link idk -1e-05 Default
+32 none title idk editorial_link idk -1e-05 Default
+33 none title idk editorial_link idk -1e-05 Default
+34 none title idk editorial_link idk -1e-05 Default
+35 none title idk editorial_link idk -1e-05 Default
+36 none title idk editorial_link idk -1e-05 Default
+37 none title idk editorial_link idk -1e-05 Default
+38 none title idk editorial_link idk -1e-05 Default
+39 none title idk editorial_link idk -1e-05 Default
+40 none title idk editorial_link idk -1e-05 Default
+41 none title idk editorial_link idk -1e-05 Default
+42 none title idk editorial_link idk -1e-05 Default
+43 none title idk editorial_link idk -1e-05 Default
+44 none title idk editorial_link idk -1e-05 Default
+45 none title idk editorial_link idk -1e-05 Default
+46 none title idk editorial_link idk -1e-05 Default
+47 none title idk editorial_link idk -1e-05 Default
+48 none title idk editorial_link idk -1e-05 Default
+49 none title idk editorial_link idk -1e-05 Default
+50 none title idk editorial_link idk -1e-05 Default
+51 none title idk editorial_link idk -1e-05 Default
+52 none title idk editorial_link idk -1e-05 Default
+53 none title idk editorial_link idk -1e-05 Default
+54 none title idk editorial_link idk -1e-05 Default
+55 none title idk editorial_link idk -1e-05 Default
+56 none title idk editorial_link idk -1e-05 Default
+57 none title idk editorial_link idk -1e-05 Default
+58 none title idk editorial_link idk -1e-05 Default
+59 none title idk editorial_link idk -1e-05 Default
+60 none title idk editorial_link idk -1e-05 Default
+61 none title idk editorial_link idk -1e-05 Default
+62 none title idk editorial_link idk -1e-05 Default
+63 none title idk editorial_link idk -1e-05 Default
+64 none title idk editorial_link idk -1e-05 Default
+65 none title idk editorial_link idk -1e-05 Default
+66 none title idk editorial_link idk -1e-05 Default
+67 none title idk editorial_link idk -1e-05 Default
+68 none title idk editorial_link idk -1e-05 Default
+69 none title idk editorial_link idk -1e-05 Default
+70 none title idk editorial_link idk -1e-05 Default
+71 none title idk editorial_link idk -1e-05 Default
+72 none title idk editorial_link idk -1e-05 Default
+73 none title idk editorial_link idk -1e-05 Default
+74 none title idk editorial_link idk -1e-05 Default
+75 none title idk editorial_link idk -1e-05 Default
+76 none title idk editorial_link idk -1e-05 Default
+77 none title idk editorial_link idk -1e-05 Default
+78 none title idk editorial_link idk -1e-05 Default
+79 none title idk editorial_link idk -1e-05 Default
+80 none title idk editorial_link idk -1e-05 Default
+81 none title idk editorial_link idk -1e-05 Default
+82 none title idk editorial_link idk -1e-05 Default
+83 none title idk editorial_link idk -1e-05 Default
+84 none title idk editorial_link idk -1e-05 Default
+85 none title idk editorial_link idk -1e-05 Default
+86 none title idk editorial_link idk -1e-05 Default
+87 none title idk editorial_link idk -1e-05 Default
+88 none title idk editorial_link idk -1e-05 Default
+89 none title idk editorial_link idk -1e-05 Default
+90 none title idk editorial_link idk -1e-05 Default
+91 none title idk editorial_link idk -1e-05 Default
+92 none title idk editorial_link idk -1e-05 Default
+93 none title idk editorial_link idk -1e-05 Default
+94 none title idk editorial_link idk -1e-05 Default
+95 none title idk editorial_link idk -1e-05 Default
+96 none title idk editorial_link idk -1e-05 Default
+97 none title idk editorial_link idk -1e-05 Default
+98 none title idk editorial_link idk -1e-05 Default
+99 none title idk editorial_link idk -1e-05 Default
+100 none title idk editorial_link idk -1e-05 Default
+101 none title idk editorial_link idk -1e-05 Default
+102 none title idk editorial_link idk -1e-05 Default
+103 none title idk editorial_link idk -1e-05 Default
+104 none title idk editorial_link idk -1e-05 Default
+105 none title idk editorial_link idk -1e-05 Default
+106 none title idk editorial_link idk -1e-05 Default
+107 none title idk editorial_link idk -1e-05 Default
+108 none title idk editorial_link idk -1e-05 Default
+109 none title idk editorial_link idk -1e-05 Default
+110 none title idk editorial_link idk -1e-05 Default
+111 none title idk editorial_link idk -1e-05 Default
+112 none title idk editorial_link idk -1e-05 Default
+113 none title idk editorial_link idk -1e-05 Default
+114 none title idk editorial_link idk -1e-05 Default
+115 none title idk editorial_link idk -1e-05 Default
+116 none title idk editorial_link idk -1e-05 Default
+117 none title idk editorial_link idk -1e-05 Default
+118 none title idk editorial_link idk -1e-05 Default
+119 none title idk editorial_link idk -1e-05 Default
+120 none title idk editorial_link idk -1e-05 Default
+121 none title idk editorial_link idk -1e-05 Default
+122 none title idk editorial_link idk -1e-05 Default
+123 none title idk editorial_link idk -1e-05 Default
+124 none title idk editorial_link idk -1e-05 Default
+125 none title idk editorial_link idk -1e-05 Default
+126 none title idk editorial_link idk -1e-05 Default
+127 none title idk editorial_link idk -1e-05 Default
+128 none title idk editorial_link idk -1e-05 Default
+129 none title idk editorial_link idk -1e-05 Default
+130 none title idk editorial_link idk -1e-05 Default
+131 none title idk editorial_link idk -1e-05 Default
+132 none title idk editorial_link idk -1e-05 Default
+133 none title idk editorial_link idk -1e-05 Default
+134 none title idk editorial_link idk -1e-05 Default
+135 none title idk editorial_link idk -1e-05 Default
+136 none title idk editorial_link idk -1e-05 Default
+137 none title idk editorial_link idk -1e-05 Default
+138 none title idk editorial_link idk -1e-05 Default
+139 none title idk editorial_link idk -1e-05 Default
+140 none title idk editorial_link idk -1e-05 Default
+141 none title idk editorial_link idk -1e-05 Default
+142 none title idk editorial_link idk -1e-05 Default
+143 none title idk editorial_link idk -1e-05 Default
+144 none title idk editorial_link idk -1e-05 Default
+145 none title idk editorial_link idk -1e-05 Default
+146 none title idk editorial_link idk -1e-05 Default
+147 none title idk editorial_link idk -1e-05 Default
+148 none title idk editorial_link idk -1e-05 Default
+149 none title idk editorial_link idk -1e-05 Default
+150 none title idk editorial_link idk -1e-05 Default
+151 none title idk editorial_link idk -1e-05 Default
+152 none title idk editorial_link idk -1e-05 Default
+153 none title idk editorial_link idk -1e-05 Default
+154 none title idk editorial_link idk -1e-05 Default
+155 none title idk editorial_link idk -1e-05 Default
+156 none title idk editorial_link idk -1e-05 Default
+157 none title idk editorial_link idk -1e-05 Default
+158 none title idk editorial_link idk -1e-05 Default
+159 none title idk editorial_link idk -1e-05 Default
+160 none title idk editorial_link idk -1e-05 Default
+161 none title idk editorial_link idk -1e-05 Default
+162 none title idk editorial_link idk -1e-05 Default
+163 none title idk editorial_link idk -1e-05 Default
+164 none title idk editorial_link idk -1e-05 Default
+165 none title idk editorial_link idk -1e-05 Default
+166 none title idk editorial_link idk -1e-05 Default
+167 none title idk editorial_link idk -1e-05 Default
+168 none title idk editorial_link idk -1e-05 Default
+169 none title idk editorial_link idk -1e-05 Default
+170 none title idk editorial_link idk -1e-05 Default
+171 none title idk editorial_link idk -1e-05 Default
+172 none title idk editorial_link idk -1e-05 Default
+173 none title idk editorial_link idk -1e-05 Default
+174 none title idk editorial_link idk -1e-05 Default
+179 none title idk editorial_link idk -1e-05 Default
+186 none title idk editorial_link idk -1e-05 Default
+187 none title idk editorial_link idk -1e-05 Default
+188 none title idk editorial_link idk -1e-05 Default
+189 none title idk editorial_link idk -1e-05 Default
+190 none title idk editorial_link idk -1e-05 Default
+191 none title idk editorial_link idk -1e-05 Default
+198 none title idk editorial_link idk -1e-05 Default
+199 none title idk editorial_link idk -1e-05 Default
+200 none title idk editorial_link idk -1e-05 Default
+201 none title idk editorial_link idk -1e-05 Default
+202 none title idk editorial_link idk -1e-05 Default
+203 none title idk editorial_link idk -1e-05 Default
+204 none title idk editorial_link idk -1e-05 Default
+205 none title idk editorial_link idk -1e-05 Default
+206 none title idk editorial_link idk -1e-05 Default
+207 none title idk editorial_link idk -1e-05 Default
+208 none title idk editorial_link idk -1e-05 Default
+209 none title idk editorial_link idk -1e-05 Default
+210 none title idk editorial_link idk -1e-05 Default
+211 none title idk editorial_link idk -1e-05 Default
+212 none title idk editorial_link idk -1e-05 Default
+213 none title idk editorial_link idk -1e-05 Default
+214 none title idk editorial_link idk -1e-05 Default
+215 none title idk editorial_link idk -1e-05 Default
+216 none title idk editorial_link idk -1e-05 Default
+217 none title idk editorial_link idk -1e-05 Default
+218 none title idk editorial_link idk -1e-05 Default
+219 none title idk editorial_link idk -1e-05 Default
+220 none title idk editorial_link idk -1e-05 Default
+221 none title idk editorial_link idk -1e-05 Default
+222 none title idk editorial_link idk -1e-05 Default
+223 none title idk editorial_link idk -1e-05 Default
+224 none title idk editorial_link idk -1e-05 Default
+225 none title idk editorial_link idk -1e-05 Default
+226 none title idk editorial_link idk -1e-05 Default
+227 none title idk editorial_link idk -1e-05 Default
+228 none title idk editorial_link idk -1e-05 Default
+229 none title idk editorial_link idk -1e-05 Default
+230 none title idk editorial_link idk -1e-05 Default
+231 none title idk editorial_link idk -1e-05 Default
+232 none title idk editorial_link idk -1e-05 Default
+233 none title idk editorial_link idk -1e-05 Default
+234 none title idk editorial_link idk -1e-05 Default
+235 none title idk editorial_link idk -1e-05 Default
+236 none title idk editorial_link idk -1e-05 Default
+237 none title idk editorial_link idk -1e-05 Default
+238 none title idk editorial_link idk -1e-05 Default
+239 none title idk editorial_link idk -1e-05 Default
+240 none title idk editorial_link idk -1e-05 Default
+241 none title idk editorial_link idk -1e-05 Default
+242 none title idk editorial_link idk -1e-05 Default
+243 none title idk editorial_link idk -1e-05 Default
+244 none title idk editorial_link idk -1e-05 Default
+245 none title idk editorial_link idk -1e-05 Default
+246 none title idk editorial_link idk -1e-05 Default
+247 none title idk editorial_link idk -1e-05 Default
+ATTENTION ===>>>248 problem description not found, please manually update it later.
+248 Strobogrammatic Number III https://leetcode.com/problems/strobogrammatic-number-iii editorial_link idk 30.878642729167428 Hard
+ATTENTION ===>>>249 problem description not found, please manually update it later.
+249 Group Shifted Strings https://leetcode.com/problems/group-shifted-strings editorial_link idk 39.943352932740574 Medium
+ATTENTION ===>>>250 problem description not found, please manually update it later.
+250 Count Univalue Subtrees https://leetcode.com/problems/count-univalue-subtrees editorial_link idk 40.961256105234774 Medium
+ATTENTION ===>>>251 problem description not found, please manually update it later.
+251 Flatten 2D Vector https://leetcode.com/problems/flatten-2d-vector editorial_link idk 39.50648144841624 Medium
+ATTENTION ===>>>252 problem description not found, please manually update it later.
+252 Meeting Rooms https://leetcode.com/problems/meeting-rooms editorial_link idk 46.248822673174075 Easy
+ATTENTION ===>>>253 problem description not found, please manually update it later.
+253 Meeting Rooms II https://leetcode.com/problems/meeting-rooms-ii editorial_link idk 38.55949247796256 Medium
+ATTENTION ===>>>254 problem description not found, please manually update it later.
+254 Factor Combinations https://leetcode.com/problems/factor-combinations editorial_link idk 41.38829925892824 Medium
+ATTENTION ===>>>255 problem description not found, please manually update it later.
+255 Verify Preorder Sequence in Binary Search Tree https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree editorial_link idk 39.378766805748725 Medium
+ATTENTION ===>>>256 problem description not found, please manually update it later.
+256 Paint House https://leetcode.com/problems/paint-house editorial_link idk 45.96302584418034 Easy
+257 Binary Tree Paths https://leetcode.com/problems/binary-tree-paths editorial_link idk 36.31273044502686 Easy
+258 Add Digits https://leetcode.com/problems/add-digits editorial_link idk 50.53628280628825 Easy
+ATTENTION ===>>>259 problem description not found, please manually update it later.
+259 3Sum Smaller https://leetcode.com/problems/3sum-smaller editorial_link idk 41.00239355914992 Medium
+260 Single Number III https://leetcode.com/problems/single-number-iii editorial_link idk 50.07232797448795 Medium
+ATTENTION ===>>>261 problem description not found, please manually update it later.
+261 Graph Valid Tree https://leetcode.com/problems/graph-valid-tree editorial_link idk 37.179756650085245 Medium
+263 Ugly Number https://leetcode.com/problems/ugly-number editorial_link idk 38.71054750068469 Easy
+264 Ugly Number II https://leetcode.com/problems/ugly-number-ii editorial_link idk 31.890756050982105 Medium
+ATTENTION ===>>>265 problem description not found, please manually update it later.
+265 Paint House II https://leetcode.com/problems/paint-house-ii editorial_link idk 37.617678094804575 Hard
+ATTENTION ===>>>266 problem description not found, please manually update it later.
+266 Palindrome Permutation https://leetcode.com/problems/palindrome-permutation editorial_link idk 56.08505866805494 Easy
+ATTENTION ===>>>267 problem description not found, please manually update it later.
+267 Palindrome Permutation II https://leetcode.com/problems/palindrome-permutation-ii editorial_link idk 31.435748281332625 Medium
+268 Missing Number https://leetcode.com/problems/missing-number editorial_link idk 43.88158846030821 Easy
+ATTENTION ===>>>269 problem description not found, please manually update it later.
+269 Alien Dictionary https://leetcode.com/problems/alien-dictionary editorial_link idk 22.426119630344267 Hard
+ATTENTION ===>>>270 problem description not found, please manually update it later.
+270 Closest Binary Search Tree Value https://leetcode.com/problems/closest-binary-search-tree-value editorial_link idk 38.707989226861365 Easy
+ATTENTION ===>>>271 problem description not found, please manually update it later.
+271 Encode and Decode Strings https://leetcode.com/problems/encode-and-decode-strings editorial_link idk 26.234420949446857 Medium
+ATTENTION ===>>>272 problem description not found, please manually update it later.
+272 Closest Binary Search Tree Value II https://leetcode.com/problems/closest-binary-search-tree-value-ii editorial_link idk 38.147311800674906 Hard
+LOCAL TIME: ------ Sat Mar 18 00:06:20 2017 ------ 
+
+1 none title idk editorial_link idk -1e-05 Default
+2 none title idk editorial_link idk -1e-05 Default
+3 none title idk editorial_link idk -1e-05 Default
+4 none title idk editorial_link idk -1e-05 Default
+5 none title idk editorial_link idk -1e-05 Default
+6 none title idk editorial_link idk -1e-05 Default
+7 none title idk editorial_link idk -1e-05 Default
+8 none title idk editorial_link idk -1e-05 Default
+9 none title idk editorial_link idk -1e-05 Default
+10 none title idk editorial_link idk -1e-05 Default
+11 none title idk editorial_link idk -1e-05 Default
+12 none title idk editorial_link idk -1e-05 Default
+13 none title idk editorial_link idk -1e-05 Default
+14 none title idk editorial_link idk -1e-05 Default
+15 none title idk editorial_link idk -1e-05 Default
+16 none title idk editorial_link idk -1e-05 Default
+17 none title idk editorial_link idk -1e-05 Default
+18 none title idk editorial_link idk -1e-05 Default
+19 none title idk editorial_link idk -1e-05 Default
+20 none title idk editorial_link idk -1e-05 Default
+21 none title idk editorial_link idk -1e-05 Default
+22 none title idk editorial_link idk -1e-05 Default
+23 none title idk editorial_link idk -1e-05 Default
+24 none title idk editorial_link idk -1e-05 Default
+25 none title idk editorial_link idk -1e-05 Default
+26 none title idk editorial_link idk -1e-05 Default
+27 none title idk editorial_link idk -1e-05 Default
+28 none title idk editorial_link idk -1e-05 Default
+29 none title idk editorial_link idk -1e-05 Default
+30 none title idk editorial_link idk -1e-05 Default
+31 none title idk editorial_link idk -1e-05 Default
+32 none title idk editorial_link idk -1e-05 Default
+33 none title idk editorial_link idk -1e-05 Default
+34 none title idk editorial_link idk -1e-05 Default
+35 none title idk editorial_link idk -1e-05 Default
+36 none title idk editorial_link idk -1e-05 Default
+37 none title idk editorial_link idk -1e-05 Default
+38 none title idk editorial_link idk -1e-05 Default
+39 none title idk editorial_link idk -1e-05 Default
+40 none title idk editorial_link idk -1e-05 Default
+41 none title idk editorial_link idk -1e-05 Default
+42 none title idk editorial_link idk -1e-05 Default
+43 none title idk editorial_link idk -1e-05 Default
+44 none title idk editorial_link idk -1e-05 Default
+45 none title idk editorial_link idk -1e-05 Default
+46 none title idk editorial_link idk -1e-05 Default
+47 none title idk editorial_link idk -1e-05 Default
+48 none title idk editorial_link idk -1e-05 Default
+49 none title idk editorial_link idk -1e-05 Default
+50 none title idk editorial_link idk -1e-05 Default
+51 none title idk editorial_link idk -1e-05 Default
+52 none title idk editorial_link idk -1e-05 Default
+53 none title idk editorial_link idk -1e-05 Default
+54 none title idk editorial_link idk -1e-05 Default
+55 none title idk editorial_link idk -1e-05 Default
+56 none title idk editorial_link idk -1e-05 Default
+57 none title idk editorial_link idk -1e-05 Default
+58 none title idk editorial_link idk -1e-05 Default
+59 none title idk editorial_link idk -1e-05 Default
+60 none title idk editorial_link idk -1e-05 Default
+61 none title idk editorial_link idk -1e-05 Default
+62 none title idk editorial_link idk -1e-05 Default
+63 none title idk editorial_link idk -1e-05 Default
+64 none title idk editorial_link idk -1e-05 Default
+65 none title idk editorial_link idk -1e-05 Default
+66 none title idk editorial_link idk -1e-05 Default
+67 none title idk editorial_link idk -1e-05 Default
+68 none title idk editorial_link idk -1e-05 Default
+69 none title idk editorial_link idk -1e-05 Default
+70 none title idk editorial_link idk -1e-05 Default
+71 none title idk editorial_link idk -1e-05 Default
+72 none title idk editorial_link idk -1e-05 Default
+73 none title idk editorial_link idk -1e-05 Default
+74 none title idk editorial_link idk -1e-05 Default
+75 none title idk editorial_link idk -1e-05 Default
+76 none title idk editorial_link idk -1e-05 Default
+77 none title idk editorial_link idk -1e-05 Default
+78 none title idk editorial_link idk -1e-05 Default
+79 none title idk editorial_link idk -1e-05 Default
+80 none title idk editorial_link idk -1e-05 Default
+81 none title idk editorial_link idk -1e-05 Default
+82 none title idk editorial_link idk -1e-05 Default
+83 none title idk editorial_link idk -1e-05 Default
+84 none title idk editorial_link idk -1e-05 Default
+85 none title idk editorial_link idk -1e-05 Default
+86 none title idk editorial_link idk -1e-05 Default
+87 none title idk editorial_link idk -1e-05 Default
+88 none title idk editorial_link idk -1e-05 Default
+89 none title idk editorial_link idk -1e-05 Default
+90 none title idk editorial_link idk -1e-05 Default
+91 none title idk editorial_link idk -1e-05 Default
+92 none title idk editorial_link idk -1e-05 Default
+93 none title idk editorial_link idk -1e-05 Default
+94 none title idk editorial_link idk -1e-05 Default
+95 none title idk editorial_link idk -1e-05 Default
+96 none title idk editorial_link idk -1e-05 Default
+97 none title idk editorial_link idk -1e-05 Default
+98 none title idk editorial_link idk -1e-05 Default
+99 none title idk editorial_link idk -1e-05 Default
+100 none title idk editorial_link idk -1e-05 Default
+101 none title idk editorial_link idk -1e-05 Default
+102 none title idk editorial_link idk -1e-05 Default
+103 none title idk editorial_link idk -1e-05 Default
+104 none title idk editorial_link idk -1e-05 Default
+105 none title idk editorial_link idk -1e-05 Default
+106 none title idk editorial_link idk -1e-05 Default
+107 none title idk editorial_link idk -1e-05 Default
+108 none title idk editorial_link idk -1e-05 Default
+109 none title idk editorial_link idk -1e-05 Default
+110 none title idk editorial_link idk -1e-05 Default
+111 none title idk editorial_link idk -1e-05 Default
+112 none title idk editorial_link idk -1e-05 Default
+113 none title idk editorial_link idk -1e-05 Default
+114 none title idk editorial_link idk -1e-05 Default
+115 none title idk editorial_link idk -1e-05 Default
+116 none title idk editorial_link idk -1e-05 Default
+117 none title idk editorial_link idk -1e-05 Default
+118 none title idk editorial_link idk -1e-05 Default
+119 none title idk editorial_link idk -1e-05 Default
+120 none title idk editorial_link idk -1e-05 Default
+121 none title idk editorial_link idk -1e-05 Default
+122 none title idk editorial_link idk -1e-05 Default
+123 none title idk editorial_link idk -1e-05 Default
+124 none title idk editorial_link idk -1e-05 Default
+125 none title idk editorial_link idk -1e-05 Default
+126 none title idk editorial_link idk -1e-05 Default
+127 none title idk editorial_link idk -1e-05 Default
+128 none title idk editorial_link idk -1e-05 Default
+129 none title idk editorial_link idk -1e-05 Default
+130 none title idk editorial_link idk -1e-05 Default
+131 none title idk editorial_link idk -1e-05 Default
+132 none title idk editorial_link idk -1e-05 Default
+133 none title idk editorial_link idk -1e-05 Default
+134 none title idk editorial_link idk -1e-05 Default
+135 none title idk editorial_link idk -1e-05 Default
+136 none title idk editorial_link idk -1e-05 Default
+137 none title idk editorial_link idk -1e-05 Default
+138 none title idk editorial_link idk -1e-05 Default
+139 none title idk editorial_link idk -1e-05 Default
+140 none title idk editorial_link idk -1e-05 Default
+141 none title idk editorial_link idk -1e-05 Default
+142 none title idk editorial_link idk -1e-05 Default
+143 none title idk editorial_link idk -1e-05 Default
+144 none title idk editorial_link idk -1e-05 Default
+145 none title idk editorial_link idk -1e-05 Default
+146 none title idk editorial_link idk -1e-05 Default
+147 none title idk editorial_link idk -1e-05 Default
+148 none title idk editorial_link idk -1e-05 Default
+149 none title idk editorial_link idk -1e-05 Default
+150 none title idk editorial_link idk -1e-05 Default
+151 none title idk editorial_link idk -1e-05 Default
+152 none title idk editorial_link idk -1e-05 Default
+153 none title idk editorial_link idk -1e-05 Default
+154 none title idk editorial_link idk -1e-05 Default
+155 none title idk editorial_link idk -1e-05 Default
+156 none title idk editorial_link idk -1e-05 Default
+157 none title idk editorial_link idk -1e-05 Default
+158 none title idk editorial_link idk -1e-05 Default
+159 none title idk editorial_link idk -1e-05 Default
+160 none title idk editorial_link idk -1e-05 Default
+161 none title idk editorial_link idk -1e-05 Default
+162 none title idk editorial_link idk -1e-05 Default
+163 none title idk editorial_link idk -1e-05 Default
+164 none title idk editorial_link idk -1e-05 Default
+165 none title idk editorial_link idk -1e-05 Default
+166 none title idk editorial_link idk -1e-05 Default
+167 none title idk editorial_link idk -1e-05 Default
+168 none title idk editorial_link idk -1e-05 Default
+169 none title idk editorial_link idk -1e-05 Default
+170 none title idk editorial_link idk -1e-05 Default
+171 none title idk editorial_link idk -1e-05 Default
+172 none title idk editorial_link idk -1e-05 Default
+173 none title idk editorial_link idk -1e-05 Default
+174 none title idk editorial_link idk -1e-05 Default
+179 none title idk editorial_link idk -1e-05 Default
+186 none title idk editorial_link idk -1e-05 Default
+187 none title idk editorial_link idk -1e-05 Default
+188 none title idk editorial_link idk -1e-05 Default
+189 none title idk editorial_link idk -1e-05 Default
+190 none title idk editorial_link idk -1e-05 Default
+191 none title idk editorial_link idk -1e-05 Default
+198 none title idk editorial_link idk -1e-05 Default
+199 none title idk editorial_link idk -1e-05 Default
+200 none title idk editorial_link idk -1e-05 Default
+201 none title idk editorial_link idk -1e-05 Default
+202 none title idk editorial_link idk -1e-05 Default
+203 none title idk editorial_link idk -1e-05 Default
+204 none title idk editorial_link idk -1e-05 Default
+205 none title idk editorial_link idk -1e-05 Default
+206 none title idk editorial_link idk -1e-05 Default
+207 none title idk editorial_link idk -1e-05 Default
+208 none title idk editorial_link idk -1e-05 Default
+209 none title idk editorial_link idk -1e-05 Default
+210 none title idk editorial_link idk -1e-05 Default
+211 none title idk editorial_link idk -1e-05 Default
+212 none title idk editorial_link idk -1e-05 Default
+213 none title idk editorial_link idk -1e-05 Default
+214 none title idk editorial_link idk -1e-05 Default
+215 none title idk editorial_link idk -1e-05 Default
+216 none title idk editorial_link idk -1e-05 Default
+217 none title idk editorial_link idk -1e-05 Default
+218 none title idk editorial_link idk -1e-05 Default
+219 none title idk editorial_link idk -1e-05 Default
+220 none title idk editorial_link idk -1e-05 Default
+221 none title idk editorial_link idk -1e-05 Default
+222 none title idk editorial_link idk -1e-05 Default
+223 none title idk editorial_link idk -1e-05 Default
+224 none title idk editorial_link idk -1e-05 Default
+225 none title idk editorial_link idk -1e-05 Default
+226 none title idk editorial_link idk -1e-05 Default
+227 none title idk editorial_link idk -1e-05 Default
+228 none title idk editorial_link idk -1e-05 Default
+229 none title idk editorial_link idk -1e-05 Default
+230 none title idk editorial_link idk -1e-05 Default
+231 none title idk editorial_link idk -1e-05 Default
+232 none title idk editorial_link idk -1e-05 Default
+233 none title idk editorial_link idk -1e-05 Default
+234 none title idk editorial_link idk -1e-05 Default
+235 none title idk editorial_link idk -1e-05 Default
+236 none title idk editorial_link idk -1e-05 Default
+237 none title idk editorial_link idk -1e-05 Default
+238 none title idk editorial_link idk -1e-05 Default
+239 none title idk editorial_link idk -1e-05 Default
+240 none title idk editorial_link idk -1e-05 Default
+241 none title idk editorial_link idk -1e-05 Default
+242 none title idk editorial_link idk -1e-05 Default
+243 none title idk editorial_link idk -1e-05 Default
+244 none title idk editorial_link idk -1e-05 Default
+245 none title idk editorial_link idk -1e-05 Default
+246 none title idk editorial_link idk -1e-05 Default
+247 none title idk editorial_link idk -1e-05 Default
+248 none title idk editorial_link idk -1e-05 Default
+249 none title idk editorial_link idk -1e-05 Default
+250 none title idk editorial_link idk -1e-05 Default
+251 none title idk editorial_link idk -1e-05 Default
+252 none title idk editorial_link idk -1e-05 Default
+253 none title idk editorial_link idk -1e-05 Default
+254 none title idk editorial_link idk -1e-05 Default
+255 none title idk editorial_link idk -1e-05 Default
+256 none title idk editorial_link idk -1e-05 Default
+257 none title idk editorial_link idk -1e-05 Default
+258 none title idk editorial_link idk -1e-05 Default
+259 none title idk editorial_link idk -1e-05 Default
+260 none title idk editorial_link idk -1e-05 Default
+261 none title idk editorial_link idk -1e-05 Default
+263 none title idk editorial_link idk -1e-05 Default
+264 none title idk editorial_link idk -1e-05 Default
+265 none title idk editorial_link idk -1e-05 Default
+266 none title idk editorial_link idk -1e-05 Default
+267 none title idk editorial_link idk -1e-05 Default
+268 none title idk editorial_link idk -1e-05 Default
+269 none title idk editorial_link idk -1e-05 Default
+270 none title idk editorial_link idk -1e-05 Default
+271 none title idk editorial_link idk -1e-05 Default
+272 none title idk editorial_link idk -1e-05 Default
+273 Integer to English Words https://leetcode.com/problems/integer-to-english-words editorial_link idk 21.475802839906212 Hard
+274 H-Index https://leetcode.com/problems/h-index editorial_link idk 32.523984770953376 Medium
+275 H-Index II https://leetcode.com/problems/h-index-ii editorial_link idk 33.81824163944443 Medium
+ATTENTION ===>>>276 problem description not found, please manually update it later.
+276 Paint Fence https://leetcode.com/problems/paint-fence editorial_link idk 34.103492157932145 Easy
+ATTENTION ===>>>277 problem description not found, please manually update it later.
+277 Find the Celebrity https://leetcode.com/problems/find-the-celebrity editorial_link idk 35.46410307687912 Medium
+278 First Bad Version https://leetcode.com/problems/first-bad-version editorial_link idk 24.68437405589386 Easy
+279 Perfect Squares https://leetcode.com/problems/perfect-squares editorial_link idk 35.7119020554588 Medium
+ATTENTION ===>>>280 problem description not found, please manually update it later.
+280 Wiggle Sort https://leetcode.com/problems/wiggle-sort editorial_link idk 55.92047257979193 Medium
+ATTENTION ===>>>281 problem description not found, please manually update it later.
+281 Zigzag Iterator https://leetcode.com/problems/zigzag-iterator editorial_link idk 49.33554120902155 Medium
+282 Expression Add Operators https://leetcode.com/problems/expression-add-operators editorial_link idk 29.059690700510465 Hard
+283 Move Zeroes https://leetcode.com/problems/move-zeroes editorial_link idk 48.61955808357033 Easy
+284 Peeking Iterator https://leetcode.com/problems/peeking-iterator editorial_link idk 35.22852435438797 Medium
+ATTENTION ===>>>285 problem description not found, please manually update it later.
+285 Inorder Successor in BST https://leetcode.com/problems/inorder-successor-in-bst editorial_link idk 36.08312181114273 Medium
+ATTENTION ===>>>286 problem description not found, please manually update it later.
+286 Walls and Gates https://leetcode.com/problems/walls-and-gates editorial_link idk 43.210053288793446 Medium
+287 Find the Duplicate Number https://leetcode.com/problems/find-the-duplicate-number editorial_link idk 42.393262604020705 Medium
+ATTENTION ===>>>288 problem description not found, please manually update it later.
+288 Unique Word Abbreviation https://leetcode.com/problems/unique-word-abbreviation editorial_link idk 15.860399461755625 Medium
+289 Game of Life https://leetcode.com/problems/game-of-life editorial_link idk 36.468124100013085 Medium
+290 Word Pattern https://leetcode.com/problems/word-pattern editorial_link idk 32.42171538947291 Easy
+ATTENTION ===>>>291 problem description not found, please manually update it later.
+291 Word Pattern II https://leetcode.com/problems/word-pattern-ii editorial_link idk 37.789999720818564 Hard
+ATTENTION ===>>>292 problem solutions not found, please manually update it later.
+292 Nim Game https://leetcode.com/problems/nim-game editorial_link idk 54.90277656126828 Easy
+ATTENTION ===>>>293 problem description not found, please manually update it later.
+293 Flip Game https://leetcode.com/problems/flip-game editorial_link idk 54.63636826301593 Easy
+ATTENTION ===>>>294 problem description not found, please manually update it later.
+294 Flip Game II https://leetcode.com/problems/flip-game-ii editorial_link idk 45.77910906919792 Medium
+295 Find Median from Data Stream https://leetcode.com/problems/find-median-from-data-stream editorial_link idk 24.566945856617597 Hard
+ATTENTION ===>>>296 problem description not found, please manually update it later.
+296 Best Meeting Point https://leetcode.com/problems/best-meeting-point editorial_link idk 51.060247542773936 Hard
+297 Serialize and Deserialize Binary Tree https://leetcode.com/problems/serialize-and-deserialize-binary-tree editorial_link idk 32.39232455742992 Hard
+ATTENTION ===>>>298 problem description not found, please manually update it later.
+298 Binary Tree Longest Consecutive Sequence https://leetcode.com/problems/binary-tree-longest-consecutive-sequence editorial_link idk 40.31640170608763 Medium
+299 Bulls and Cows https://leetcode.com/problems/bulls-and-cows editorial_link idk 33.77497147013456 Medium
+300 Longest Increasing Subsequence https://leetcode.com/problems/longest-increasing-subsequence editorial_link idk 37.66304017839894 Medium
+301 Remove Invalid Parentheses https://leetcode.com/problems/remove-invalid-parentheses editorial_link idk 34.857787989225166 Hard
+ATTENTION ===>>>302 problem description not found, please manually update it later.
+302 Smallest Rectangle Enclosing Black Pixels https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels editorial_link idk 44.596887749575764 Hard
+303 Range Sum Query - Immutable https://leetcode.com/problems/range-sum-query-immutable editorial_link idk 27.42387704432092 Easy
+304 Range Sum Query 2D - Immutable https://leetcode.com/problems/range-sum-query-2d-immutable editorial_link idk 23.55645141466532 Medium
+ATTENTION ===>>>305 problem description not found, please manually update it later.
+305 Number of Islands II https://leetcode.com/problems/number-of-islands-ii editorial_link idk 38.55419319342922 Hard
+306 Additive Number https://leetcode.com/problems/additive-number editorial_link idk 27.253699919499656 Medium
+307 Range Sum Query - Mutable https://leetcode.com/problems/range-sum-query-mutable editorial_link idk 19.252054667715765 Medium
+ATTENTION ===>>>308 problem description not found, please manually update it later.
+308 Range Sum Query 2D - Mutable https://leetcode.com/problems/range-sum-query-2d-mutable editorial_link idk 21.161960402466732 Hard
+309 Best Time to Buy and Sell Stock with Cooldown https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown editorial_link idk 40.05313126034318 Medium
+310 Minimum Height Trees https://leetcode.com/problems/minimum-height-trees editorial_link idk 28.61506024689898 Medium
+ATTENTION ===>>>311 problem description not found, please manually update it later.
+311 Sparse Matrix Multiplication https://leetcode.com/problems/sparse-matrix-multiplication editorial_link idk 50.683016026675276 Medium
+312 Burst Balloons https://leetcode.com/problems/burst-balloons editorial_link idk 41.95818073571596 Hard
+313 Super Ugly Number https://leetcode.com/problems/super-ugly-number editorial_link idk 37.21746614123296 Medium
+ATTENTION ===>>>314 problem description not found, please manually update it later.
+314 Binary Tree Vertical Order Traversal https://leetcode.com/problems/binary-tree-vertical-order-traversal editorial_link idk 36.08053605000563 Medium
+315 Count of Smaller Numbers After Self https://leetcode.com/problems/count-of-smaller-numbers-after-self editorial_link idk 33.9239273711836 Hard
+316 Remove Duplicate Letters https://leetcode.com/problems/remove-duplicate-letters editorial_link idk 28.98145877536224 Hard
+ATTENTION ===>>>317 problem description not found, please manually update it later.
+317 Shortest Distance from All Buildings https://leetcode.com/problems/shortest-distance-from-all-buildings editorial_link idk 33.37955900707253 Hard
+318 Maximum Product of Word Lengths https://leetcode.com/problems/maximum-product-of-word-lengths editorial_link idk 42.94799065643324 Medium
+319 Bulb Switcher https://leetcode.com/problems/bulb-switcher editorial_link idk 42.03130992643213 Medium
+ATTENTION ===>>>320 problem description not found, please manually update it later.
+320 Generalized Abbreviation https://leetcode.com/problems/generalized-abbreviation editorial_link idk 44.08658801969992 Medium
+321 Create Maximum Number https://leetcode.com/problems/create-maximum-number editorial_link idk 24.209152679656214 Hard
+322 Coin Change https://leetcode.com/problems/coin-change editorial_link idk 26.156823529997062 Medium
+ATTENTION ===>>>323 problem description not found, please manually update it later.
+323 Number of Connected Components in an Undirected Graph https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph editorial_link idk 47.226611051423035 Medium
+324 Wiggle Sort II https://leetcode.com/problems/wiggle-sort-ii editorial_link idk 25.424927032731752 Medium
+ATTENTION ===>>>325 problem description not found, please manually update it later.
+325 Maximum Size Subarray Sum Equals k https://leetcode.com/problems/maximum-size-subarray-sum-equals-k editorial_link idk 41.95141149951698 Medium
+326 Power of Three https://leetcode.com/problems/power-of-three editorial_link idk 39.64069706426579 Easy
+327 Count of Range Sum https://leetcode.com/problems/count-of-range-sum editorial_link idk 29.203001056457822 Hard
+328 Odd Even Linked List https://leetcode.com/problems/odd-even-linked-list editorial_link idk 42.46880445168906 Medium
+329 Longest Increasing Path in a Matrix https://leetcode.com/problems/longest-increasing-path-in-a-matrix editorial_link idk 35.79656329798503 Hard
+330 Patching Array https://leetcode.com/problems/patching-array editorial_link idk 31.633885164119345 Hard
+331 Verify Preorder Serialization of a Binary Tree https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree editorial_link idk 35.50085693667689 Medium
+332 Reconstruct Itinerary https://leetcode.com/problems/reconstruct-itinerary editorial_link idk 28.359737648230627 Medium
+ATTENTION ===>>>333 problem description not found, please manually update it later.
+333 Largest BST Subtree https://leetcode.com/problems/largest-bst-subtree editorial_link idk 30.047459925420117 Medium
+334 Increasing Triplet Subsequence https://leetcode.com/problems/increasing-triplet-subsequence editorial_link idk 38.33622559652928 Medium
+335 Self Crossing https://leetcode.com/problems/self-crossing editorial_link idk 24.410068685914467 Hard
+336 Palindrome Pairs https://leetcode.com/problems/palindrome-pairs editorial_link idk 25.331744696757312 Hard
+337 House Robber III https://leetcode.com/problems/house-robber-iii editorial_link idk 42.25878833208676 Medium
+338 Counting Bits https://leetcode.com/problems/counting-bits editorial_link idk 60.12976775210721 Medium
+ATTENTION ===>>>339 problem description not found, please manually update it later.
+339 Nested List Weight Sum https://leetcode.com/problems/nested-list-weight-sum editorial_link idk 60.596885813148795 Easy
+ATTENTION ===>>>340 problem description not found, please manually update it later.
+340 Longest Substring with At Most K Distinct Characters https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters editorial_link idk 38.389321110508014 Hard
+341 Flatten Nested List Iterator https://leetcode.com/problems/flatten-nested-list-iterator editorial_link idk 39.8940764072343 Medium
+342 Power of Four https://leetcode.com/problems/power-of-four editorial_link idk 37.8447521525092 Easy
+343 Integer Break https://leetcode.com/problems/integer-break editorial_link idk 45.24593697977173 Medium
+344 Reverse String https://leetcode.com/problems/reverse-string editorial_link idk 58.10210922849699 Easy
+345 Reverse Vowels of a String https://leetcode.com/problems/reverse-vowels-of-a-string editorial_link idk 37.77048818810817 Easy
+ATTENTION ===>>>346 problem description not found, please manually update it later.
+346 Moving Average from Data Stream https://leetcode.com/problems/moving-average-from-data-stream editorial_link idk 57.9873226331705 Easy
+347 Top K Frequent Elements https://leetcode.com/problems/top-k-frequent-elements editorial_link idk 46.86951687716068 Medium
+ATTENTION ===>>>348 problem description not found, please manually update it later.
+348 Design Tic-Tac-Toe https://leetcode.com/problems/design-tic-tac-toe editorial_link idk 45.49152269340743 Medium
+349 Intersection of Two Arrays https://leetcode.com/problems/intersection-of-two-arrays editorial_link idk 46.30291940447476 Easy
+350 Intersection of Two Arrays II https://leetcode.com/problems/intersection-of-two-arrays-ii editorial_link idk 44.01410381978452 Easy
+ATTENTION ===>>>351 problem description not found, please manually update it later.
+351 Android Unlock Patterns https://leetcode.com/problems/android-unlock-patterns editorial_link idk 43.084010637102516 Medium
+352 Data Stream as Disjoint Intervals https://leetcode.com/problems/data-stream-as-disjoint-intervals editorial_link idk 39.25664481740258 Hard
+ATTENTION ===>>>353 problem description not found, please manually update it later.
+353 Design Snake Game https://leetcode.com/problems/design-snake-game editorial_link idk 26.0307312288859 Medium
+354 Russian Doll Envelopes https://leetcode.com/problems/russian-doll-envelopes editorial_link idk 31.877818778187784 Hard
+355 Design Twitter https://leetcode.com/problems/design-twitter editorial_link idk 25.063879971172113 Medium
+ATTENTION ===>>>356 problem description not found, please manually update it later.
+356 Line Reflection https://leetcode.com/problems/line-reflection editorial_link idk 30.29447357805567 Medium
+357 Count Numbers with Unique Digits https://leetcode.com/problems/count-numbers-with-unique-digits editorial_link idk 45.3620893112229 Medium
+ATTENTION ===>>>358 problem description not found, please manually update it later.
+358 Rearrange String k Distance Apart https://leetcode.com/problems/rearrange-string-k-distance-apart editorial_link idk 31.803214425715403 Hard
+ATTENTION ===>>>359 problem description not found, please manually update it later.
+359 Logger Rate Limiter https://leetcode.com/problems/logger-rate-limiter editorial_link idk 58.69106263194933 Easy
+ATTENTION ===>>>360 problem description not found, please manually update it later.
+360 Sort Transformed Array https://leetcode.com/problems/sort-transformed-array editorial_link idk 43.291162200154176 Medium
+ATTENTION ===>>>361 problem description not found, please manually update it later.
+361 Bomb Enemy https://leetcode.com/problems/bomb-enemy editorial_link idk 38.3722660318405 Medium
+ATTENTION ===>>>362 problem description not found, please manually update it later.
+362 Design Hit Counter https://leetcode.com/problems/design-hit-counter editorial_link idk 52.98456329853693 Medium
+363 Max Sum of Rectangle No Larger Than K https://leetcode.com/problems/max-sum-of-sub-matrix-no-larger-than-k editorial_link idk 32.438632713925216 Hard
+ATTENTION ===>>>364 problem description not found, please manually update it later.
+364 Nested List Weight Sum II https://leetcode.com/problems/nested-list-weight-sum-ii editorial_link idk 50.927797170677934 Medium
+365 Water and Jug Problem https://leetcode.com/problems/water-and-jug-problem editorial_link idk 26.51505334542784 Medium
+ATTENTION ===>>>366 problem description not found, please manually update it later.
+366 Find Leaves of Binary Tree https://leetcode.com/problems/find-leaves-of-binary-tree editorial_link idk 58.19070904645477 Medium
+367 Valid Perfect Square https://leetcode.com/problems/valid-perfect-square editorial_link idk 37.72958378243024 Easy
+368 Largest Divisible Subset https://leetcode.com/problems/largest-divisible-subset editorial_link idk 33.44795854119242 Medium
+ATTENTION ===>>>369 problem description not found, please manually update it later.
+369 Plus One Linked List https://leetcode.com/problems/plus-one-linked-list editorial_link idk 53.64086923370187 Medium
+ATTENTION ===>>>370 problem description not found, please manually update it later.
+370 Range Addition https://leetcode.com/problems/range-addition editorial_link idk 54.36031914300061 Medium
+371 Sum of Two Integers https://leetcode.com/problems/sum-of-two-integers editorial_link idk 51.12730353738615 Easy
+372 Super Pow https://leetcode.com/problems/super-pow editorial_link idk 33.54502322822972 Medium
+373 Find K Pairs with Smallest Sums https://leetcode.com/problems/find-k-pairs-with-smallest-sums editorial_link idk 30.252348924372335 Medium
+374 Guess Number Higher or Lower https://leetcode.com/problems/guess-number-higher-or-lower editorial_link idk 34.20060585661393 Easy
+375 Guess Number Higher or Lower II https://leetcode.com/problems/guess-number-higher-or-lower-ii editorial_link idk 35.504278356786564 Medium
+376 Wiggle Subsequence https://leetcode.com/problems/wiggle-subsequence editorial_link idk 34.811801694584084 Medium
+377 Combination Sum IV https://leetcode.com/problems/combination-sum-iv editorial_link idk 41.686998954339494 Medium
+378 Kth Smallest Element in a Sorted Matrix https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix editorial_link idk 43.67452850702347 Medium
+ATTENTION ===>>>379 problem description not found, please manually update it later.
+379 Design Phone Directory https://leetcode.com/problems/design-phone-directory editorial_link idk 30.981126308550472 Medium
+380 Insert Delete GetRandom O(1) https://leetcode.com/problems/insert-delete-getrandom-o1 editorial_link idk 38.787279884657124 Medium
+381 Insert Delete GetRandom O(1) - Duplicates allowed https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed editorial_link idk 28.41067564318346 Hard
+382 Linked List Random Node https://leetcode.com/problems/linked-list-random-node editorial_link idk 46.41018805241679 Medium
+383 Ransom Note https://leetcode.com/problems/ransom-note editorial_link idk 46.44972555019175 Easy
+384 Shuffle an Array https://leetcode.com/problems/shuffle-an-array editorial_link idk 45.425901781833986 Medium
+385 Mini Parser https://leetcode.com/problems/mini-parser editorial_link idk 30.083585883273045 Medium
+386 Lexicographical Numbers https://leetcode.com/problems/lexicographical-numbers editorial_link idk 40.165319331444465 Medium
+387 First Unique Character in a String https://leetcode.com/problems/first-unique-character-in-a-string editorial_link idk 45.99107581843651 Easy
+388 Longest Absolute File Path https://leetcode.com/problems/longest-absolute-file-path editorial_link idk 35.544246778424 Medium
+389 Find the Difference https://leetcode.com/problems/find-the-difference editorial_link idk 51.22028862478778 Easy
+390 Elimination Game https://leetcode.com/problems/elimination-game editorial_link idk 39.72993533662989 Medium
+391 Perfect Rectangle https://leetcode.com/problems/perfect-rectangle editorial_link idk 25.404397826361684 Hard
+392 Is Subsequence https://leetcode.com/problems/is-subsequence editorial_link idk 44.221794764573055 Medium
+393 UTF-8 Validation https://leetcode.com/problems/utf-8-validation editorial_link idk 34.65295784839896 Medium
+394 Decode String https://leetcode.com/problems/decode-string editorial_link idk 40.72050022630882 Medium
+395 Longest Substring with At Least K Repeating Characters https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters editorial_link idk 35.640202494135075 Medium
+396 Rotate Function https://leetcode.com/problems/rotate-function editorial_link idk 31.07482788457921 Medium
+397 Integer Replacement https://leetcode.com/problems/integer-replacement editorial_link idk 29.58920528839169 Medium
+398 Random Pick Index https://leetcode.com/problems/random-pick-index editorial_link idk 41.419107752820615 Medium
+399 Evaluate Division https://leetcode.com/problems/evaluate-division editorial_link idk 40.09017651573292 Medium
+400 Nth Digit https://leetcode.com/problems/nth-digit editorial_link idk 30.13497852614357 Easy
+401 Binary Watch https://leetcode.com/problems/binary-watch editorial_link idk 44.38004786120251 Easy
+402 Remove K Digits https://leetcode.com/problems/remove-k-digits editorial_link idk 26.121677535800032 Medium
+403 Frog Jump https://leetcode.com/problems/frog-jump editorial_link idk 31.166789237440724 Hard
+404 Sum of Left Leaves https://leetcode.com/problems/sum-of-left-leaves editorial_link idk 46.3380361493569 Easy
+405 Convert a Number to Hexadecimal https://leetcode.com/problems/convert-a-number-to-hexadecimal editorial_link idk 40.706495422997996 Easy
+406 Queue Reconstruction by Height https://leetcode.com/problems/queue-reconstruction-by-height editorial_link idk 54.76934545141776 Medium
+407 Trapping Rain Water II https://leetcode.com/problems/trapping-rain-water-ii editorial_link idk 36.059243327793524 Hard
+ATTENTION ===>>>408 problem description not found, please manually update it later.
+408 Valid Word Abbreviation https://leetcode.com/problems/valid-word-abbreviation editorial_link idk 27.53389174824234 Easy
+409 Longest Palindrome https://leetcode.com/problems/longest-palindrome editorial_link idk 44.788416813205515 Easy
+410 Split Array Largest Sum https://leetcode.com/problems/split-array-largest-sum editorial_link idk 34.41477317092215 Hard
+ATTENTION ===>>>411 problem description not found, please manually update it later.
+411 Minimum Unique Word Abbreviation https://leetcode.com/problems/minimum-unique-word-abbreviation editorial_link idk 31.540203850509624 Hard
+412 Fizz Buzz https://leetcode.com/problems/fizz-buzz editorial_link idk 58.664370368691785 Easy
+413 Arithmetic Slices https://leetcode.com/problems/arithmetic-slices editorial_link idk 54.718295839139955 Medium
+414 Third Maximum Number https://leetcode.com/problems/third-maximum-number editorial_link idk 27.071805735605654 Easy
+415 Add Strings https://leetcode.com/problems/add-strings editorial_link idk 41.21300807945577 Easy
+416 Partition Equal Subset Sum https://leetcode.com/problems/partition-equal-subset-sum editorial_link idk 38.1345982247687 Medium
+417 Pacific Atlantic Water Flow https://leetcode.com/problems/pacific-atlantic-water-flow editorial_link idk 32.936025297981026 Medium
+ATTENTION ===>>>418 problem description not found, please manually update it later.
+418 Sentence Screen Fitting https://leetcode.com/problems/sentence-screen-fitting editorial_link idk 27.302195373508177 Medium
+419 Battleships in a Board https://leetcode.com/problems/battleships-in-a-board editorial_link idk 60.655037613744625 Medium
+420 Strong Password Checker https://leetcode.com/problems/strong-password-checker editorial_link idk 20.370747606437156 Hard
+421 Maximum XOR of Two Numbers in an Array https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array editorial_link idk 44.22630164442217 Medium
+ATTENTION ===>>>422 problem description not found, please manually update it later.
+422 Valid Word Square https://leetcode.com/problems/valid-word-square editorial_link idk 36.10010241795431 Easy
+423 Reconstruct Original Digits from English https://leetcode.com/problems/reconstruct-original-digits-from-english editorial_link idk 43.0697574816639 Medium
+424 Longest Repeating Character Replacement https://leetcode.com/problems/longest-repeating-character-replacement editorial_link idk 40.96037296037296 Medium
+ATTENTION ===>>>425 problem description not found, please manually update it later.
+425 Word Squares https://leetcode.com/problems/word-squares editorial_link idk 42.43795243019648 Hard
+432 All O`one Data Structure https://leetcode.com/problems/all-oone-data-structure editorial_link idk 27.662917111795387 Hard
+434 Number of Segments in a String https://leetcode.com/problems/number-of-segments-in-a-string editorial_link idk 37.108222151759804 Easy
+435 Non-overlapping Intervals https://leetcode.com/problems/non-overlapping-intervals editorial_link idk 40.09580291970803 Medium
+436 Find Right Interval https://leetcode.com/problems/find-right-interval editorial_link idk 41.073362875430824 Medium
+437 Path Sum III https://leetcode.com/problems/path-sum-iii editorial_link idk 38.96522606893375 Easy
+438 Find All Anagrams in a String https://leetcode.com/problems/find-all-anagrams-in-a-string editorial_link idk 33.38652667372597 Easy
+ATTENTION ===>>>439 problem description not found, please manually update it later.
+439 Ternary Expression Parser https://leetcode.com/problems/ternary-expression-parser editorial_link idk 50.01018952516812 Medium
+ATTENTION ===>>>440 problem solutions not found, please manually update it later.
+440 K-th Smallest in Lexicographical Order https://leetcode.com/problems/k-th-smallest-in-lexicographical-order editorial_link idk 23.02084966295658 Hard
+441 Arranging Coins https://leetcode.com/problems/arranging-coins editorial_link idk 35.95268272074355 Easy
+442 Find All Duplicates in an Array https://leetcode.com/problems/find-all-duplicates-in-an-array editorial_link idk 52.66805802478679 Medium
+ATTENTION ===>>>444 problem description not found, please manually update it later.
+444 Sequence Reconstruction https://leetcode.com/problems/sequence-reconstruction editorial_link idk 19.69428731810527 Medium
+445 Add Two Numbers II https://leetcode.com/problems/add-two-numbers-ii editorial_link idk 46.15615886473648 Medium
+446 Arithmetic Slices II - Subsequence https://leetcode.com/problems/arithmetic-slices-ii-subsequence editorial_link idk 24.737824100881426 Hard
+447 Number of Boomerangs https://leetcode.com/problems/number-of-boomerangs editorial_link idk 43.41565485531786 Easy
+448 Find All Numbers Disappeared in an Array https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array editorial_link idk 52.91164172357566 Easy
+449 Serialize and Deserialize BST https://leetcode.com/problems/serialize-and-deserialize-bst editorial_link idk 41.96197061365601 Medium
+450 Delete Node in a BST https://leetcode.com/problems/delete-node-in-a-bst editorial_link idk 35.414394765539804 Medium
+451 Sort Characters By Frequency https://leetcode.com/problems/sort-characters-by-frequency editorial_link idk 50.289855072463766 Medium
+452 Minimum Number of Arrows to Burst Balloons https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons editorial_link idk 42.64934543813011 Medium
+453 Minimum Moves to Equal Array Elements https://leetcode.com/problems/minimum-moves-to-equal-array-elements editorial_link idk 46.6705255287847 Easy
+454 4Sum II https://leetcode.com/problems/4sum-ii editorial_link idk 45.187252849499885 Medium
+455 Assign Cookies https://leetcode.com/problems/assign-cookies editorial_link idk 47.25961538461539 Easy
+456 132 Pattern https://leetcode.com/problems/132-pattern editorial_link idk 28.039052268127158 Medium
+459 Repeated Substring Pattern https://leetcode.com/problems/repeated-substring-pattern editorial_link idk 38.60085529790606 Easy
+460 LFU Cache https://leetcode.com/problems/lfu-cache editorial_link idk 21.853294934778926 Hard
+461 Hamming Distance https://leetcode.com/problems/hamming-distance editorial_link idk 70.6900844967546 Easy
+462 Minimum Moves to Equal Array Elements II https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii editorial_link idk 51.16908123968458 Medium
+463 Island Perimeter https://leetcode.com/problems/island-perimeter editorial_link idk 56.45491226423947 Easy
+464 Can I Win https://leetcode.com/problems/can-i-win editorial_link idk 23.532877295191962 Medium
+ATTENTION ===>>>465 problem description not found, please manually update it later.
+465 Optimal Account Balancing https://leetcode.com/problems/optimal-account-balancing editorial_link idk 32.73537202022634 Hard
+466 Count The Repetitions https://leetcode.com/problems/count-the-repetitions editorial_link idk 25.720699432892253 Hard
+467 Unique Substrings in Wraparound String https://leetcode.com/problems/unique-substrings-in-wraparound-string editorial_link idk 31.28936029168048 Medium
+468 Validate IP Address https://leetcode.com/problems/validate-ip-address editorial_link idk 20.239823879338612 Medium
+ATTENTION ===>>>469 problem description not found, please manually update it later.
+469 Convex Polygon https://leetcode.com/problems/convex-polygon editorial_link idk 29.948602231415318 Medium
+ATTENTION ===>>>471 problem description not found, please manually update it later.
+471 Encode String with Shortest Length https://leetcode.com/problems/encode-string-with-shortest-length editorial_link idk 42.03753351206434 Hard
+472 Concatenated Words https://leetcode.com/problems/concatenated-words editorial_link idk 29.401817797505814 Hard
+473 Matchsticks to Square https://leetcode.com/problems/matchsticks-to-square editorial_link idk 34.18972332015811 Medium
+474 Ones and Zeroes https://leetcode.com/problems/ones-and-zeroes editorial_link idk 37.06720977596741 Medium
+475 Heaters https://leetcode.com/problems/heaters editorial_link idk 29.757609770437476 Easy
+476 Number Complement https://leetcode.com/problems/number-complement editorial_link idk 60.79981753212195 Easy
+477 Total Hamming Distance https://leetcode.com/problems/total-hamming-distance editorial_link idk 45.898212533594986 Medium
+480 Sliding Window Median https://leetcode.com/problems/sliding-window-median editorial_link idk 31.526583890480737 Hard
+481 Magical String https://leetcode.com/problems/magical-string editorial_link idk 45.47575002010778 Medium
+482 License Key Formatting https://leetcode.com/problems/license-key-formatting editorial_link idk 41.05372206600562 Medium
+483 Smallest Good Base https://leetcode.com/problems/smallest-good-base editorial_link idk 31.054018445322797 Hard
+ATTENTION ===>>>484 problem description not found, please manually update it later.
+484 Find Permutation https://leetcode.com/problems/find-permutation editorial_link idk 51.76886792452831 Medium
+485 Max Consecutive Ones https://leetcode.com/problems/max-consecutive-ones editorial_link idk 54.796616829000975 Easy
+486 Predict the Winner https://leetcode.com/problems/predict-the-winner editorial_link idk 44.37815185737624 Medium
+ATTENTION ===>>>487 problem description not found, please manually update it later.
+487 Max Consecutive Ones II https://leetcode.com/problems/max-consecutive-ones-ii editorial_link idk 43.92484342379958 Medium
+488 Zuma Game https://leetcode.com/problems/zuma-game editorial_link idk 37.01061423351314 Hard
+ATTENTION ===>>>490 problem description not found, please manually update it later.
+490 The Maze https://leetcode.com/problems/the-maze editorial_link idk 41.784328937160595 Medium
+491 Increasing Subsequences https://leetcode.com/problems/increasing-subsequences editorial_link idk 38.45349271572656 Medium
+492 Construct the Rectangle https://leetcode.com/problems/construct-the-rectangle editorial_link idk 49.21779409194197 Easy
+493 Reverse Pairs https://leetcode.com/problems/reverse-pairs editorial_link idk 18.272667107875577 Hard
+494 Target Sum https://leetcode.com/problems/target-sum editorial_link idk 44.097767710350375 Medium
+495 Teemo Attacking https://leetcode.com/problems/teemo-attacking editorial_link idk 51.47069556966645 Medium
+496 Next Greater Element I https://leetcode.com/problems/next-greater-element-i editorial_link idk 57.78326861983763 Easy
+498 Diagonal Traverse https://leetcode.com/problems/diagonal-traverse editorial_link idk 46.32192279679534 Medium
+ATTENTION ===>>>499 problem description not found, please manually update it later.
+499 The Maze III https://leetcode.com/problems/the-maze-iii editorial_link idk 31.74418604651163 Hard
+500 Keyboard Row https://leetcode.com/problems/keyboard-row editorial_link idk 60.1693927503011 Easy
+501 Find Mode in Binary Search Tree https://leetcode.com/problems/find-mode-in-binary-search-tree editorial_link idk 39.13390010626993 Easy
+502 IPO https://leetcode.com/problems/ipo editorial_link idk 33.07008884501481 Hard
+503 Next Greater Element II https://leetcode.com/problems/next-greater-element-ii editorial_link idk 46.603955262573145 Medium
+504 Base 7 https://leetcode.com/problems/base-7 editorial_link idk 45.97224525902582 Easy
+ATTENTION ===>>>505 problem description not found, please manually update it later.
+505 The Maze II https://leetcode.com/problems/the-maze-ii editorial_link idk 34.95759444872783 Medium
+506 Relative Ranks https://leetcode.com/problems/relative-ranks editorial_link idk 48.13434910749041 Easy
+508 Most Frequent Subtree Sum https://leetcode.com/problems/most-frequent-subtree-sum editorial_link idk 51.91513598177417 Medium
+513 Find Bottom Left Tree Value https://leetcode.com/problems/find-bottom-left-tree-value editorial_link idk 56.17828773168579 Medium
+514 Freedom Trail https://leetcode.com/problems/freedom-trail editorial_link idk 32.00892857142857 Hard
+515 Find Largest Value in Each Tree Row https://leetcode.com/problems/find-largest-value-in-each-tree-row editorial_link idk 53.0485436893204 Medium
+516 Longest Palindromic Subsequence https://leetcode.com/problems/longest-palindromic-subsequence editorial_link idk 42.42250756522451 Medium
+517 Super Washing Machines https://leetcode.com/problems/super-washing-machines editorial_link idk 35.25360050093926 Hard
+520 Detect Capital https://leetcode.com/problems/detect-capital editorial_link idk 53.042725886860865 Easy
+523 Continuous Subarray Sum https://leetcode.com/problems/continuous-subarray-sum editorial_link idk 21.345676224881462 Medium
+524 Longest Word in Dictionary through Deleting https://leetcode.com/problems/longest-word-in-dictionary-through-deleting editorial_link idk 40.21861618210502 Medium
+525 Contiguous Array https://leetcode.com/problems/contiguous-array editorial_link idk 33.729160113243154 Medium
+526 Beautiful Arrangement https://leetcode.com/problems/beautiful-arrangement editorial_link idk 52.56553887519606 Medium
+ATTENTION ===>>>527 problem description not found, please manually update it later.
+527 Word Abbreviation https://leetcode.com/problems/word-abbreviation editorial_link idk 32.54779902178746 Hard
+529 Minesweeper https://leetcode.com/problems/minesweeper editorial_link idk 52.353854112778066 Medium
+530 Minimum Absolute Difference in BST https://leetcode.com/problems/minimum-absolute-difference-in-bst editorial_link idk 48.300020605810836 Easy
+ATTENTION ===>>>531 problem description not found, please manually update it later.
+531 Lonely Pixel I https://leetcode.com/problems/lonely-pixel-i editorial_link idk 49.61607580460709 Medium
+532 K-diff Pairs in an Array https://leetcode.com/problems/k-diff-pairs-in-an-array editorial_link idk 27.03065134099617 Easy
+ATTENTION ===>>>533 problem description not found, please manually update it later.
+533 Lonely Pixel II https://leetcode.com/problems/lonely-pixel-ii editorial_link idk 38.178340903657656 Medium
+535 Encode and Decode TinyURL https://leetcode.com/problems/encode-and-decode-tinyurl editorial_link idk 76.648740447212 Medium
+ATTENTION ===>>>536 problem description not found, please manually update it later.
+536 Construct Binary Tree from String https://leetcode.com/problems/construct-binary-tree-from-string editorial_link idk 34.85213581599124 Medium
+539 Minimum Time Difference https://leetcode.com/problems/minimum-time-difference editorial_link idk 44.36317379551598 Medium
+541 Reverse String II https://leetcode.com/problems/reverse-string-ii editorial_link idk 44.46237643736131 Easy
