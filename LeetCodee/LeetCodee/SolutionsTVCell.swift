@@ -24,9 +24,11 @@ class SolutionsTVCell: UITableViewCell, UIWebViewDelegate{
     
     func updateUI() {
         let arr = solutionOfProblem.components(separatedBy: "FORSPLITROF")
+        if arr.count < 1 {return} // may have index out of bounds exception
         let title = arr[0]
-        let html = arr[1]
         solutionTitleLabel.text = title
+        if arr.count < 2 {return} // may have index out of bounds exception
+        let html = arr[1]
         loadSolutionnWebView(html: html)
     }
     

@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 import SideMenu
 
-class HomeTableViewController: UITableViewController, CustomSearchControllerDelegate {
+class HomeTableViewController: UITableViewController, CustomSearchControllerDelegate, LeftMenuDelegate {
     @IBOutlet weak var leftMenuButton: UIBarButtonItem!
     @IBOutlet weak var rightMenuButton: UIBarButtonItem!
     
@@ -52,6 +52,8 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
         // of it here like setting its viewControllers. If you're using storyboards, you'll want to do something like:
         let menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "LeftSideMenuNC") as! UISideMenuNavigationController
         SideMenuManager.menuLeftNavigationController = menuLeftNavigationController
+        let leftMenuVC = menuLeftNavigationController.viewControllers[0] as! LeftMenuViewController
+        leftMenuVC.delegate = self
         
         // let menuRightNavigationController = UISideMenuNavigationController(rootViewController: self)
         // UISideMenuNavigationController is a subclass of UINavigationController, so do any additional configuration
@@ -129,7 +131,7 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
     func didChangeSearchText(searchText: String) {
         // TODO filter
         filteredProblems = [Problem]()
-        for problem in realm.objects(Problem.self).sorted(byKeyPath: "id").filter("title contains %@", searchText) {
+        for problem in realm.objects(Problem.self).sorted(byKeyPath: "id").filter("title contains[c] %@", searchText) {
             filteredProblems.append(problem)
         }
         // ...
@@ -265,6 +267,52 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
         }
     }
     
+    // MARK: - LeftMenuDelegate
+    func sortById(ascending: Bool) {
+        // get all problems from Realm
+        problems = [Problem]()
+        for problem in realm.objects(Problem.self).sorted(byKeyPath: "id", ascending: ascending) {
+            problems.append(problem)
+        }
+        tableView.reloadData()
+    }
+    
+    func sortByTitle(ascending: Bool) {
+        // get all problems from Realm
+        problems = [Problem]()
+        for problem in realm.objects(Problem.self).sorted(byKeyPath: "title", ascending: ascending) {
+            problems.append(problem)
+        }
+        tableView.reloadData()
+    }
+    
+    func sortByAccepDiff(ascending: Bool) {
+        if ascending {
+            problems = [Problem]()
+            for problem in realm.objects(Problem.self).filter("difficulty == 'Easy'").sorted(byKeyPath: "acceptance", ascending: ascending) {
+                problems.append(problem)
+            }
+            for problem in realm.objects(Problem.self).filter("difficulty == 'Medium'").sorted(byKeyPath: "acceptance", ascending: ascending) {
+                problems.append(problem)
+            }
+            for problem in realm.objects(Problem.self).filter("difficulty == 'Hard'").sorted(byKeyPath: "acceptance", ascending: ascending) {
+                problems.append(problem)
+            }
+            tableView.reloadData()
+        } else {
+            problems = [Problem]()
+            for problem in realm.objects(Problem.self).filter("difficulty == 'Hard'").sorted(byKeyPath: "acceptance", ascending: ascending) {
+                problems.append(problem)
+            }
+            for problem in realm.objects(Problem.self).filter("difficulty == 'Medium'").sorted(byKeyPath: "acceptance", ascending: ascending) {
+                problems.append(problem)
+            }
+            for problem in realm.objects(Problem.self).filter("difficulty == 'Easy'").sorted(byKeyPath: "acceptance", ascending: ascending) {
+                problems.append(problem)
+            }
+            tableView.reloadData()
+        }
+    }
 }
 
 
