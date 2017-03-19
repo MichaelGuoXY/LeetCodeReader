@@ -69,12 +69,22 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
         
         // side menu config
         SideMenuManager.menuFadeStatusBar = false
+        SideMenuManager.menuPresentMode = .viewSlideInOut
         
         // config navi bar color
         navigationController?.navigationBar.barTintColor = UIColor(red: 85/255, green: 210/255, blue: 251/255, alpha: 0.9)
         
         // configure search controller
         configureSearchController()
+        
+        // reload tableview
+        reloadTableView()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.barTintColor = UIColor(red: 85/255, green: 210/255, blue: 251/255, alpha: 0.9)
     }
     
     func reloadTableView() {
@@ -83,9 +93,10 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
         for problem in realm.objects(Problem.self).sorted(byKeyPath: "id") {
             problems.append(problem)
         }
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
+        print("now reload data, has %@ problems", problems.count)
+        
+        self.tableView.reloadData()
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -95,13 +106,13 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
     
     func configureSearchController() {
         // Initialize and perform a minimum configuration to the search controller.
-        searchController = CustomSearchController(searchResultsController: self, searchBarFrame: CGRect(x: 0.0, y: 0.0, width: tableView.bounds.width * 0.7, height: 30.0), searchBarFont: UIFont(name: "Futura", size: 16.0)!, searchBarTextColor: .white, searchBarTintColor: UIColor(red: 85/255, green: 210/255, blue: 251/255, alpha: 0.9))
-//        searchController.searchResultsUpdater = self
+        searchController = CustomSearchController(searchResultsController: self, searchBarFrame: CGRect(x: 0.0, y: 0.0, width: tableView.bounds.width * 0.7, height: 30.0), searchBarFont: UIFont(name: "Futura", size: 16.0)!, searchBarTextColor: .gray, searchBarTintColor: .white)
+        //        searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
         searchController.customSearchBar.placeholder = "Search here..."
-//        searchController.searchBar.delegate = self
-//        searchController.searchBar.sizeToFit()
-//        searchController.searchBar.showsCancelButton = false
+        //        searchController.searchBar.delegate = self
+        //        searchController.searchBar.sizeToFit()
+        //        searchController.searchBar.showsCancelButton = false
         let titleView = UIView(frame: searchController.customSearchBar.frame)
         titleView.addSubview(searchController.customSearchBar)
         // Place the search bar view to the tableview headerview.
@@ -318,6 +329,45 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
             tableView.reloadData()
         }
     }
+    
+    // MARK: - Show Scroll View Indicator
+    override func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        if tableView.numberOfRows(inSection: 0) > 3 {
+            for view in tableView.subviews
+            {
+                if view is UIImageView
+                {
+                    let imageView = view as? UIImageView
+                    delay(bySeconds: 0.7) {
+                        imageView?.isHidden = false
+                        imageView?.layer.removeAllAnimations()
+                        imageView?.alpha = 1.0
+                    }
+                }
+            }
+        }
+    }
+    
+    public func delay(bySeconds seconds: Double, dispatchLevel: DispatchLevel = .main, closure: @escaping () -> Void) {
+        let dispatchTime = DispatchTime.now() + seconds
+        dispatchLevel.dispatchQueue.asyncAfter(deadline: dispatchTime, execute: closure)
+    }
+    
+    public enum DispatchLevel {
+        case main, userInteractive, userInitiated, utility, background
+        var dispatchQueue: DispatchQueue {
+            switch self {
+            case .main: return DispatchQueue.main
+            case .userInteractive: return DispatchQueue.global(qos: .userInteractive)
+            case .userInitiated: return DispatchQueue.global(qos: .userInitiated)
+            case .utility: return DispatchQueue.global(qos: .utility)
+            case .background: return DispatchQueue.global(qos: .background)
+            }
+        }
+    }
+    // END MARK
+    
+    
 }
 
 

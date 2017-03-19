@@ -60,7 +60,7 @@ class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITabl
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        tabBarController?.tabBar.barTintColor = navigationController?.navigationBar.barTintColor
         curProblem.fetchSolutions(fetch: fetchSolutions)
     }
     
@@ -119,17 +119,13 @@ class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITabl
         let returnedView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: 30))
         returnedView.layer.masksToBounds = true
         returnedView.layer.cornerRadius = 15
-        returnedView.backgroundColor = .black
+        returnedView.backgroundColor = UIColor(red: 241/255, green: 232/255, blue: 215/255, alpha: 1.0)
         
         let label = UILabel(frame: CGRect(x: returnedView.bounds.width / 5, y: 0, width: tableView.bounds.width, height: 30))
         label.text = sectionTitleArr[section]
-        label.textColor = .white
+        label.textColor = .gray
         label.font = UIFont(name: "Chalkduster", size: 20)
         returnedView.addSubview(label)
-        
-        if section == 1 || section == 2 {
-             return returnedView
-        }
         
         // section == 0: TITLE
         let returnedViewS1 = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: 40))

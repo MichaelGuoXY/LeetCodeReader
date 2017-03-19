@@ -23,23 +23,23 @@ class ProblemTVCell: UITableViewCell {
         }
     }
     
-    override func draw(_ rect: CGRect) {
-        
-        let startPoint = CGPoint(x: 0.0, y: frame.size.height)
-        let endPoint = CGPoint(x: CGFloat(Float(frame.width) * problem.acceptance / 100.0), y: frame.size.height)
-        let path = UIBezierPath()
-        path.move(to: startPoint)
-        path.addLine(to: endPoint)
-        
-        let shapeLayer = CAShapeLayer()
-        shapeLayer.path = path.cgPath
-        shapeLayer.strokeColor = UIColor(red: 17/255, green: 246/255, blue: 139/255, alpha: 1.0).cgColor
-        shapeLayer.lineWidth = 2.5
-        
-        layer.addSublayer(shapeLayer)
-        
-        super.draw(rect)
-    }
+//    override func draw(_ rect: CGRect) {
+//        
+//        let startPoint = CGPoint(x: 0.0, y: frame.size.height)
+//        let endPoint = CGPoint(x: CGFloat(Float(frame.width) * problem.acceptance / 100.0), y: frame.size.height)
+//        let path = UIBezierPath()
+//        path.move(to: startPoint)
+//        path.addLine(to: endPoint)
+//        
+//        let shapeLayer = CAShapeLayer()
+//        shapeLayer.path = path.cgPath
+//        shapeLayer.strokeColor = UIColor(red: 17/255, green: 246/255, blue: 139/255, alpha: 1.0).cgColor
+//        shapeLayer.lineWidth = 2.5
+//        
+//        layer.addSublayer(shapeLayer)
+//        
+//        super.draw(rect)
+//    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -53,6 +53,11 @@ class ProblemTVCell: UITableViewCell {
     }
     
     func updateUI() {
+        // draw line at left bottom, to indicate the acceptance of this problem
+//        let lineFrame = CGRect(x: 0, y: contentView.bounds.height - 2.5, width: contentView.bounds.width * CGFloat(problem.acceptance / 100.0), height: 2.5)
+//        let line = UIView(frame: lineFrame)
+//        line.backgroundColor = UIColor(red: 17/255, green: 246/255, blue: 139/255, alpha: 1.0)
+//        contentView.addSubview(line)
         // update UI immediately after "problem" being set
         id.text = "No." + String(problem.id)
         title.text = problem.title

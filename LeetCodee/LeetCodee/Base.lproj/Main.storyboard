@@ -15,7 +15,7 @@
         <scene sceneID="ddH-sf-PAH">
             <objects>
                 <tableViewController extendedLayoutIncludesOpaqueBars="YES" id="4ZQ-bP-mMJ" customClass="HomeTableViewController" customModule="LeetCodee" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="tZa-88-ILI">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="tZa-88-ILI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -27,7 +27,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="90.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opp-GN-uKN">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="opp-GN-uKN">
                                             <rect key="frame" x="13" y="3" width="50" height="32"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="50" id="0EJ-b7-x2s"/>
@@ -286,7 +286,7 @@
                                         <rect key="frame" x="0.0" y="75" width="375" height="283"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="egj-25-CoI" id="Hr7-Uz-k61">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="282.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="282"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hwb-u2-VOs">
@@ -505,7 +505,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="90.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTh-5B-mff">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ZTh-5B-mff">
                                             <rect key="frame" x="13" y="3" width="100" height="32"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="100" id="KYs-6P-rpW"/>
@@ -734,6 +734,6 @@
         <image name="upArrow" width="54" height="54"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Da3-7q-Bpz"/>
+        <segue reference="3K0-nf-pOM"/>
     </inferredMetricsTieBreakers>
 </document>

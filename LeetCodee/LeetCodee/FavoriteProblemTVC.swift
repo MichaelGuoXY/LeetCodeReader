@@ -35,6 +35,9 @@ class FavoriteProblemTVC: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        // tab bar color 
+        tabBarController?.tabBar.barTintColor = UIColor(red: 179/255, green: 136/255, blue: 250/255, alpha: 0.9)
+        
         // reload problems to be displayed
         problems = [Problem]()
         for problem in realm.objects(Problem.self).filter("isFavorite == true") {

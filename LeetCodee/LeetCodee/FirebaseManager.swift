@@ -37,7 +37,6 @@ class FirebaseManager: NSObject{
                 try! realm.write {
                     realm.add(problem)
                 }
-                
             }
             reloadTableView()
         }) { (error) in
