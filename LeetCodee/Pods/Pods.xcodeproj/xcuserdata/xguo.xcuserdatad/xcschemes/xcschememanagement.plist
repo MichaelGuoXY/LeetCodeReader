@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Gifu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>GoogleToolboxForMac.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,22 +47,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2082C426F25FD160B1D2235B27D785AC</key>
+		<key>2A0580E7FEB7A7EE6D6B100C6C5487FE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>45013B7C7BBAC30FB8DA5A01C54DA6B8</key>
+		<key>5B9888C33DE4EBFB8177CEA845DEEA74</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9C22A1915DD369847C3A6E29DF89B1F0</key>
+		<key>64936FFA4A034A567A7D2C974EC0B8A5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A319D60065A2292245E7537E8CBD4453</key>
+		<key>A5D71BB0366FC1FFEF61DD9C00D6FEF0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B6B31E369A112AA395E11299EF91AFB9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

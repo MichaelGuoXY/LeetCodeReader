@@ -20,8 +20,10 @@ class Problem: Object {
     dynamic var problemLink: String!
     dynamic var isFavorite = false
     var solutions = List<RString>()
+    dynamic var tags: String!
     
-    func initialize(id: Int, title: String, acceptance: Float, description: String, difficulty: String, editorialLink: String, problemLink: String) {
+    
+    func initialize(id: Int, title: String, acceptance: Float, description: String, difficulty: String, editorialLink: String, problemLink: String, solutions: NSArray, tags: String) {
         self.id = id
         self.title = title
         self.acceptance = acceptance
@@ -29,22 +31,23 @@ class Problem: Object {
         self.difficulty = difficulty
         self.editorialLink = editorialLink
         self.problemLink = problemLink
-    }
-    
-    // get solutions
-    func updateSolutions(solutions: List<RString>, fetch: ([String]) -> ()) {
-        self.solutions = solutions
-        var solus = [String]()
+        self.tags = tags
         for solution in solutions {
-            solus.append(solution.stringValue)
+            let solu = RString()
+            solu.stringValue = solution as! String
+            self.solutions.append(solu)
         }
-        fetch(solus)
     }
     
-    // fetch solutions
-    func fetchSolutions(fetch: @escaping ([String]) -> ()) {
-        FirebaseManager.fetchSolutionsWithID(id: id, updateSolutions: updateSolutions, fetch: fetch)
-    }
+//    // get solutions
+//    func updateSolutions(solutions: List<RString>) {
+//        self.solutions = solutions
+//    }
+//    
+//    // fetch solutions
+//    func fetchSolutions() {
+//        FirebaseManager.fetchSolutionsWithID(id: id, updateSolutions: updateSolutions)
+//    }
 }
 
 class RString: Object {

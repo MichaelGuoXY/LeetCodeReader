@@ -37,6 +37,7 @@ class FavoriteProblemTVC: UITableViewController {
         super.viewWillAppear(animated)
         // tab bar color 
         tabBarController?.tabBar.barTintColor = UIColor(red: 179/255, green: 136/255, blue: 250/255, alpha: 0.9)
+        tabBarController?.tabBar.tintColor = .white
         
         // reload problems to be displayed
         problems = [Problem]()

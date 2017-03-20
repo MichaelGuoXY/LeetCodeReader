@@ -61,11 +61,15 @@ class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITabl
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tabBarController?.tabBar.barTintColor = navigationController?.navigationBar.barTintColor
-        curProblem.fetchSolutions(fetch: fetchSolutions)
+        fetchSolutions()
     }
     
-    func fetchSolutions(solutions: [String]) {
-        self.solutions = solutions
+    func fetchSolutions() {
+        var solus = [String]()
+        for solution in curProblem.solutions {
+            solus.append(solution.stringValue)
+        }
+        solutions = solus
     }
     
     override func didReceiveMemoryWarning() {

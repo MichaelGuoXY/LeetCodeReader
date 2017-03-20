@@ -12,6 +12,7 @@ target 'LeetCodee' do
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
   pod 'RealmSwift'
+  pod 'Gifu'
 
 end
 

@@ -40,6 +40,7 @@ for tr in trs:
     frequency = 'idk'
     description = "hola this is the description for the problem"
     solutions = {}
+    tags = 'tags{#}tags{#}tags'
     i = 0
     for td in tr.find_elements_by_tag_name('td'):
         i += 1
@@ -53,7 +54,7 @@ for tr in trs:
         # 7 frequency
         if i == 2:
             id = int(td.text)
-            if id <= 272:
+            if id <= 541:
                 break
         elif i == 3:
             title = str(td.get_attribute('value'))
@@ -66,6 +67,10 @@ for tr in trs:
             # TODO: obtain the description of the problem, in the format of HTML
             try:
                 description = driver_des.find_element_by_class_name('question-content').get_attribute('innerHTML')
+                tags = ""
+                for tag in driver_des.find_element_by_class_name('hidebutton').find_elements_by_tag_name('a'):
+                    tags += tag.get_attribute('text') + "{#}"
+                tags = tags[:len(tags) - 3]
             except Exception:
                 print('ATTENTION ===>>>' + str(id) + ' problem description not found, please manually update it later.')
                 log.write(
@@ -82,7 +87,7 @@ for tr in trs:
             count = len(pre_solutions)
             j = 0
             while j < count:
-                # print(j + 1)
+                print(pre_solutions[j].text.split("\n")[1])
                 solution_title = pre_solutions[j].text.split("\n")[1]
                 pre_solutions[j].click()
             # obtain the solution
@@ -112,10 +117,10 @@ for tr in trs:
         elif i == 6:
             difficulty = td.text
     # print out
-    print(str(id) + ' ' + title + ' ' + problem_link + ' editorial_link ' + editorial_link + ' ' + str(acceptance) + ' ' + difficulty)
-    log.write(str(id) + ' ' + title + ' ' + problem_link + ' editorial_link ' + editorial_link + ' ' + str(acceptance) + ' ' + difficulty +'\n')
+    print(str(id) + ' ' + title + ' ' + problem_link + ' tags ' + tags + ' editorial_link ' + editorial_link + ' ' + str(acceptance) + ' ' + difficulty)
+    log.write(str(id) + ' ' + title + ' ' + problem_link + ' tags ' + tags + ' editorial_link ' + editorial_link + ' ' + str(acceptance) + ' ' + difficulty +'\n')
     # record for each problem
-    if id <= 272:
+    if id <= 541:
         continue
     record = {}
     record['id'] = id
@@ -126,7 +131,10 @@ for tr in trs:
     record['difficulty'] = difficulty
     record['description'] = description
     record['solutions'] = solutions
+    record['tags'] = tags
     # upload to firebase
+    if tags == 'tags{#}tags{#}tags' or len(solutions) == 0 or description == 'hola this is the description for the problem':
+        continue
     result = firebase.post('/problems', record)
 
 driver_des.close()
