@@ -61,6 +61,9 @@ class TagViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         return realm.objects(Problem.self).filter("tags contains[c] %@", tag).count
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
     
     // MARK: - Navigation
     

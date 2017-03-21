@@ -21,9 +21,10 @@ class Problem: Object {
     dynamic var isFavorite = false
     var solutions = List<RString>()
     dynamic var tags: String!
+    dynamic var timestamp: Double = 0.0
     
     
-    func initialize(id: Int, title: String, acceptance: Float, description: String, difficulty: String, editorialLink: String, problemLink: String, solutions: NSArray, tags: String) {
+    func initialize(id: Int, title: String, acceptance: Float, description: String, difficulty: String, editorialLink: String, problemLink: String, solutions: NSArray, tags: String, timestamp: Double) {
         self.id = id
         self.title = title
         self.acceptance = acceptance
@@ -32,6 +33,7 @@ class Problem: Object {
         self.editorialLink = editorialLink
         self.problemLink = problemLink
         self.tags = tags
+        self.timestamp = timestamp
         for solution in solutions {
             let solu = RString()
             solu.stringValue = solution as! String

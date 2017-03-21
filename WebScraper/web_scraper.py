@@ -3,6 +3,9 @@ from selenium.webdriver.support.ui import Select
 from firebase import firebase
 import time
 
+
+# arr for bad conn id
+ids = []
 # firebase init
 firebase = firebase.FirebaseApplication('https://leetcodereader.firebaseio.com/', None)
 # TODO: need auth for firebase
@@ -54,7 +57,7 @@ for tr in trs:
         # 7 frequency
         if i == 2:
             id = int(td.text)
-            if id <= 541:
+            if id <= 474:
                 break
         elif i == 3:
             title = str(td.get_attribute('value'))
@@ -120,7 +123,7 @@ for tr in trs:
     print(str(id) + ' ' + title + ' ' + problem_link + ' tags ' + tags + ' editorial_link ' + editorial_link + ' ' + str(acceptance) + ' ' + difficulty)
     log.write(str(id) + ' ' + title + ' ' + problem_link + ' tags ' + tags + ' editorial_link ' + editorial_link + ' ' + str(acceptance) + ' ' + difficulty +'\n')
     # record for each problem
-    if id <= 541:
+    if id <= 474:
         continue
     record = {}
     record['id'] = id
@@ -132,8 +135,10 @@ for tr in trs:
     record['description'] = description
     record['solutions'] = solutions
     record['tags'] = tags
+    record['timestamp'] = time.time()
     # upload to firebase
     if tags == 'tags{#}tags{#}tags' or len(solutions) == 0 or description == 'hola this is the description for the problem':
+        ids.append(id)
         continue
     result = firebase.post('/problems', record)
 

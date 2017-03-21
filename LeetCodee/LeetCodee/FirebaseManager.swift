@@ -69,12 +69,15 @@ class FirebaseManager: NSObject{
 //        // END TODO
 //        // return solutions
 //    }
+    static func checkIfNeedsUpdate() {
+        
+    }
     
-    static func fetchAllProblems(navigate: @escaping () -> (), label: UILabel) {
+    static func fetchAllProblems(navigate: @escaping () -> (), progressBar: GTProgressBar, label: UILabel) {
         ref.child("problems").observeSingleEvent(of: .value, with: { (snapshot) in
             let val = snapshot.value as! NSDictionary
+            let count = val.count
             for (_, dict) in val {
-                
                 let value = dict as! NSDictionary
                 let id = value["id"] as! Int
                 let title = value["title"] as! String
@@ -84,23 +87,31 @@ class FirebaseManager: NSObject{
                 let editorialLink = value["editorial_link"] as! String
                 let acceptance = value["acceptance"] as! Float
                 let tags = value["tags"] as! String
+                let timestamp = value["timestamp"] as! Double
                 let solutions = value["solutions"] as! NSArray
+                
+                print(String(id) + " problem fetched")
+                label.text = "#" + String(id) + " problem fetched...😊"
+                progressBar.animateTo(progress: progressBar.progress + CGFloat(1.0 / Float(count)))
+                // this step allows UI updating, very important
+                RunLoop.main.run(until: NSDate(timeIntervalSinceNow: 0.01) as Date)
+                
                 // if realm already has this problem, then skip
                 if realm.objects(Problem.self).filter("id == %@", id).count > 0 {
-                    continue
+                    if realm.objects(Problem.self).filter("id == %@", id)[0].timestamp - timestamp > -1 {
+                        continue
+                    }
                 }
+
                 let problem = Problem()
-                problem.initialize(id: id, title: title, acceptance: acceptance, description: description, difficulty: difficulty, editorialLink: editorialLink, problemLink: problemLink, solutions: solutions, tags: tags)
+                problem.initialize(id: id, title: title, acceptance: acceptance, description: description, difficulty: difficulty, editorialLink: editorialLink, problemLink: problemLink, solutions: solutions, tags: tags, timestamp: timestamp)
                 try! realm.write {
                     realm.add(problem)
                 }
-                print(String(id) + " 's solutions fetched")
-                label.text = String(id) + " 's solutions fetched"
+                
             }
             //reloadTableView()
-            //progressBar.animateTo(progress: 1)
-            //userdefault.set(true, forKey: "cando")
-            
+            progressBar.animateTo(progress: 1)
             navigate()
         }) { (error) in
             print(error.localizedDescription)

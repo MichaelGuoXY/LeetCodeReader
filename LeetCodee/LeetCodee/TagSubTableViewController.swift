@@ -30,15 +30,19 @@ class TagSubTableViewController: UITableViewController, CustomSearchControllerDe
         tableView.estimatedRowHeight = 140
         
         // configure search controller
-        configureSearchController()
-        
-        // reload tableview
-        reloadTableView()
-        
+        if UIDevice.current.orientation.isLandscape {
+            let width = view.frame.width > view.frame.height ? view.frame.width : view.frame.height
+            configureSearchController(width: width * 0.65)
+        } else {
+            let width = view.frame.width > view.frame.height ? view.frame.height : view.frame.width
+            configureSearchController(width: width * 0.65)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        // reload tableview
+        reloadTableView()
         navigationController?.navigationBar.barTintColor = UIColor(red: 255/255, green: 162/255, blue: 81/255, alpha: 0.9)
         tabBarController?.tabBar.barTintColor = UIColor(red: 255/255, green: 162/255, blue: 81/255, alpha: 0.9)
         tabBarController?.tabBar.tintColor = .white
@@ -60,18 +64,36 @@ class TagSubTableViewController: UITableViewController, CustomSearchControllerDe
         // Dispose of any resources that can be recreated.
     }
     
-    func configureSearchController() {
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        if UIDevice.current.orientation.isLandscape {
+            let width = view.frame.width > view.frame.height ? view.frame.width : view.frame.height
+            configureSearchController(width: width * 0.65)
+        } else {
+            let width = view.frame.width > view.frame.height ? view.frame.height : view.frame.width
+            configureSearchController(width: width * 0.65)
+        }
+    }
+    
+    func configureSearchController(width: CGFloat) {
         // Initialize and perform a minimum configuration to the search controller.
-        searchController = CustomSearchController(searchResultsController: self, searchBarFrame: CGRect(x: 0.0, y: 0.0, width: tableView.bounds.width * 0.7, height: 30.0), searchBarFont: UIFont(name: "Futura", size: 16.0)!, searchBarTextColor: .gray, searchBarTintColor: .white)
+        searchController = CustomSearchController(searchResultsController: self, searchBarFrame: CGRect(x: 0.0, y: 0.0, width: width, height: 30), searchBarFont: UIFont(name: "Futura", size: 16.0)!, searchBarTextColor: .gray, searchBarTintColor: .white)
+        //        searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
         searchController.customSearchBar.placeholder = "Search here..."
+        //        searchController.searchBar.delegate = self
+        //        searchController.searchBar.sizeToFit()
+        //        searchController.searchBar.showsCancelButton = false
         let titleView = UIView(frame: searchController.customSearchBar.frame)
         titleView.addSubview(searchController.customSearchBar)
-        // Place the search bar view to the navigationItem title view.
+        // Place the search bar view to the tableview headerview.
         navigationItem.titleView = titleView
+        //navigationItem.titleView?.tintColor = UIColor(red: 51/255, green: 210/255, blue: 236/255, alpha: 1.0)
+        //navigationItem.titleView?.backgroundColor = UIColor(red: 85/255, green: 210/255, blue: 251/255, alpha: 0.9)
+        //tableView.tableHeaderView = searchController.customSearchBar
         searchController.hidesNavigationBarDuringPresentation = false
         searchController.customDelegate = self
     }
+
     
     // MARK: - CUstom Search Bar Delegate
     

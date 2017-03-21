@@ -15,7 +15,7 @@ class LeftMenuViewController: UIViewController, UITableViewDelegate, UITableView
     var isOneToTwo = true
     var isEToH = false
     var isAToZ = false
-    var delegate: HomeTableViewController!
+    var delegate: LeftMenuDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()

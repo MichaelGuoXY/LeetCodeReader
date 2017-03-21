@@ -10,6 +10,8 @@ import UIKit
 
 class RightMenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    var delegate: UpdateDataDelegate!
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -29,7 +31,7 @@ class RightMenuViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 6
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -54,16 +56,11 @@ class RightMenuViewController: UIViewController, UITableViewDelegate, UITableVie
             let cell = tableView.dequeueReusableCell(withIdentifier: "SendFeedbackTVCell") as! SendFeedbackTVCell
             cell.label.text = "Send Feedback"
             return cell
-//        case 4:
-//            let cell = tableView.dequeueReusableCell(withIdentifier: "OptionTVCell") as! OptionOneTableViewCell
-//            cell.imgView.image = #imageLiteral(resourceName: "HtoE")
-//            cell.titleLabel.text = "Sort by Problem Acceptance and Difficulty"
-//            return cell
-//        case 5:
-//            let cell = tableView.dequeueReusableCell(withIdentifier: "OptionTVCell") as! OptionOneTableViewCell
-//            cell.imgView.image = #imageLiteral(resourceName: "ZtoA")
-//            cell.titleLabel.text = "Sort by Problem Title"
-//            return cell
+        case 5:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SendFeedbackTVCell") as! SendFeedbackTVCell
+            cell.label.text = "Update With Online Database"
+            cell.label.textColor = .red
+            return cell
         default:
             return UITableViewCell()
         }
@@ -77,6 +74,10 @@ class RightMenuViewController: UIViewController, UITableViewDelegate, UITableVie
         if indexPath.row == 3 {
             let sendFeedbackVC = storyboard?.instantiateViewController(withIdentifier: "SendFeedbackVC") as! SendFeedbackViewController
             present(sendFeedbackVC, animated: true, completion: nil)
+        } else if indexPath.row == 5 {
+            let updateVC = storyboard?.instantiateViewController(withIdentifier: "UpdateDataVC") as! UpdateDataViewController
+            updateVC.delegate = delegate
+            present(updateVC, animated: true, completion: nil)
         }
         tableView.deselectRow(at: indexPath, animated: true)
     }

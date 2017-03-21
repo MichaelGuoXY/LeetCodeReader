@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 import SideMenu
 
-class HomeTableViewController: UITableViewController, CustomSearchControllerDelegate, LeftMenuDelegate {
+class HomeTableViewController: UITableViewController, CustomSearchControllerDelegate, LeftMenuDelegate, UpdateDataDelegate {
     @IBOutlet weak var leftMenuButton: UIBarButtonItem!
     @IBOutlet weak var rightMenuButton: UIBarButtonItem!
     
@@ -54,6 +54,8 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
         // of it here like setting its viewControllers. If you're using storyboards, you'll want to do something like:
         let menuRightNavigationController = storyboard!.instantiateViewController(withIdentifier: "RightSideMenuNC") as! UISideMenuNavigationController
         SideMenuManager.menuRightNavigationController = menuRightNavigationController
+        let rightMenuVC = menuRightNavigationController.viewControllers[0] as! RightMenuViewController
+        rightMenuVC.delegate = self
         
         // Enable gestures. The left and/or right menus must be set up above for these to work.
         // Note that these continue to work on the Navigation Controller independent of the view controller it displays!
@@ -70,17 +72,23 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
         
         // config navi bar color
         navigationController?.navigationBar.barTintColor = UIColor(red: 85/255, green: 210/255, blue: 251/255, alpha: 0.9)
+        UINavigationBar.appearance().tintColor = .white
+        navigationController?.navigationBar.tintColor = .white
         
         // configure search controller
-        configureSearchController()
-        
-        // reload tableview
-        reloadTableView()
-        
+        if UIDevice.current.orientation.isLandscape {
+            let width = view.frame.width > view.frame.height ? view.frame.width : view.frame.height
+            configureSearchController(width: width * 0.65)
+        } else {
+            let width = view.frame.width > view.frame.height ? view.frame.height : view.frame.width
+            configureSearchController(width: width * 0.65)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        // reload tableview
+        reloadTableView()
         tabBarController?.tabBar.barTintColor = UIColor(red: 85/255, green: 210/255, blue: 251/255, alpha: 0.9)
         tabBarController?.tabBar.tintColor = .white
     }
@@ -91,7 +99,6 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
         for problem in realm.objects(Problem.self).sorted(byKeyPath: "id") {
             problems.append(problem)
         }
-        print("now reload data, has %@ problems", problems.count)
         self.tableView.reloadData()
     }
     
@@ -100,9 +107,19 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
         // Dispose of any resources that can be recreated.
     }
     
-    func configureSearchController() {
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        if UIDevice.current.orientation.isLandscape {
+            let width = view.frame.width > view.frame.height ? view.frame.width : view.frame.height
+            configureSearchController(width: width * 0.65)
+        } else {
+            let width = view.frame.width > view.frame.height ? view.frame.height : view.frame.width
+            configureSearchController(width: width * 0.65)
+        }
+    }
+    
+    func configureSearchController(width: CGFloat) {
         // Initialize and perform a minimum configuration to the search controller.
-        searchController = CustomSearchController(searchResultsController: self, searchBarFrame: CGRect(x: 0.0, y: 0.0, width: tableView.bounds.width * 0.7, height: 30.0), searchBarFont: UIFont(name: "Futura", size: 16.0)!, searchBarTextColor: .gray, searchBarTintColor: .white)
+        searchController = CustomSearchController(searchResultsController: self, searchBarFrame: CGRect(x: 0.0, y: 0.0, width: width, height: 30), searchBarFont: UIFont(name: "Futura", size: 16.0)!, searchBarTextColor: .gray, searchBarTintColor: .white)
         //        searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
         searchController.customSearchBar.placeholder = "Search here..."
@@ -363,7 +380,10 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
     }
     // END MARK
     
-    
+    // MARK: - Update Data Delegate
+    func reloadHomeViewController() {
+        reloadTableView()
+    }
 }
 
 
