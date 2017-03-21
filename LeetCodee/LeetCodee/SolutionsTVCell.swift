@@ -22,6 +22,7 @@ class SolutionsTVCell: UITableViewCell, UIWebViewDelegate{
     var indexPath: IndexPath!
     
     func updateUI() {
+//        solutionWebView.scrollView.isScrollEnabled = false
         let arr = solutionOfProblem.components(separatedBy: "FORSPLITROF")
         if arr.count < 1 {return} // may have index out of bounds exception
         let title = arr[0]
@@ -46,7 +47,7 @@ class SolutionsTVCell: UITableViewCell, UIWebViewDelegate{
         solutionWebView.delegate = self
         //solutionWebView.scrollView.isScrollEnabled = false
     }
-//    
+    
 //    func webViewDidFinishLoad(_ webView: UIWebView) {
 //        let height = webView.scrollView.contentSize.height
 //        delegate.reloadTableView(indexPath: indexPath, height: height)

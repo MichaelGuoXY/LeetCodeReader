@@ -19,6 +19,8 @@ class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITabl
         }
     }
     
+    var heightsForSolutionsCell = [Int: CGFloat]()
+    
     var contentHeights = [Int: CGFloat]()
     
     let sectionTitleArr = ["TITLE", "DESCRIPTION", "SOLUTIONS"]
@@ -143,7 +145,10 @@ class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITabl
     // CusTVReloadDelegate - required
     func reloadTableView(indexPath: IndexPath, height: CGFloat) {
         tableView.beginUpdates()
-        tableView.reloadRows(at: [indexPath], with: .automatic)
+        if heightsForSolutionsCell[indexPath.row] == nil {
+            heightsForSolutionsCell[indexPath.row] = height + 60.0
+            tableView.reloadRows(at: [indexPath], with: .automatic)
+        }
         tableView.endUpdates()
     }
     
@@ -154,7 +159,7 @@ class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITabl
             if indexPath.section == 1 {
                 return 300
             } else {
-                return 450
+                return 400
         }
     }
     
