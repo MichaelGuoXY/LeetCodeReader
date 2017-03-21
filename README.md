@@ -1,2 +1,2 @@
 # LeetCodeReader
-Helps you review leetcode problems on your phone
+# Review Leetcode problems on your mobile devices, cracking the coding interview is not a dream anymore!

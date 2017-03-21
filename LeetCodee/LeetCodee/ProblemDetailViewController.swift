@@ -109,8 +109,6 @@ class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITabl
             cell.solutionOfProblem = solutions == nil ? "" : solutions[indexPath.row]
             cell.delegate = self
             cell.indexPath = indexPath
-            //            cell.contentView.setNeedsLayout()
-            //            cell.contentView.layoutIfNeeded()
             return cell
         }
     }
@@ -144,9 +142,9 @@ class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITabl
     
     // CusTVReloadDelegate - required
     func reloadTableView(indexPath: IndexPath, height: CGFloat) {
-        //tableView.reloadData()
-        contentHeights[indexPath.row] = height
+        tableView.beginUpdates()
         tableView.reloadRows(at: [indexPath], with: .automatic)
+        tableView.endUpdates()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

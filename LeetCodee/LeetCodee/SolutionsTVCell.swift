@@ -18,9 +18,8 @@ class SolutionsTVCell: UITableViewCell, UIWebViewDelegate{
         }
     }
     
-    var delegate: ProblemDetailViewController!
+    var delegate: CusTVReloadDelegate!
     var indexPath: IndexPath!
-    var contentHeight = 0.0
     
     func updateUI() {
         let arr = solutionOfProblem.components(separatedBy: "FORSPLITROF")
@@ -47,6 +46,11 @@ class SolutionsTVCell: UITableViewCell, UIWebViewDelegate{
         solutionWebView.delegate = self
         //solutionWebView.scrollView.isScrollEnabled = false
     }
+//    
+//    func webViewDidFinishLoad(_ webView: UIWebView) {
+//        let height = webView.scrollView.contentSize.height
+//        delegate.reloadTableView(indexPath: indexPath, height: height)
+//    }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -54,28 +58,7 @@ class SolutionsTVCell: UITableViewCell, UIWebViewDelegate{
         // Configure the view for the selected state
     }
     
-//    func webViewDidFinishLoad(_ webView: UIWebView) {
-//        if contentHeight != 0.0 {
-//            return
-//        }
-//        contentHeight = Double(webView.scrollView.contentSize.height)
-//        delegate.reloadTableView(indexPath: indexPath, height: CGFloat(contentHeight))
-//    }
     
-    // TWO ways to make the webview height equals to the inner html
-    // 1
-    //    int content_height = [[theWebView stringByEvaluatingJavaScriptFromString: @"document.body.offsetHeight"] integerValue];
-    //    CGRect rect = theWebView.frame;
-    //    rect.size.height = content_height;
-    //    theWebView.frame = rect;
-    // 2
-    //    - (void)webViewDidFinishLoad:(UIWebView *)webView
-    //    {
-    //    CGSize size = [webView sizeThatFits: CGSizeMake(1.0f, 1.0f)]; // Pass about any size
-    //    CGRect frame = webView.frame;
-    //    frame.size.height = size.height;
-    //    webView.frame = frame;
-    //    }
 }
 
 protocol CusTVReloadDelegate {

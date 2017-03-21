@@ -470,7 +470,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.michael.guo.apps.leetcodereader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "324d0271-a05f-42f7-8857-98aa040958c8";
+				PROVISIONING_PROFILE = "588a757d-512a-4cae-b0db-b75988da9d54";
 				PROVISIONING_PROFILE_SPECIFIER = guo;
 				SWIFT_VERSION = 3.0;
 			};
