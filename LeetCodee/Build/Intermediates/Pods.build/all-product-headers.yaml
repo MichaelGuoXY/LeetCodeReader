@@ -1,0 +1,250 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "GTMSessionFetcher-Swift.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionFetcher-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionFetcher-umbrella.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Target Support Files/GTMSessionFetcher/GTMSessionFetcher-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionFetcher.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/GTMSessionFetcher/Source/GTMSessionFetcher.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionFetcherLogging.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/GTMSessionFetcher/Source/GTMSessionFetcherLogging.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionFetcherService.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/GTMSessionFetcher/Source/GTMSessionFetcherService.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionUploadFetcher.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/GTMSessionFetcher/Source/GTMSessionUploadFetcher.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/Pods.build/Debug-iphonesimulator/GTMSessionFetcher.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Products/Debug-iphonesimulator/Gifu/Gifu.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Gifu-Swift.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Products/Debug-iphonesimulator/Gifu/Gifu.framework/Headers/Gifu-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Gifu-umbrella.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Target Support Files/Gifu/Gifu-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Gifu.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Gifu/Source/Gifu.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Products/Debug-iphonesimulator/Gifu/Gifu.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/Pods.build/Debug-iphonesimulator/Gifu.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "GTMDebugSelectorValidation.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/GoogleToolboxForMac/DebugUtils/GTMDebugSelectorValidation.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMDebugThreadValidation.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/GoogleToolboxForMac/DebugUtils/GTMDebugThreadValidation.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMDefines.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/GoogleToolboxForMac/GTMDefines.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMMethodCheck.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/GoogleToolboxForMac/DebugUtils/GTMMethodCheck.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMNSData+zlib.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/GoogleToolboxForMac/Foundation/GTMNSData+zlib.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMNSDictionary+URLArguments.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/GoogleToolboxForMac/Foundation/GTMNSDictionary+URLArguments.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMNSString+URLArguments.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/GoogleToolboxForMac/Foundation/GTMNSString+URLArguments.h"
+        },
+        {
+          'type': 'file',
+          'name': "GoogleToolboxForMac-Swift.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers/GoogleToolboxForMac-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "GoogleToolboxForMac-umbrella.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/Pods.build/Debug-iphonesimulator/GoogleToolboxForMac.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Products/Debug-iphonesimulator/Pods_LeetCodee.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-LeetCodee-umbrella.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Target Support Files/Pods-LeetCodee/Pods-LeetCodee-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_LeetCodee-Swift.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Products/Debug-iphonesimulator/Pods_LeetCodee.framework/Headers/Pods_LeetCodee-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Products/Debug-iphonesimulator/Pods_LeetCodee.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-LeetCodee.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Realm-Swift.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/Realm-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/Pods.build/Debug-iphonesimulator/Realm.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "RealmSwift-Swift.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "RealmSwift-umbrella.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Target Support Files/RealmSwift/RealmSwift-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/Pods.build/Debug-iphonesimulator/RealmSwift.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "SideMenu-Swift.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "SideMenu-umbrella.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Target Support Files/SideMenu/SideMenu-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/Pods.build/Debug-iphonesimulator/SideMenu.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

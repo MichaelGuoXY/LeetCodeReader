@@ -1,0 +1,37 @@
+dependencies: \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/Realm/RLMUpdateChecker.mm \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Target\ Support\ Files/Realm/Realm-prefix.pch \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/RLMUpdateChecker.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/RLMRealm.h \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/RLMConstants.h \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/RLMUtil.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/RLMOptionalBase.h \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/array.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/util/meta.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/util/assert.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/util/features.h \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/util/config.h \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/util/terminate.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/util/to_string.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/version.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/util/file_mapper.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/util/file.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/util/safe_int_ops.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/util/type_traits.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/util/type_list.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/util/thread.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/util/encrypted_file_mapping.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/utilities.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/alloc.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/string_data.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/util/optional.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/null.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/exceptions.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/owned_data.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/query_conditions.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/unicode.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/binary_data.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/column_fwd.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/array_direct.hpp \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/realm_nmmintrin.h \
+  /Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Realm/include/core/realm/timestamp.hpp

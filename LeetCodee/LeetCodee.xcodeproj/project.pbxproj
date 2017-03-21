@@ -30,7 +30,6 @@
 		80D04A3B1E7FE6C30068124C /* GTProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D04A3A1E7FE6C30068124C /* GTProgressBar.swift */; };
 		80D04A3D1E7FF36D0068124C /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 80D04A3C1E7FF36D0068124C /* loading.gif */; };
 		80D04A411E804EC10068124C /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D04A401E804EC10068124C /* Reachability.swift */; };
-		80D04A451E805AB80068124C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80D04A441E805AB80068124C /* GoogleService-Info.plist */; };
 		80F666731E79E7450030FA1E /* DescriptionTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F666721E79E7450030FA1E /* DescriptionTVCell.swift */; };
 		80F666751E79E7E20030FA1E /* TitleTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F666741E79E7E20030FA1E /* TitleTVCell.swift */; };
 		80F666771E79E7F60030FA1E /* SolutionsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F666761E79E7F60030FA1E /* SolutionsTVCell.swift */; };
@@ -39,6 +38,7 @@
 		80FB739A1E7C7B8000D8396D /* WelcomeTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FB73991E7C7B8000D8396D /* WelcomeTVCell.swift */; };
 		80FB739C1E7C7B9200D8396D /* OptionOneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FB739B1E7C7B9200D8396D /* OptionOneTableViewCell.swift */; };
 		B9EAB066297D5C871FB473D4 /* Pods_LeetCodee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD46ACAA72717A9836A7C9D /* Pods_LeetCodee.framework */; };
+		E0DBB09C1E81178D005A383F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0DBB09B1E81178D005A383F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,7 +69,6 @@
 		80D04A3A1E7FE6C30068124C /* GTProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTProgressBar.swift; sourceTree = "<group>"; };
 		80D04A3C1E7FF36D0068124C /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		80D04A401E804EC10068124C /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
-		80D04A441E805AB80068124C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		80F666721E79E7450030FA1E /* DescriptionTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionTVCell.swift; sourceTree = "<group>"; };
 		80F666741E79E7E20030FA1E /* TitleTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleTVCell.swift; sourceTree = "<group>"; };
 		80F666761E79E7F60030FA1E /* SolutionsTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolutionsTVCell.swift; sourceTree = "<group>"; };
@@ -78,6 +77,7 @@
 		80FB73991E7C7B8000D8396D /* WelcomeTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeTVCell.swift; sourceTree = "<group>"; };
 		80FB739B1E7C7B9200D8396D /* OptionOneTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionOneTableViewCell.swift; sourceTree = "<group>"; };
 		B8A0CF793844C9B96D73147C /* Pods-LeetCodee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeetCodee.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeetCodee/Pods-LeetCodee.release.xcconfig"; sourceTree = "<group>"; };
+		E0DBB09B1E81178D005A383F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +152,7 @@
 				80F6667D1E7A417F0030FA1E /* code-style.css */,
 				805D05371E784FAB00B8C682 /* LaunchScreen.storyboard */,
 				805D053A1E784FAB00B8C682 /* Info.plist */,
-				80D04A441E805AB80068124C /* GoogleService-Info.plist */,
+				E0DBB09B1E81178D005A383F /* GoogleService-Info.plist */,
 			);
 			path = LeetCodee;
 			sourceTree = "<group>";
@@ -234,7 +234,7 @@
 				80D04A3D1E7FF36D0068124C /* loading.gif in Resources */,
 				805D05361E784FAB00B8C682 /* Assets.xcassets in Resources */,
 				805D05341E784FAB00B8C682 /* Main.storyboard in Resources */,
-				80D04A451E805AB80068124C /* GoogleService-Info.plist in Resources */,
+				E0DBB09C1E81178D005A383F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,13 +445,14 @@
 			baseConfigurationReference = 67999FF3B4CBEBF2932AB27C /* Pods-LeetCodee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = N74Z9L6N77;
 				INFOPLIST_FILE = LeetCodee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.michaelguoxy.leetcodee;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michael.guo.apps.leetcodereader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9114dd62-7e33-43c5-af7d-6890ae2b819c";
+				PROVISIONING_PROFILE = "588a757d-512a-4cae-b0db-b75988da9d54";
 				PROVISIONING_PROFILE_SPECIFIER = guo;
 				SWIFT_VERSION = 3.0;
 			};
@@ -462,13 +463,14 @@
 			baseConfigurationReference = B8A0CF793844C9B96D73147C /* Pods-LeetCodee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = N74Z9L6N77;
 				INFOPLIST_FILE = LeetCodee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.michaelguoxy.leetcodee;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michael.guo.apps.leetcodereader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9114dd62-7e33-43c5-af7d-6890ae2b819c";
+				PROVISIONING_PROFILE = "324d0271-a05f-42f7-8857-98aa040958c8";
 				PROVISIONING_PROFILE_SPECIFIER = guo;
 				SWIFT_VERSION = 3.0;
 			};

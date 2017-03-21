@@ -1,0 +1,8 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "7a5a2999c733703fb0114ef85c8cff91"
+build_time: [543400116, 28810000]
+inputs:
+  "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/SideMenu/Pod/Classes/SideMenuManager.swift": [9223372036854775807, 0]
+  "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/SideMenu/Pod/Classes/SideMenuTransition.swift": [9223372036854775807, 0]
+  "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/SideMenu/Pod/Classes/UISideMenuNavigationController.swift": [9223372036854775807, 0]
+  "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/SideMenu/Pod/Classes/UITableViewVibrantCell.swift": [9223372036854775807, 0]

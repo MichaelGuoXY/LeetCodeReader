@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>963439530698-vt4bouvaiov5il4stqr3o4vcaa9ljg1m.apps.googleusercontent.com</string>
+	<string>963439530698-t37ge5mj6m251vojt3592dlarqs8d0t7.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.963439530698-vt4bouvaiov5il4stqr3o4vcaa9ljg1m</string>
+	<string>com.googleusercontent.apps.963439530698-t37ge5mj6m251vojt3592dlarqs8d0t7</string>
 	<key>API_KEY</key>
 	<string>AIzaSyC4CAN61pb5b8pMWtGcS09_AjZdgVRBa4Q</string>
 	<key>GCM_SENDER_ID</key>
@@ -17,7 +17,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.michaelguoxy.leetcodee</string>
+	<string>com.michael.guo.apps.leetcodereader</string>
 	<key>PROJECT_ID</key>
 	<string>leetcodereader</string>
 	<key>STORAGE_BUCKET</key>
@@ -33,7 +33,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:963439530698:ios:6f006472fbf14314</string>
+	<string>1:963439530698:ios:14bdaec89a747560</string>
 	<key>DATABASE_URL</key>
 	<string>https://leetcodereader.firebaseio.com</string>
 </dict>

@@ -1,0 +1,14 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "72137c3aa34310651dbc830971432c2e"
+build_time: [543400058, 73475000]
+inputs:
+  "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Gifu/Source/Classes/AnimatedFrame.swift": [9223372036854775807, 0]
+  "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Gifu/Source/Classes/Animator.swift": [9223372036854775807, 0]
+  "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Gifu/Source/Extensions/Array.swift": [9223372036854775807, 0]
+  "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Gifu/Source/Extensions/CGSize.swift": [9223372036854775807, 0]
+  "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Gifu/Source/Classes/FrameStore.swift": [9223372036854775807, 0]
+  "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Gifu/Source/Classes/GIFAnimatable.swift": [9223372036854775807, 0]
+  "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Gifu/Source/Classes/GIFImageView.swift": [9223372036854775807, 0]
+  "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Gifu/Source/Helpers/ImageSourceHelpers.swift": [9223372036854775807, 0]
+  "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Gifu/Source/Extensions/UIImage.swift": [9223372036854775807, 0]
+  "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Gifu/Source/Extensions/UIImageView.swift": [9223372036854775807, 0]

@@ -1,0 +1,244 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "GIFAnimatable"
+- "ImageContainer"
+provides-nominal:
+- "P4Gifu13GIFAnimatable"
+- "P4Gifu14ImageContainer"
+provides-member:
+- ["P4Gifu13GIFAnimatable", ""]
+- ["P4Gifu14ImageContainer", ""]
+- ["P4Gifu13GIFAnimatable", "intrinsicContentSize"]
+- ["P4Gifu13GIFAnimatable", "gifLoopDuration"]
+- ["P4Gifu13GIFAnimatable", "activeFrame"]
+- ["P4Gifu13GIFAnimatable", "frameCount"]
+- ["P4Gifu13GIFAnimatable", "isAnimatingGIF"]
+- ["P4Gifu13GIFAnimatable", "animate"]
+- ["P4Gifu13GIFAnimatable", "animate"]
+- ["P4Gifu13GIFAnimatable", "prepareForAnimation"]
+- ["P4Gifu13GIFAnimatable", "prepareForAnimation"]
+- ["P4Gifu13GIFAnimatable", "prepareForReuse"]
+- ["P4Gifu13GIFAnimatable", "startAnimatingGIF"]
+- ["P4Gifu13GIFAnimatable", "stopAnimatingGIF"]
+- ["P4Gifu13GIFAnimatable", "setShouldResizeFrames"]
+- ["P4Gifu13GIFAnimatable", "setFrameBufferCount"]
+- ["P4Gifu13GIFAnimatable", "updateImageIfNeeded"]
+- ["P4Gifu13GIFAnimatable", "animatorHasNewFrame"]
+provides-dynamic-lookup:
+depends-top-level:
+- "CALayer"
+- "CGRect"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- "UIViewContentMode"
+- "Data"
+- "CGSize"
+- "String"
+- "GIFAnimatable"
+- "ImageContainer"
+- "Void"
+- !private "??"
+- "UIImage"
+- "Animator"
+- !private "BooleanLiteralType"
+- "Int"
+- "Bool"
+- "TimeInterval"
+depends-member:
+- !private ["C4Gifu8Animator", "activeFrame"]
+- !private ["C4Gifu8Animator", "animate"]
+- !private ["C4Gifu8Animator", "frameBufferCount"]
+- !private ["C4Gifu8Animator", "frameCount"]
+- !private ["C4Gifu8Animator", "isAnimating"]
+- !private ["C4Gifu8Animator", "loopDuration"]
+- !private ["C4Gifu8Animator", "prepareForAnimation"]
+- !private ["C4Gifu8Animator", "prepareForReuse"]
+- !private ["C4Gifu8Animator", "shouldResizeFrames"]
+- !private ["C4Gifu8Animator", "startAnimating"]
+- !private ["C4Gifu8Animator", "stopAnimating"]
+- !private ["Ps9AnyObject", "activeFrame"]
+- !private ["Ps9AnyObject", "animate"]
+- !private ["Ps9AnyObject", "cgImage"]
+- !private ["Ps9AnyObject", "contents"]
+- !private ["Ps9AnyObject", "frameBufferCount"]
+- !private ["Ps9AnyObject", "frameCount"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "isAnimating"]
+- !private ["Ps9AnyObject", "loopDuration"]
+- !private ["Ps9AnyObject", "prepareForAnimation"]
+- !private ["Ps9AnyObject", "prepareForReuse"]
+- !private ["Ps9AnyObject", "setNeedsDisplay"]
+- !private ["Ps9AnyObject", "shouldResizeFrames"]
+- !private ["Ps9AnyObject", "size"]
+- !private ["Ps9AnyObject", "startAnimating"]
+- !private ["Ps9AnyObject", "stopAnimating"]
+- ["Sb", "deinit"]
+- !private ["CSo7CALayer", "contents"]
+- ["CSo7CALayer", "deinit"]
+- !private ["CSo7CALayer", "setNeedsDisplay"]
+- !private ["PSo13CAMediaTiming", "contents"]
+- !private ["PSo13CAMediaTiming", "setNeedsDisplay"]
+- !private ["VSC6CGRect", "size"]
+- ["VSC6CGSize", "deinit"]
+- !private ["VSC6CGSize", "zero"]
+- !private ["Ps7CVarArg", "cgImage"]
+- !private ["Ps7CVarArg", "contents"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "setNeedsDisplay"]
+- !private ["Ps7CVarArg", "size"]
+- !private ["Ps28CustomDebugStringConvertible", "cgImage"]
+- !private ["Ps28CustomDebugStringConvertible", "contents"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "none"]
+- !private ["Ps28CustomDebugStringConvertible", "setNeedsDisplay"]
+- !private ["Ps28CustomDebugStringConvertible", "size"]
+- ["Ps28CustomDebugStringConvertible", "some"]
+- !private ["Ps28CustomDebugStringConvertible", "zero"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "size"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "zero"]
+- !private ["Ps17CustomReflectable", "none"]
+- !private ["Ps17CustomReflectable", "size"]
+- ["Ps17CustomReflectable", "some"]
+- !private ["Ps17CustomReflectable", "zero"]
+- !private ["Ps23CustomStringConvertible", "cgImage"]
+- !private ["Ps23CustomStringConvertible", "contents"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "setNeedsDisplay"]
+- !private ["Ps23CustomStringConvertible", "size"]
+- ["V10Foundation4Data", "deinit"]
+- ["Sd", "deinit"]
+- !private ["Ps9Equatable", "cgImage"]
+- !private ["Ps9Equatable", "contents"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "setNeedsDisplay"]
+- !private ["Ps9Equatable", "size"]
+- !private ["Ps9Equatable", "zero"]
+- !private ["Ps23ExpressibleByNilLiteral", "none"]
+- ["Ps23ExpressibleByNilLiteral", "some"]
+- ["P4Gifu13GIFAnimatable", "Animator"]
+- ["P4Gifu13GIFAnimatable", "Bool"]
+- ["P4Gifu13GIFAnimatable", "CALayer"]
+- ["P4Gifu13GIFAnimatable", "CGRect"]
+- ["P4Gifu13GIFAnimatable", "CGSize"]
+- ["P4Gifu13GIFAnimatable", "Data"]
+- ["P4Gifu13GIFAnimatable", "ImageContainer"]
+- ["P4Gifu13GIFAnimatable", "Int"]
+- ["P4Gifu13GIFAnimatable", "String"]
+- ["P4Gifu13GIFAnimatable", "TimeInterval"]
+- ["P4Gifu13GIFAnimatable", "UIImage"]
+- ["P4Gifu13GIFAnimatable", "UIViewContentMode"]
+- ["P4Gifu13GIFAnimatable", "Void"]
+- ["P4Gifu13GIFAnimatable", "activeFrame"]
+- ["P4Gifu13GIFAnimatable", "animate"]
+- ["P4Gifu13GIFAnimatable", "animator"]
+- ["P4Gifu13GIFAnimatable", "animatorHasNewFrame"]
+- ["P4Gifu13GIFAnimatable", "contentMode"]
+- ["P4Gifu13GIFAnimatable", "frame"]
+- ["P4Gifu13GIFAnimatable", "frameCount"]
+- ["P4Gifu13GIFAnimatable", "gifLoopDuration"]
+- !private ["P4Gifu13GIFAnimatable", "image"]
+- ["P4Gifu13GIFAnimatable", "intrinsicContentSize"]
+- ["P4Gifu13GIFAnimatable", "isAnimatingGIF"]
+- ["P4Gifu13GIFAnimatable", "layer"]
+- ["P4Gifu13GIFAnimatable", "prepareForAnimation"]
+- ["P4Gifu13GIFAnimatable", "prepareForReuse"]
+- ["P4Gifu13GIFAnimatable", "setFrameBufferCount"]
+- ["P4Gifu13GIFAnimatable", "setShouldResizeFrames"]
+- ["P4Gifu13GIFAnimatable", "startAnimatingGIF"]
+- ["P4Gifu13GIFAnimatable", "stopAnimatingGIF"]
+- ["P4Gifu13GIFAnimatable", "updateImageIfNeeded"]
+- ["P4Gifu13GIFAnimatable", ""]
+- !private ["Ps8Hashable", "cgImage"]
+- !private ["Ps8Hashable", "contents"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "setNeedsDisplay"]
+- !private ["Ps8Hashable", "size"]
+- ["P4Gifu14ImageContainer", "CGSize"]
+- ["P4Gifu14ImageContainer", "UIImage"]
+- ["P4Gifu14ImageContainer", "deinit"]
+- ["P4Gifu14ImageContainer", "image"]
+- ["P4Gifu14ImageContainer", ""]
+- ["Si", "deinit"]
+- !private ["PSo8NSCoding", "cgImage"]
+- !private ["PSo8NSCoding", "contents"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "setNeedsDisplay"]
+- !private ["PSo8NSCoding", "size"]
+- !private ["CSo8NSObject", "cgImage"]
+- !private ["CSo8NSObject", "contents"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "setNeedsDisplay"]
+- !private ["CSo8NSObject", "size"]
+- !private ["PSo16NSObjectProtocol", "cgImage"]
+- !private ["PSo16NSObjectProtocol", "contents"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "setNeedsDisplay"]
+- !private ["PSo16NSObjectProtocol", "size"]
+- !private ["PSo14NSSecureCoding", "cgImage"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "size"]
+- ["Sq", "deinit"]
+- !private ["Sq", "none"]
+- ["Sq", "some"]
+- ["SS", "deinit"]
+- !private ["PSo29UIAccessibilityIdentification", "cgImage"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "size"]
+- !private ["CSo7UIImage", "cgImage"]
+- ["CSo7UIImage", "deinit"]
+- !private ["CSo7UIImage", "init"]
+- !private ["CSo7UIImage", "size"]
+- !private ["Ps26_ExpressibleByImageLiteral", "cgImage"]
+- !private ["Ps26_ExpressibleByImageLiteral", "init"]
+- !private ["Ps26_ExpressibleByImageLiteral", "size"]
+- !private ["Ps9_Hashable", "cgImage"]
+- !private ["Ps9_Hashable", "contents"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "setNeedsDisplay"]
+- !private ["Ps9_Hashable", "size"]
+depends-nominal:
+- !private "C4Gifu8Animator"
+- !private "Ps9AnyObject"
+- "Sb"
+- "CSo7CALayer"
+- !private "PSo13CAMediaTiming"
+- !private "VSC6CGRect"
+- "VSC6CGSize"
+- !private "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- "V10Foundation4Data"
+- "Sd"
+- !private "Ps9Equatable"
+- "Ps23ExpressibleByNilLiteral"
+- "P4Gifu13GIFAnimatable"
+- !private "Ps8Hashable"
+- "P4Gifu14ImageContainer"
+- "Si"
+- !private "PSo8NSCoding"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- "Sq"
+- "SS"
+- !private "PSo29UIAccessibilityIdentification"
+- "CSo7UIImage"
+- !private "Ps26_ExpressibleByImageLiteral"
+- !private "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Gifu/Source/Gifu.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Target Support Files/Gifu/Gifu-umbrella.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Intermediates/Pods.build/Debug-iphonesimulator/Gifu.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "7b85d8102ed4cdace8cb3fffa3fec54c"

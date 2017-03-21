@@ -1,0 +1,929 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CustomSearchController"
+- "CustomSearchControllerDelegate"
+provides-nominal:
+- "C9LeetCodee22CustomSearchController"
+- "P9LeetCodee30CustomSearchControllerDelegate"
+provides-member:
+- ["C9LeetCodee22CustomSearchController", ""]
+- ["P9LeetCodee30CustomSearchControllerDelegate", ""]
+provides-dynamic-lookup:
+- "customSearchBar"
+- "searchBarCancelButtonClicked"
+- "searchBar"
+- "didReceiveMemoryWarning"
+- "searchBarSearchButtonClicked"
+- "configureSearchBar"
+- "searchBarTextDidBeginEditing"
+- "viewDidLoad"
+depends-top-level:
+- "UISearchController"
+- "AssignmentPrecedence"
+- "UISearchBarDelegate"
+- "CustomSearchBar"
+- "UIViewController"
+- "NSCoder"
+- "String"
+- "UIFont"
+- "UISearchBar"
+- "UIColor"
+- "Bundle"
+- "CustomSearchControllerDelegate"
+- !private "BooleanLiteralType"
+- "CGRect"
+- "CustomSearchController"
+- !private "StringLiteralType"
+depends-member:
+- !private ["Ps9AnyObject", "CustomSearchBar"]
+- !private ["Ps9AnyObject", "barTintColor"]
+- ["Ps9AnyObject", "configureSearchBar"]
+- ["Ps9AnyObject", "customDelegate"]
+- ["Ps9AnyObject", "customSearchBar"]
+- !private ["Ps9AnyObject", "delegate"]
+- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "position"]
+- ["Ps9AnyObject", "positionForBar"]
+- !private ["Ps9AnyObject", "resignFirstResponder"]
+- ["Ps9AnyObject", "searchBar"]
+- ["Ps9AnyObject", "searchBarBookmarkButtonClicked"]
+- ["Ps9AnyObject", "searchBarCancelButtonClicked"]
+- ["Ps9AnyObject", "searchBarResultsListButtonClicked"]
+- ["Ps9AnyObject", "searchBarSearchButtonClicked"]
+- ["Ps9AnyObject", "searchBarShouldBeginEditing"]
+- ["Ps9AnyObject", "searchBarShouldEndEditing"]
+- ["Ps9AnyObject", "searchBarTextDidBeginEditing"]
+- ["Ps9AnyObject", "searchBarTextDidEndEditing"]
+- !private ["Ps9AnyObject", "showsBookmarkButton"]
+- !private ["Ps9AnyObject", "showsCancelButton"]
+- !private ["Ps9AnyObject", "tintColor"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- ["Sb", "deinit"]
+- !private ["PSo15CALayerDelegate", "barTintColor"]
+- !private ["PSo15CALayerDelegate", "delegate"]
+- !private ["PSo15CALayerDelegate", "init"]
+- !private ["PSo15CALayerDelegate", "resignFirstResponder"]
+- !private ["PSo15CALayerDelegate", "showsBookmarkButton"]
+- !private ["PSo15CALayerDelegate", "showsCancelButton"]
+- !private ["PSo15CALayerDelegate", "tintColor"]
+- ["VSC6CGRect", "deinit"]
+- !private ["Ps7CVarArg", "CustomSearchBar"]
+- !private ["Ps7CVarArg", "barTintColor"]
+- ["Ps7CVarArg", "configureSearchBar"]
+- ["Ps7CVarArg", "customDelegate"]
+- ["Ps7CVarArg", "customSearchBar"]
+- !private ["Ps7CVarArg", "delegate"]
+- ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "position"]
+- ["Ps7CVarArg", "positionForBar"]
+- !private ["Ps7CVarArg", "resignFirstResponder"]
+- ["Ps7CVarArg", "searchBar"]
+- ["Ps7CVarArg", "searchBarBookmarkButtonClicked"]
+- ["Ps7CVarArg", "searchBarCancelButtonClicked"]
+- ["Ps7CVarArg", "searchBarResultsListButtonClicked"]
+- ["Ps7CVarArg", "searchBarSearchButtonClicked"]
+- ["Ps7CVarArg", "searchBarShouldBeginEditing"]
+- ["Ps7CVarArg", "searchBarShouldEndEditing"]
+- ["Ps7CVarArg", "searchBarTextDidBeginEditing"]
+- ["Ps7CVarArg", "searchBarTextDidEndEditing"]
+- !private ["Ps7CVarArg", "showsBookmarkButton"]
+- !private ["Ps7CVarArg", "showsCancelButton"]
+- !private ["Ps7CVarArg", "tintColor"]
+- ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps28CustomDebugStringConvertible", "CustomSearchBar"]
+- !private ["Ps28CustomDebugStringConvertible", "barTintColor"]
+- ["Ps28CustomDebugStringConvertible", "configureSearchBar"]
+- ["Ps28CustomDebugStringConvertible", "customDelegate"]
+- ["Ps28CustomDebugStringConvertible", "customSearchBar"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "position"]
+- ["Ps28CustomDebugStringConvertible", "positionForBar"]
+- !private ["Ps28CustomDebugStringConvertible", "resignFirstResponder"]
+- ["Ps28CustomDebugStringConvertible", "searchBar"]
+- ["Ps28CustomDebugStringConvertible", "searchBarBookmarkButtonClicked"]
+- ["Ps28CustomDebugStringConvertible", "searchBarCancelButtonClicked"]
+- ["Ps28CustomDebugStringConvertible", "searchBarResultsListButtonClicked"]
+- ["Ps28CustomDebugStringConvertible", "searchBarSearchButtonClicked"]
+- ["Ps28CustomDebugStringConvertible", "searchBarShouldBeginEditing"]
+- ["Ps28CustomDebugStringConvertible", "searchBarShouldEndEditing"]
+- ["Ps28CustomDebugStringConvertible", "searchBarTextDidBeginEditing"]
+- ["Ps28CustomDebugStringConvertible", "searchBarTextDidEndEditing"]
+- !private ["Ps28CustomDebugStringConvertible", "showsBookmarkButton"]
+- !private ["Ps28CustomDebugStringConvertible", "showsCancelButton"]
+- !private ["Ps28CustomDebugStringConvertible", "tintColor"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["C9LeetCodee15CustomSearchBar", "barTintColor"]
+- ["C9LeetCodee15CustomSearchBar", "deinit"]
+- !private ["C9LeetCodee15CustomSearchBar", "delegate"]
+- !private ["C9LeetCodee15CustomSearchBar", "init"]
+- !private ["C9LeetCodee15CustomSearchBar", "resignFirstResponder"]
+- !private ["C9LeetCodee15CustomSearchBar", "showsBookmarkButton"]
+- !private ["C9LeetCodee15CustomSearchBar", "showsCancelButton"]
+- !private ["C9LeetCodee15CustomSearchBar", "tintColor"]
+- ["C9LeetCodee22CustomSearchController", "Bundle"]
+- ["C9LeetCodee22CustomSearchController", "CGRect"]
+- ["C9LeetCodee22CustomSearchController", "CustomSearchBar"]
+- ["C9LeetCodee22CustomSearchController", "CustomSearchControllerDelegate"]
+- ["C9LeetCodee22CustomSearchController", "NSCoder"]
+- ["C9LeetCodee22CustomSearchController", "String"]
+- ["C9LeetCodee22CustomSearchController", "UIColor"]
+- ["C9LeetCodee22CustomSearchController", "UIFont"]
+- ["C9LeetCodee22CustomSearchController", "UISearchBar"]
+- ["C9LeetCodee22CustomSearchController", "UIViewController"]
+- ["C9LeetCodee22CustomSearchController", "configureSearchBar"]
+- ["C9LeetCodee22CustomSearchController", "customDelegate"]
+- ["C9LeetCodee22CustomSearchController", "customSearchBar"]
+- ["C9LeetCodee22CustomSearchController", "deinit"]
+- ["C9LeetCodee22CustomSearchController", "didReceiveMemoryWarning"]
+- ["C9LeetCodee22CustomSearchController", "init"]
+- ["C9LeetCodee22CustomSearchController", "position"]
+- ["C9LeetCodee22CustomSearchController", "positionForBar"]
+- ["C9LeetCodee22CustomSearchController", "searchBar"]
+- ["C9LeetCodee22CustomSearchController", "searchBarBookmarkButtonClicked"]
+- ["C9LeetCodee22CustomSearchController", "searchBarCancelButtonClicked"]
+- ["C9LeetCodee22CustomSearchController", "searchBarResultsListButtonClicked"]
+- ["C9LeetCodee22CustomSearchController", "searchBarSearchButtonClicked"]
+- ["C9LeetCodee22CustomSearchController", "searchBarShouldBeginEditing"]
+- ["C9LeetCodee22CustomSearchController", "searchBarShouldEndEditing"]
+- ["C9LeetCodee22CustomSearchController", "searchBarTextDidBeginEditing"]
+- ["C9LeetCodee22CustomSearchController", "searchBarTextDidEndEditing"]
+- ["C9LeetCodee22CustomSearchController", "viewDidLoad"]
+- ["P9LeetCodee30CustomSearchControllerDelegate", "String"]
+- ["P9LeetCodee30CustomSearchControllerDelegate", "didChangeSearchText"]
+- ["P9LeetCodee30CustomSearchControllerDelegate", "didStartSearching"]
+- ["P9LeetCodee30CustomSearchControllerDelegate", "didTapOnCancelButton"]
+- ["P9LeetCodee30CustomSearchControllerDelegate", "didTapOnSearchButton"]
+- !private ["Ps23CustomStringConvertible", "CustomSearchBar"]
+- !private ["Ps23CustomStringConvertible", "barTintColor"]
+- ["Ps23CustomStringConvertible", "configureSearchBar"]
+- ["Ps23CustomStringConvertible", "customDelegate"]
+- ["Ps23CustomStringConvertible", "customSearchBar"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
+- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "position"]
+- ["Ps23CustomStringConvertible", "positionForBar"]
+- !private ["Ps23CustomStringConvertible", "resignFirstResponder"]
+- ["Ps23CustomStringConvertible", "searchBar"]
+- ["Ps23CustomStringConvertible", "searchBarBookmarkButtonClicked"]
+- ["Ps23CustomStringConvertible", "searchBarCancelButtonClicked"]
+- ["Ps23CustomStringConvertible", "searchBarResultsListButtonClicked"]
+- ["Ps23CustomStringConvertible", "searchBarSearchButtonClicked"]
+- ["Ps23CustomStringConvertible", "searchBarShouldBeginEditing"]
+- ["Ps23CustomStringConvertible", "searchBarShouldEndEditing"]
+- ["Ps23CustomStringConvertible", "searchBarTextDidBeginEditing"]
+- ["Ps23CustomStringConvertible", "searchBarTextDidEndEditing"]
+- !private ["Ps23CustomStringConvertible", "showsBookmarkButton"]
+- !private ["Ps23CustomStringConvertible", "showsCancelButton"]
+- !private ["Ps23CustomStringConvertible", "tintColor"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "CustomSearchBar"]
+- !private ["Ps9Equatable", "barTintColor"]
+- ["Ps9Equatable", "configureSearchBar"]
+- ["Ps9Equatable", "customDelegate"]
+- ["Ps9Equatable", "customSearchBar"]
+- !private ["Ps9Equatable", "delegate"]
+- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "position"]
+- ["Ps9Equatable", "positionForBar"]
+- !private ["Ps9Equatable", "resignFirstResponder"]
+- ["Ps9Equatable", "searchBar"]
+- ["Ps9Equatable", "searchBarBookmarkButtonClicked"]
+- ["Ps9Equatable", "searchBarCancelButtonClicked"]
+- ["Ps9Equatable", "searchBarResultsListButtonClicked"]
+- ["Ps9Equatable", "searchBarSearchButtonClicked"]
+- ["Ps9Equatable", "searchBarShouldBeginEditing"]
+- ["Ps9Equatable", "searchBarShouldEndEditing"]
+- ["Ps9Equatable", "searchBarTextDidBeginEditing"]
+- ["Ps9Equatable", "searchBarTextDidEndEditing"]
+- !private ["Ps9Equatable", "showsBookmarkButton"]
+- !private ["Ps9Equatable", "showsCancelButton"]
+- !private ["Ps9Equatable", "tintColor"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "CustomSearchBar"]
+- !private ["Ps8Hashable", "barTintColor"]
+- ["Ps8Hashable", "configureSearchBar"]
+- ["Ps8Hashable", "customDelegate"]
+- ["Ps8Hashable", "customSearchBar"]
+- !private ["Ps8Hashable", "delegate"]
+- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "position"]
+- ["Ps8Hashable", "positionForBar"]
+- !private ["Ps8Hashable", "resignFirstResponder"]
+- ["Ps8Hashable", "searchBar"]
+- ["Ps8Hashable", "searchBarBookmarkButtonClicked"]
+- ["Ps8Hashable", "searchBarCancelButtonClicked"]
+- ["Ps8Hashable", "searchBarResultsListButtonClicked"]
+- ["Ps8Hashable", "searchBarSearchButtonClicked"]
+- ["Ps8Hashable", "searchBarShouldBeginEditing"]
+- ["Ps8Hashable", "searchBarShouldEndEditing"]
+- ["Ps8Hashable", "searchBarTextDidBeginEditing"]
+- ["Ps8Hashable", "searchBarTextDidEndEditing"]
+- !private ["Ps8Hashable", "showsBookmarkButton"]
+- !private ["Ps8Hashable", "showsCancelButton"]
+- !private ["Ps8Hashable", "tintColor"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "CustomSearchBar"]
+- !private ["PSo8NSCoding", "barTintColor"]
+- ["PSo8NSCoding", "configureSearchBar"]
+- ["PSo8NSCoding", "customDelegate"]
+- ["PSo8NSCoding", "customSearchBar"]
+- !private ["PSo8NSCoding", "delegate"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "position"]
+- ["PSo8NSCoding", "positionForBar"]
+- !private ["PSo8NSCoding", "resignFirstResponder"]
+- ["PSo8NSCoding", "searchBar"]
+- ["PSo8NSCoding", "searchBarBookmarkButtonClicked"]
+- ["PSo8NSCoding", "searchBarCancelButtonClicked"]
+- ["PSo8NSCoding", "searchBarResultsListButtonClicked"]
+- ["PSo8NSCoding", "searchBarSearchButtonClicked"]
+- ["PSo8NSCoding", "searchBarShouldBeginEditing"]
+- ["PSo8NSCoding", "searchBarShouldEndEditing"]
+- ["PSo8NSCoding", "searchBarTextDidBeginEditing"]
+- ["PSo8NSCoding", "searchBarTextDidEndEditing"]
+- !private ["PSo8NSCoding", "showsBookmarkButton"]
+- !private ["PSo8NSCoding", "showsCancelButton"]
+- !private ["PSo8NSCoding", "tintColor"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo26NSExtensionRequestHandling", "CustomSearchBar"]
+- ["PSo26NSExtensionRequestHandling", "configureSearchBar"]
+- ["PSo26NSExtensionRequestHandling", "customDelegate"]
+- ["PSo26NSExtensionRequestHandling", "customSearchBar"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "position"]
+- ["PSo26NSExtensionRequestHandling", "positionForBar"]
+- ["PSo26NSExtensionRequestHandling", "searchBar"]
+- ["PSo26NSExtensionRequestHandling", "searchBarBookmarkButtonClicked"]
+- ["PSo26NSExtensionRequestHandling", "searchBarCancelButtonClicked"]
+- ["PSo26NSExtensionRequestHandling", "searchBarResultsListButtonClicked"]
+- ["PSo26NSExtensionRequestHandling", "searchBarSearchButtonClicked"]
+- ["PSo26NSExtensionRequestHandling", "searchBarShouldBeginEditing"]
+- ["PSo26NSExtensionRequestHandling", "searchBarShouldEndEditing"]
+- ["PSo26NSExtensionRequestHandling", "searchBarTextDidBeginEditing"]
+- ["PSo26NSExtensionRequestHandling", "searchBarTextDidEndEditing"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "Bundle"]
+- ["CSo8NSObject", "CGRect"]
+- ["CSo8NSObject", "CustomSearchBar"]
+- ["CSo8NSObject", "CustomSearchControllerDelegate"]
+- ["CSo8NSObject", "NSCoder"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UIColor"]
+- ["CSo8NSObject", "UIFont"]
+- ["CSo8NSObject", "UISearchBar"]
+- ["CSo8NSObject", "UIViewController"]
+- !private ["CSo8NSObject", "barTintColor"]
+- ["CSo8NSObject", "configureSearchBar"]
+- ["CSo8NSObject", "customDelegate"]
+- ["CSo8NSObject", "customSearchBar"]
+- !private ["CSo8NSObject", "delegate"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "position"]
+- ["CSo8NSObject", "positionForBar"]
+- !private ["CSo8NSObject", "resignFirstResponder"]
+- ["CSo8NSObject", "searchBar"]
+- ["CSo8NSObject", "searchBarBookmarkButtonClicked"]
+- ["CSo8NSObject", "searchBarCancelButtonClicked"]
+- ["CSo8NSObject", "searchBarResultsListButtonClicked"]
+- ["CSo8NSObject", "searchBarSearchButtonClicked"]
+- ["CSo8NSObject", "searchBarShouldBeginEditing"]
+- ["CSo8NSObject", "searchBarShouldEndEditing"]
+- ["CSo8NSObject", "searchBarTextDidBeginEditing"]
+- ["CSo8NSObject", "searchBarTextDidEndEditing"]
+- !private ["CSo8NSObject", "showsBookmarkButton"]
+- !private ["CSo8NSObject", "showsCancelButton"]
+- !private ["CSo8NSObject", "tintColor"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "CustomSearchBar"]
+- !private ["PSo16NSObjectProtocol", "barTintColor"]
+- ["PSo16NSObjectProtocol", "configureSearchBar"]
+- ["PSo16NSObjectProtocol", "customDelegate"]
+- ["PSo16NSObjectProtocol", "customSearchBar"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "position"]
+- ["PSo16NSObjectProtocol", "positionForBar"]
+- !private ["PSo16NSObjectProtocol", "resignFirstResponder"]
+- ["PSo16NSObjectProtocol", "searchBar"]
+- ["PSo16NSObjectProtocol", "searchBarBookmarkButtonClicked"]
+- ["PSo16NSObjectProtocol", "searchBarCancelButtonClicked"]
+- ["PSo16NSObjectProtocol", "searchBarResultsListButtonClicked"]
+- ["PSo16NSObjectProtocol", "searchBarSearchButtonClicked"]
+- ["PSo16NSObjectProtocol", "searchBarShouldBeginEditing"]
+- ["PSo16NSObjectProtocol", "searchBarShouldEndEditing"]
+- ["PSo16NSObjectProtocol", "searchBarTextDidBeginEditing"]
+- ["PSo16NSObjectProtocol", "searchBarTextDidEndEditing"]
+- !private ["PSo16NSObjectProtocol", "showsBookmarkButton"]
+- !private ["PSo16NSObjectProtocol", "showsCancelButton"]
+- !private ["PSo16NSObjectProtocol", "tintColor"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Os5Never", "deinit"]
+- ["Sq", "deinit"]
+- ["Vs12StaticString", "deinit"]
+- !private ["Vs12StaticString", "init"]
+- ["SS", "deinit"]
+- !private ["PSo29UIAccessibilityIdentification", "barTintColor"]
+- !private ["PSo29UIAccessibilityIdentification", "delegate"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "resignFirstResponder"]
+- !private ["PSo29UIAccessibilityIdentification", "showsBookmarkButton"]
+- !private ["PSo29UIAccessibilityIdentification", "showsCancelButton"]
+- !private ["PSo29UIAccessibilityIdentification", "tintColor"]
+- !private ["PSo12UIAppearance", "barTintColor"]
+- !private ["PSo12UIAppearance", "delegate"]
+- !private ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "resignFirstResponder"]
+- !private ["PSo12UIAppearance", "showsBookmarkButton"]
+- !private ["PSo12UIAppearance", "showsCancelButton"]
+- !private ["PSo12UIAppearance", "tintColor"]
+- !private ["PSo21UIAppearanceContainer", "CustomSearchBar"]
+- !private ["PSo21UIAppearanceContainer", "barTintColor"]
+- ["PSo21UIAppearanceContainer", "configureSearchBar"]
+- ["PSo21UIAppearanceContainer", "customDelegate"]
+- ["PSo21UIAppearanceContainer", "customSearchBar"]
+- !private ["PSo21UIAppearanceContainer", "delegate"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "position"]
+- ["PSo21UIAppearanceContainer", "positionForBar"]
+- !private ["PSo21UIAppearanceContainer", "resignFirstResponder"]
+- ["PSo21UIAppearanceContainer", "searchBar"]
+- ["PSo21UIAppearanceContainer", "searchBarBookmarkButtonClicked"]
+- ["PSo21UIAppearanceContainer", "searchBarCancelButtonClicked"]
+- ["PSo21UIAppearanceContainer", "searchBarResultsListButtonClicked"]
+- ["PSo21UIAppearanceContainer", "searchBarSearchButtonClicked"]
+- ["PSo21UIAppearanceContainer", "searchBarShouldBeginEditing"]
+- ["PSo21UIAppearanceContainer", "searchBarShouldEndEditing"]
+- ["PSo21UIAppearanceContainer", "searchBarTextDidBeginEditing"]
+- ["PSo21UIAppearanceContainer", "searchBarTextDidEndEditing"]
+- !private ["PSo21UIAppearanceContainer", "showsBookmarkButton"]
+- !private ["PSo21UIAppearanceContainer", "showsCancelButton"]
+- !private ["PSo21UIAppearanceContainer", "tintColor"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo16UIBarPositioning", "barTintColor"]
+- !private ["PSo16UIBarPositioning", "delegate"]
+- !private ["PSo16UIBarPositioning", "init"]
+- !private ["PSo16UIBarPositioning", "resignFirstResponder"]
+- !private ["PSo16UIBarPositioning", "showsBookmarkButton"]
+- !private ["PSo16UIBarPositioning", "showsCancelButton"]
+- !private ["PSo16UIBarPositioning", "tintColor"]
+- !private ["PSo24UIBarPositioningDelegate", "CustomSearchBar"]
+- !private ["PSo24UIBarPositioningDelegate", "configureSearchBar"]
+- !private ["PSo24UIBarPositioningDelegate", "customDelegate"]
+- !private ["PSo24UIBarPositioningDelegate", "customSearchBar"]
+- ["PSo24UIBarPositioningDelegate", "position"]
+- ["PSo24UIBarPositioningDelegate", "positionForBar"]
+- ["PSo24UIBarPositioningDelegate", "searchBar"]
+- ["PSo24UIBarPositioningDelegate", "searchBarBookmarkButtonClicked"]
+- ["PSo24UIBarPositioningDelegate", "searchBarCancelButtonClicked"]
+- ["PSo24UIBarPositioningDelegate", "searchBarResultsListButtonClicked"]
+- ["PSo24UIBarPositioningDelegate", "searchBarSearchButtonClicked"]
+- ["PSo24UIBarPositioningDelegate", "searchBarShouldBeginEditing"]
+- ["PSo24UIBarPositioningDelegate", "searchBarShouldEndEditing"]
+- ["PSo24UIBarPositioningDelegate", "searchBarTextDidBeginEditing"]
+- ["PSo24UIBarPositioningDelegate", "searchBarTextDidEndEditing"]
+- ["PSo24UIBarPositioningDelegate", ""]
+- ["CSo7UIColor", "deinit"]
+- !private ["PSo18UIContentContainer", "CustomSearchBar"]
+- ["PSo18UIContentContainer", "configureSearchBar"]
+- ["PSo18UIContentContainer", "customDelegate"]
+- ["PSo18UIContentContainer", "customSearchBar"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "position"]
+- ["PSo18UIContentContainer", "positionForBar"]
+- ["PSo18UIContentContainer", "searchBar"]
+- ["PSo18UIContentContainer", "searchBarBookmarkButtonClicked"]
+- ["PSo18UIContentContainer", "searchBarCancelButtonClicked"]
+- ["PSo18UIContentContainer", "searchBarResultsListButtonClicked"]
+- ["PSo18UIContentContainer", "searchBarSearchButtonClicked"]
+- ["PSo18UIContentContainer", "searchBarShouldBeginEditing"]
+- ["PSo18UIContentContainer", "searchBarShouldEndEditing"]
+- ["PSo18UIContentContainer", "searchBarTextDidBeginEditing"]
+- ["PSo18UIContentContainer", "searchBarTextDidEndEditing"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "barTintColor"]
+- !private ["PSo17UICoordinateSpace", "delegate"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "resignFirstResponder"]
+- !private ["PSo17UICoordinateSpace", "showsBookmarkButton"]
+- !private ["PSo17UICoordinateSpace", "showsCancelButton"]
+- !private ["PSo17UICoordinateSpace", "tintColor"]
+- !private ["PSo13UIDynamicItem", "barTintColor"]
+- !private ["PSo13UIDynamicItem", "delegate"]
+- !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "resignFirstResponder"]
+- !private ["PSo13UIDynamicItem", "showsBookmarkButton"]
+- !private ["PSo13UIDynamicItem", "showsCancelButton"]
+- !private ["PSo13UIDynamicItem", "tintColor"]
+- !private ["PSo18UIFocusEnvironment", "CustomSearchBar"]
+- !private ["PSo18UIFocusEnvironment", "barTintColor"]
+- ["PSo18UIFocusEnvironment", "configureSearchBar"]
+- ["PSo18UIFocusEnvironment", "customDelegate"]
+- ["PSo18UIFocusEnvironment", "customSearchBar"]
+- !private ["PSo18UIFocusEnvironment", "delegate"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "position"]
+- ["PSo18UIFocusEnvironment", "positionForBar"]
+- !private ["PSo18UIFocusEnvironment", "resignFirstResponder"]
+- ["PSo18UIFocusEnvironment", "searchBar"]
+- ["PSo18UIFocusEnvironment", "searchBarBookmarkButtonClicked"]
+- ["PSo18UIFocusEnvironment", "searchBarCancelButtonClicked"]
+- ["PSo18UIFocusEnvironment", "searchBarResultsListButtonClicked"]
+- ["PSo18UIFocusEnvironment", "searchBarSearchButtonClicked"]
+- ["PSo18UIFocusEnvironment", "searchBarShouldBeginEditing"]
+- ["PSo18UIFocusEnvironment", "searchBarShouldEndEditing"]
+- ["PSo18UIFocusEnvironment", "searchBarTextDidBeginEditing"]
+- ["PSo18UIFocusEnvironment", "searchBarTextDidEndEditing"]
+- !private ["PSo18UIFocusEnvironment", "showsBookmarkButton"]
+- !private ["PSo18UIFocusEnvironment", "showsCancelButton"]
+- !private ["PSo18UIFocusEnvironment", "tintColor"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "barTintColor"]
+- !private ["PSo11UIFocusItem", "delegate"]
+- !private ["PSo11UIFocusItem", "init"]
+- !private ["PSo11UIFocusItem", "resignFirstResponder"]
+- !private ["PSo11UIFocusItem", "showsBookmarkButton"]
+- !private ["PSo11UIFocusItem", "showsCancelButton"]
+- !private ["PSo11UIFocusItem", "tintColor"]
+- ["CSo6UIFont", "deinit"]
+- ["CSo11UIResponder", "Bundle"]
+- ["CSo11UIResponder", "CGRect"]
+- ["CSo11UIResponder", "CustomSearchBar"]
+- ["CSo11UIResponder", "CustomSearchControllerDelegate"]
+- ["CSo11UIResponder", "NSCoder"]
+- ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "UIColor"]
+- ["CSo11UIResponder", "UIFont"]
+- ["CSo11UIResponder", "UISearchBar"]
+- ["CSo11UIResponder", "UIViewController"]
+- !private ["CSo11UIResponder", "barTintColor"]
+- ["CSo11UIResponder", "configureSearchBar"]
+- ["CSo11UIResponder", "customDelegate"]
+- ["CSo11UIResponder", "customSearchBar"]
+- !private ["CSo11UIResponder", "delegate"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "position"]
+- ["CSo11UIResponder", "positionForBar"]
+- !private ["CSo11UIResponder", "resignFirstResponder"]
+- ["CSo11UIResponder", "searchBar"]
+- ["CSo11UIResponder", "searchBarBookmarkButtonClicked"]
+- ["CSo11UIResponder", "searchBarCancelButtonClicked"]
+- ["CSo11UIResponder", "searchBarResultsListButtonClicked"]
+- ["CSo11UIResponder", "searchBarSearchButtonClicked"]
+- ["CSo11UIResponder", "searchBarShouldBeginEditing"]
+- ["CSo11UIResponder", "searchBarShouldEndEditing"]
+- ["CSo11UIResponder", "searchBarTextDidBeginEditing"]
+- ["CSo11UIResponder", "searchBarTextDidEndEditing"]
+- !private ["CSo11UIResponder", "showsBookmarkButton"]
+- !private ["CSo11UIResponder", "showsCancelButton"]
+- !private ["CSo11UIResponder", "tintColor"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "CustomSearchBar"]
+- !private ["PSo30UIResponderStandardEditActions", "barTintColor"]
+- ["PSo30UIResponderStandardEditActions", "configureSearchBar"]
+- ["PSo30UIResponderStandardEditActions", "customDelegate"]
+- ["PSo30UIResponderStandardEditActions", "customSearchBar"]
+- !private ["PSo30UIResponderStandardEditActions", "delegate"]
+- ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "position"]
+- ["PSo30UIResponderStandardEditActions", "positionForBar"]
+- !private ["PSo30UIResponderStandardEditActions", "resignFirstResponder"]
+- ["PSo30UIResponderStandardEditActions", "searchBar"]
+- ["PSo30UIResponderStandardEditActions", "searchBarBookmarkButtonClicked"]
+- ["PSo30UIResponderStandardEditActions", "searchBarCancelButtonClicked"]
+- ["PSo30UIResponderStandardEditActions", "searchBarResultsListButtonClicked"]
+- ["PSo30UIResponderStandardEditActions", "searchBarSearchButtonClicked"]
+- ["PSo30UIResponderStandardEditActions", "searchBarShouldBeginEditing"]
+- ["PSo30UIResponderStandardEditActions", "searchBarShouldEndEditing"]
+- ["PSo30UIResponderStandardEditActions", "searchBarTextDidBeginEditing"]
+- ["PSo30UIResponderStandardEditActions", "searchBarTextDidEndEditing"]
+- !private ["PSo30UIResponderStandardEditActions", "showsBookmarkButton"]
+- !private ["PSo30UIResponderStandardEditActions", "showsCancelButton"]
+- !private ["PSo30UIResponderStandardEditActions", "tintColor"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["CSo11UISearchBar", "barTintColor"]
+- !private ["CSo11UISearchBar", "delegate"]
+- !private ["CSo11UISearchBar", "resignFirstResponder"]
+- !private ["CSo11UISearchBar", "showsBookmarkButton"]
+- !private ["CSo11UISearchBar", "showsCancelButton"]
+- !private ["CSo11UISearchBar", "tintColor"]
+- !private ["PSo19UISearchBarDelegate", "CustomSearchBar"]
+- !private ["PSo19UISearchBarDelegate", "configureSearchBar"]
+- !private ["PSo19UISearchBarDelegate", "customDelegate"]
+- !private ["PSo19UISearchBarDelegate", "customSearchBar"]
+- ["PSo19UISearchBarDelegate", "position"]
+- ["PSo19UISearchBarDelegate", "positionForBar"]
+- ["PSo19UISearchBarDelegate", "searchBar"]
+- ["PSo19UISearchBarDelegate", "searchBarBookmarkButtonClicked"]
+- ["PSo19UISearchBarDelegate", "searchBarCancelButtonClicked"]
+- ["PSo19UISearchBarDelegate", "searchBarResultsListButtonClicked"]
+- ["PSo19UISearchBarDelegate", "searchBarSearchButtonClicked"]
+- ["PSo19UISearchBarDelegate", "searchBarShouldBeginEditing"]
+- ["PSo19UISearchBarDelegate", "searchBarShouldEndEditing"]
+- ["PSo19UISearchBarDelegate", "searchBarTextDidBeginEditing"]
+- ["PSo19UISearchBarDelegate", "searchBarTextDidEndEditing"]
+- ["PSo19UISearchBarDelegate", ""]
+- ["CSo18UISearchController", "Bundle"]
+- ["CSo18UISearchController", "CGRect"]
+- ["CSo18UISearchController", "CustomSearchBar"]
+- ["CSo18UISearchController", "CustomSearchControllerDelegate"]
+- ["CSo18UISearchController", "NSCoder"]
+- ["CSo18UISearchController", "String"]
+- ["CSo18UISearchController", "UIColor"]
+- ["CSo18UISearchController", "UIFont"]
+- ["CSo18UISearchController", "UISearchBar"]
+- ["CSo18UISearchController", "UIViewController"]
+- ["CSo18UISearchController", "configureSearchBar"]
+- ["CSo18UISearchController", "customDelegate"]
+- ["CSo18UISearchController", "customSearchBar"]
+- ["CSo18UISearchController", "deinit"]
+- ["CSo18UISearchController", "didReceiveMemoryWarning"]
+- ["CSo18UISearchController", "init"]
+- ["CSo18UISearchController", "position"]
+- ["CSo18UISearchController", "positionForBar"]
+- ["CSo18UISearchController", "searchBar"]
+- ["CSo18UISearchController", "searchBarBookmarkButtonClicked"]
+- ["CSo18UISearchController", "searchBarCancelButtonClicked"]
+- ["CSo18UISearchController", "searchBarResultsListButtonClicked"]
+- ["CSo18UISearchController", "searchBarSearchButtonClicked"]
+- ["CSo18UISearchController", "searchBarShouldBeginEditing"]
+- ["CSo18UISearchController", "searchBarShouldEndEditing"]
+- ["CSo18UISearchController", "searchBarTextDidBeginEditing"]
+- ["CSo18UISearchController", "searchBarTextDidEndEditing"]
+- ["CSo18UISearchController", "viewDidLoad"]
+- ["CSo18UISearchController", ""]
+- !private ["PSo16UIStateRestoring", "CustomSearchBar"]
+- ["PSo16UIStateRestoring", "configureSearchBar"]
+- ["PSo16UIStateRestoring", "customDelegate"]
+- ["PSo16UIStateRestoring", "customSearchBar"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "position"]
+- ["PSo16UIStateRestoring", "positionForBar"]
+- ["PSo16UIStateRestoring", "searchBar"]
+- ["PSo16UIStateRestoring", "searchBarBookmarkButtonClicked"]
+- ["PSo16UIStateRestoring", "searchBarCancelButtonClicked"]
+- ["PSo16UIStateRestoring", "searchBarResultsListButtonClicked"]
+- ["PSo16UIStateRestoring", "searchBarSearchButtonClicked"]
+- ["PSo16UIStateRestoring", "searchBarShouldBeginEditing"]
+- ["PSo16UIStateRestoring", "searchBarShouldEndEditing"]
+- ["PSo16UIStateRestoring", "searchBarTextDidBeginEditing"]
+- ["PSo16UIStateRestoring", "searchBarTextDidEndEditing"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo17UITextInputTraits", "barTintColor"]
+- !private ["PSo17UITextInputTraits", "delegate"]
+- !private ["PSo17UITextInputTraits", "init"]
+- !private ["PSo17UITextInputTraits", "resignFirstResponder"]
+- !private ["PSo17UITextInputTraits", "showsBookmarkButton"]
+- !private ["PSo17UITextInputTraits", "showsCancelButton"]
+- !private ["PSo17UITextInputTraits", "tintColor"]
+- !private ["PSo18UITraitEnvironment", "CustomSearchBar"]
+- !private ["PSo18UITraitEnvironment", "barTintColor"]
+- ["PSo18UITraitEnvironment", "configureSearchBar"]
+- ["PSo18UITraitEnvironment", "customDelegate"]
+- ["PSo18UITraitEnvironment", "customSearchBar"]
+- !private ["PSo18UITraitEnvironment", "delegate"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "position"]
+- ["PSo18UITraitEnvironment", "positionForBar"]
+- !private ["PSo18UITraitEnvironment", "resignFirstResponder"]
+- ["PSo18UITraitEnvironment", "searchBar"]
+- ["PSo18UITraitEnvironment", "searchBarBookmarkButtonClicked"]
+- ["PSo18UITraitEnvironment", "searchBarCancelButtonClicked"]
+- ["PSo18UITraitEnvironment", "searchBarResultsListButtonClicked"]
+- ["PSo18UITraitEnvironment", "searchBarSearchButtonClicked"]
+- ["PSo18UITraitEnvironment", "searchBarShouldBeginEditing"]
+- ["PSo18UITraitEnvironment", "searchBarShouldEndEditing"]
+- ["PSo18UITraitEnvironment", "searchBarTextDidBeginEditing"]
+- ["PSo18UITraitEnvironment", "searchBarTextDidEndEditing"]
+- !private ["PSo18UITraitEnvironment", "showsBookmarkButton"]
+- !private ["PSo18UITraitEnvironment", "showsCancelButton"]
+- !private ["PSo18UITraitEnvironment", "tintColor"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "barTintColor"]
+- !private ["CSo6UIView", "delegate"]
+- !private ["CSo6UIView", "resignFirstResponder"]
+- !private ["CSo6UIView", "showsBookmarkButton"]
+- !private ["CSo6UIView", "showsCancelButton"]
+- !private ["CSo6UIView", "tintColor"]
+- ["CSo16UIViewController", "Bundle"]
+- ["CSo16UIViewController", "CGRect"]
+- ["CSo16UIViewController", "CustomSearchBar"]
+- ["CSo16UIViewController", "CustomSearchControllerDelegate"]
+- ["CSo16UIViewController", "NSCoder"]
+- ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "UIColor"]
+- ["CSo16UIViewController", "UIFont"]
+- ["CSo16UIViewController", "UISearchBar"]
+- ["CSo16UIViewController", "UIViewController"]
+- ["CSo16UIViewController", "configureSearchBar"]
+- ["CSo16UIViewController", "customDelegate"]
+- ["CSo16UIViewController", "customSearchBar"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "position"]
+- ["CSo16UIViewController", "positionForBar"]
+- ["CSo16UIViewController", "searchBar"]
+- ["CSo16UIViewController", "searchBarBookmarkButtonClicked"]
+- ["CSo16UIViewController", "searchBarCancelButtonClicked"]
+- ["CSo16UIViewController", "searchBarResultsListButtonClicked"]
+- ["CSo16UIViewController", "searchBarSearchButtonClicked"]
+- ["CSo16UIViewController", "searchBarShouldBeginEditing"]
+- ["CSo16UIViewController", "searchBarShouldEndEditing"]
+- ["CSo16UIViewController", "searchBarTextDidBeginEditing"]
+- ["CSo16UIViewController", "searchBarTextDidEndEditing"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- !private ["PSo37UIViewControllerAnimatedTransitioning", "CustomSearchBar"]
+- ["PSo37UIViewControllerAnimatedTransitioning", "configureSearchBar"]
+- ["PSo37UIViewControllerAnimatedTransitioning", "customDelegate"]
+- ["PSo37UIViewControllerAnimatedTransitioning", "customSearchBar"]
+- ["PSo37UIViewControllerAnimatedTransitioning", "didReceiveMemoryWarning"]
+- ["PSo37UIViewControllerAnimatedTransitioning", "init"]
+- ["PSo37UIViewControllerAnimatedTransitioning", "position"]
+- ["PSo37UIViewControllerAnimatedTransitioning", "positionForBar"]
+- ["PSo37UIViewControllerAnimatedTransitioning", "searchBar"]
+- ["PSo37UIViewControllerAnimatedTransitioning", "searchBarBookmarkButtonClicked"]
+- ["PSo37UIViewControllerAnimatedTransitioning", "searchBarCancelButtonClicked"]
+- ["PSo37UIViewControllerAnimatedTransitioning", "searchBarResultsListButtonClicked"]
+- ["PSo37UIViewControllerAnimatedTransitioning", "searchBarSearchButtonClicked"]
+- ["PSo37UIViewControllerAnimatedTransitioning", "searchBarShouldBeginEditing"]
+- ["PSo37UIViewControllerAnimatedTransitioning", "searchBarShouldEndEditing"]
+- ["PSo37UIViewControllerAnimatedTransitioning", "searchBarTextDidBeginEditing"]
+- ["PSo37UIViewControllerAnimatedTransitioning", "searchBarTextDidEndEditing"]
+- ["PSo37UIViewControllerAnimatedTransitioning", "viewDidLoad"]
+- ["PSo37UIViewControllerAnimatedTransitioning", ""]
+- !private ["PSo37UIViewControllerTransitioningDelegate", "CustomSearchBar"]
+- ["PSo37UIViewControllerTransitioningDelegate", "configureSearchBar"]
+- ["PSo37UIViewControllerTransitioningDelegate", "customDelegate"]
+- ["PSo37UIViewControllerTransitioningDelegate", "customSearchBar"]
+- ["PSo37UIViewControllerTransitioningDelegate", "didReceiveMemoryWarning"]
+- ["PSo37UIViewControllerTransitioningDelegate", "init"]
+- ["PSo37UIViewControllerTransitioningDelegate", "position"]
+- ["PSo37UIViewControllerTransitioningDelegate", "positionForBar"]
+- ["PSo37UIViewControllerTransitioningDelegate", "searchBar"]
+- ["PSo37UIViewControllerTransitioningDelegate", "searchBarBookmarkButtonClicked"]
+- ["PSo37UIViewControllerTransitioningDelegate", "searchBarCancelButtonClicked"]
+- ["PSo37UIViewControllerTransitioningDelegate", "searchBarResultsListButtonClicked"]
+- ["PSo37UIViewControllerTransitioningDelegate", "searchBarSearchButtonClicked"]
+- ["PSo37UIViewControllerTransitioningDelegate", "searchBarShouldBeginEditing"]
+- ["PSo37UIViewControllerTransitioningDelegate", "searchBarShouldEndEditing"]
+- ["PSo37UIViewControllerTransitioningDelegate", "searchBarTextDidBeginEditing"]
+- ["PSo37UIViewControllerTransitioningDelegate", "searchBarTextDidEndEditing"]
+- ["PSo37UIViewControllerTransitioningDelegate", "viewDidLoad"]
+- ["PSo37UIViewControllerTransitioningDelegate", ""]
+- ["Su", "deinit"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "barTintColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "delegate"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "resignFirstResponder"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "showsBookmarkButton"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "showsCancelButton"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "tintColor"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps9_Hashable", "CustomSearchBar"]
+- !private ["Ps9_Hashable", "barTintColor"]
+- ["Ps9_Hashable", "configureSearchBar"]
+- ["Ps9_Hashable", "customDelegate"]
+- ["Ps9_Hashable", "customSearchBar"]
+- !private ["Ps9_Hashable", "delegate"]
+- ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "position"]
+- ["Ps9_Hashable", "positionForBar"]
+- !private ["Ps9_Hashable", "resignFirstResponder"]
+- ["Ps9_Hashable", "searchBar"]
+- ["Ps9_Hashable", "searchBarBookmarkButtonClicked"]
+- ["Ps9_Hashable", "searchBarCancelButtonClicked"]
+- ["Ps9_Hashable", "searchBarResultsListButtonClicked"]
+- ["Ps9_Hashable", "searchBarSearchButtonClicked"]
+- ["Ps9_Hashable", "searchBarShouldBeginEditing"]
+- ["Ps9_Hashable", "searchBarShouldEndEditing"]
+- ["Ps9_Hashable", "searchBarTextDidBeginEditing"]
+- ["Ps9_Hashable", "searchBarTextDidEndEditing"]
+- !private ["Ps9_Hashable", "showsBookmarkButton"]
+- !private ["Ps9_Hashable", "showsCancelButton"]
+- !private ["Ps9_Hashable", "tintColor"]
+- ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sb"
+- !private "PSo15CALayerDelegate"
+- "VSC6CGRect"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps17CustomReflectable"
+- "C9LeetCodee15CustomSearchBar"
+- "C9LeetCodee22CustomSearchController"
+- "P9LeetCodee30CustomSearchControllerDelegate"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- "SQ"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Os5Never"
+- "Sq"
+- "Vs12StaticString"
+- "SS"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "PSo16UIBarPositioning"
+- "PSo24UIBarPositioningDelegate"
+- "CSo7UIColor"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- "CSo6UIFont"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- !private "CSo11UISearchBar"
+- "PSo19UISearchBarDelegate"
+- "CSo18UISearchController"
+- "PSo16UIStateRestoring"
+- !private "PSo17UITextInputTraits"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- "PSo37UIViewControllerAnimatedTransitioning"
+- "PSo37UIViewControllerTransitioningDelegate"
+- "Su"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Modules/RealmSwift.swiftmodule/x86_64.swiftmodule"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMSyncUtil_Private.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMSyncConfiguration_Private.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMOptionalBase.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMListBase.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/NSError+RLMSync.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncUser.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncSession.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncPermissionOfferResponse.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncPermissionOffer.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncPermissionChange.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncPermission.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncManager.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncCredentials.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncConfiguration.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSchema.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMResults.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncUtil.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealmConfiguration+Sync.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMConstants.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMProperty.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObject.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMMigration.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMThreadSafeReference.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMCollection.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMArray.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/Realm.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Realm/Realm.framework/Modules/module.modulemap"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Modules/module.modulemap"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Gifu/Gifu.framework/Modules/Gifu.swiftmodule/x86_64.swiftmodule"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Gifu/Gifu.framework/Headers/Gifu-Swift.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Gifu/Gifu.framework/Headers/Gifu.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Gifu/Gifu.framework/Headers/Gifu-umbrella.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Gifu/Gifu.framework/Modules/module.modulemap"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/x86_64.swiftmodule"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-Swift.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-umbrella.h"
+- "/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/module.modulemap"
+interface-hash: "45a50a00b72418c3dc5ea242565887a6"

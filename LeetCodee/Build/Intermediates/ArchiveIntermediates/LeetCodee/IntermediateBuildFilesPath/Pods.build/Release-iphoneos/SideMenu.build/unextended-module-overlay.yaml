@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/ArchiveIntermediates/LeetCodee/BuildProductsPath/Release-iphoneos/SideMenu/SideMenu.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/guoxiaoyu/Desktop/LeetCodeReader/LeetCodee/Build/Intermediates/ArchiveIntermediates/LeetCodee/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/SideMenu.build/unextended-module.modulemap',
+    }]
+  }]
+}
