@@ -18,7 +18,7 @@ class SolutionsTVCell: UITableViewCell, UIWebViewDelegate{
         }
     }
     
-    var delegate: CusTVReloadDelegate!
+    var delegate: SolutionReloadDelegate!
     var indexPath: IndexPath!
     
     func updateUI() {
@@ -48,20 +48,20 @@ class SolutionsTVCell: UITableViewCell, UIWebViewDelegate{
         //solutionWebView.scrollView.isScrollEnabled = false
     }
     
-//    func webViewDidFinishLoad(_ webView: UIWebView) {
-//        let height = webView.scrollView.contentSize.height
-//        delegate.reloadTableView(indexPath: indexPath, height: height)
-//    }
+    func webViewDidFinishLoad(_ webView: UIWebView) {
+        let height_web = webView.scrollView.contentSize.height
+        let height_title = solutionTitleLabel.bounds.height
+        delegate.passHeightToTableView(indexPath: indexPath, height_title: height_title + 45, height_full: height_web + height_title)
+    }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
         // Configure the view for the selected state
     }
-    
-    
 }
 
-protocol CusTVReloadDelegate {
-    func reloadTableView(indexPath: IndexPath, height: CGFloat)
+protocol SolutionReloadDelegate {
+    //func reloadTableView(indexPath: IndexPath, height: CGFloat)
+    func passHeightToTableView(indexPath: IndexPath, height_title: CGFloat, height_full: CGFloat)
 }
