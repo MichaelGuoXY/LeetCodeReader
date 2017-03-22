@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DescriptionTVCell: UITableViewCell {
+class DescriptionTVCell: UITableViewCell, UIWebViewDelegate {
 
     @IBOutlet weak var descriptionWebView: UIWebView!
     
@@ -17,10 +17,14 @@ class DescriptionTVCell: UITableViewCell {
             updateUI()
         }
     }
+    var delegate: ReloadDescriptionCellDelegate!
+    var indexPath: IndexPath!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        descriptionWebView.delegate = self
+        //descriptionWebView.scrollView.isScrollEnabled = false
     }
 
     func loadDescriptionWebView() {
@@ -36,10 +40,18 @@ class DescriptionTVCell: UITableViewCell {
         loadDescriptionWebView()
     }
     
+    func webViewDidFinishLoad(_ webView: UIWebView) {
+        let height = webView.scrollView.contentSize.height + 30
+        delegate.reloadDescriptionCell(indexPath: indexPath, height: height)
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
+}
 
+protocol ReloadDescriptionCellDelegate {
+    func reloadDescriptionCell(indexPath: IndexPath, height: CGFloat)
 }

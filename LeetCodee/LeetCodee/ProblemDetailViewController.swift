@@ -8,10 +8,10 @@
 
 import UIKit
 
-class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CusTVReloadDelegate {
+class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, SolutionReloadDelegate, ReloadDescriptionCellDelegate {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var backToTopBtn: UIButton!
-
+    
     var curProblem: Problem!
     var solutions: [String]! {
         didSet {
@@ -19,9 +19,8 @@ class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITabl
         }
     }
     
-    var heightsForSolutionsCell = [Int: CGFloat]()
-    
-    var contentHeights = [Int: CGFloat]()
+    var heightsForSolutionsCell = [IndexPath: [Any]]()
+    var heightForDescriptionCell: CGFloat!
     
     let sectionTitleArr = ["TITLE", "DESCRIPTION", "SOLUTIONS"]
     
@@ -43,7 +42,7 @@ class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITabl
         
         // got back button config
         
-//        navigationController?.navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Chalkduster", size: 20)!], for: UIControlState.normal)
+        //        navigationController?.navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Chalkduster", size: 20)!], for: UIControlState.normal)
     }
     
     // config floating button over table view
@@ -105,6 +104,8 @@ class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITabl
         } else if indexPath.section == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "DescriptionTVCell", for: indexPath) as! DescriptionTVCell
             cell.descriptionOfProblem = curProblem.descriptionn
+            cell.delegate = self
+            cell.indexPath = indexPath
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "SolutionTVCell", for: indexPath) as! SolutionsTVCell
@@ -140,28 +141,64 @@ class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITabl
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let isUnExpanded = heightsForSolutionsCell[indexPath]?[0] as! Int == 1
+        heightsForSolutionsCell[indexPath]?[0] = isUnExpanded ? 2 : 1
+        tableView.cellForRow(at: indexPath)?.backgroundColor = isUnExpanded ? UIColor(red: 204/255, green: 243/255, blue: 246/255, alpha: 1) : .white
+        tableView.beginUpdates()
+        tableView.endUpdates()
     }
     
-    // CusTVReloadDelegate - required
-    func reloadTableView(indexPath: IndexPath, height: CGFloat) {
-        tableView.beginUpdates()
-        if heightsForSolutionsCell[indexPath.row] == nil {
-            heightsForSolutionsCell[indexPath.row] = height + 60.0
+    // MARK: - CusTVReloadDelegate
+    func passHeightToTableView(indexPath: IndexPath, height_title: CGFloat, height_full: CGFloat) {
+        if heightsForSolutionsCell[indexPath] == nil {
+            heightsForSolutionsCell[indexPath] = [1, height_title, height_full]
+            tableView.reloadData()
+        }
+    }
+    
+    // MARK: - ReloadDescriptionCellDelegate
+    func reloadDescriptionCell(indexPath: IndexPath, height: CGFloat) {
+        //tableView.beginUpdates()
+        if heightForDescriptionCell == nil {
+            heightForDescriptionCell = height
             tableView.reloadRows(at: [indexPath], with: .automatic)
         }
-        tableView.endUpdates()
+        //tableView.endUpdates()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
             return 70
-        } else
-            if indexPath.section == 1 {
-                return 300
-            } else {
+        } else if indexPath.section == 1 { // description section
+            return heightForDescriptionCell == nil ? 100 : heightForDescriptionCell > view.frame.height * 3/5 ? view.frame.height * 3/5 : heightForDescriptionCell
+        } else if indexPath.section == 2{ // solutions section
+            if heightsForSolutionsCell[indexPath] == nil {
                 return 400
+            } else {
+                let index = heightsForSolutionsCell[indexPath]?[0] as! Int
+                if (heightsForSolutionsCell[indexPath]![index] as! CGFloat) < view.frame.height * 3/5 {
+                    return heightsForSolutionsCell[indexPath]![index] as! CGFloat
+                } else {
+                    return view.frame.height * 3/5
+                }
+            }
+        } else {
+            return 0
         }
     }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        if UIDevice.current.orientation.isLandscape {
+            heightForDescriptionCell = nil
+            heightsForSolutionsCell = [IndexPath: [CGFloat]]()
+            tableView.reloadData()
+        } else {
+            heightForDescriptionCell = nil
+            heightsForSolutionsCell = [IndexPath: [CGFloat]]()
+            tableView.reloadData()
+        }
+    }
+    
     
     /*
      // Override to support conditional editing of the table view.
