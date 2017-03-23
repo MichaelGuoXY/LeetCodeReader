@@ -37,7 +37,7 @@ class SolutionsTVCell: UITableViewCell, UIWebViewDelegate{
         let htmlHeader = "<html> \n <head> \n <link href=\"code-style.css\" rel=\"stylesheet\" type=\"text/css\" /> \n </head> \n <body> \n"
         let htmlFooter = "</body> \n </html>"
         let htmlSnippet = html
-        solutionWebView.backgroundColor = UIColor.clear
+        solutionWebView.backgroundColor = .white
         solutionWebView.loadHTMLString(String.init(format: "%@%@%@", htmlHeader, htmlSnippet, htmlFooter), baseURL: baseURLForCss)
     }
     
