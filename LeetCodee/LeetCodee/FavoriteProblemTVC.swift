@@ -41,7 +41,7 @@ class FavoriteProblemTVC: UITableViewController, MGSwipeTableCellDelegate {
         
         // reload problems to be displayed
         problems = [Problem]()
-        for problem in realm.objects(Problem.self).filter("isFavorite == true") {
+        for problem in realm.objects(Problem.self).filter("isFavorite == true and isTrashed == false") {
             problems.append(problem)
         }
         tableView.reloadData()
@@ -76,14 +76,6 @@ class FavoriteProblemTVC: UITableViewController, MGSwipeTableCellDelegate {
     }
     
     // MARK: -- MGSwipeTableCellDelegate
-    func swipeTableCell(_ cell: MGSwipeTableCell, canSwipe direction: MGSwipeDirection, from point: CGPoint) -> Bool {
-        if direction == .leftToRight {
-            return true
-        } else {
-            return false
-        }
-    }
-    
     func swipeTableCell(_ cell: MGSwipeTableCell, swipeButtonsFor direction: MGSwipeDirection, swipeSettings: MGSwipeSettings, expansionSettings: MGSwipeExpansionSettings) -> [UIView]? {
         
         swipeSettings.transition = .drag
@@ -91,7 +83,29 @@ class FavoriteProblemTVC: UITableViewController, MGSwipeTableCellDelegate {
         
         if direction == MGSwipeDirection.leftToRight {
             expansionSettings.fillOnTrigger = true
-            expansionSettings.threshold = 1.0
+            expansionSettings.threshold = 1.5
+            let color = UIColor.init(red:1.0, green:59/255.0, blue:50/255.0, alpha:1.0)
+            let path = self.tableView.indexPath(for: cell)!
+            
+            return [
+                MGSwipeButton(title: "Trash it", backgroundColor: color, callback: { (cell) -> Bool in
+                    let id = self.problems[path.row].id
+                    for problem in self.realm.objects(Problem.self).filter("id == %@", id) {
+                        try! self.realm.write {
+                            problem.isTrashed = true
+                        }
+                    }
+                    self.problems.remove(at: path.row)
+                    self.tableView.deleteRows(at: [path], with: .right)
+                    
+                    return false //don't autohide to improve delete animation
+                })
+            ]
+        }
+        else {
+            expansionSettings.fillOnTrigger = true
+            expansionSettings.threshold = 1.5
+            //let padding = 15
             let color = UIColor(red: 179/255, green: 136/255, blue: 250/255, alpha: 1.0)
             let path = self.tableView.indexPath(for: cell)!
             
@@ -104,14 +118,10 @@ class FavoriteProblemTVC: UITableViewController, MGSwipeTableCellDelegate {
                         }
                     }
                     self.problems.remove(at: path.row)
-                    self.tableView.deleteRows(at: [path], with: .right)
+                    self.tableView.deleteRows(at: [path], with: .left)
                     
-                    return false //don't autohide to improve delete animation
+                    return false
                 })
-            ]
-        } else {
-            return [
-                MGSwipeButton()
             ]
         }
     }

@@ -51,10 +51,9 @@ class TagSubTableViewController: UITableViewController, CustomSearchControllerDe
     func reloadTableView() {
         // get all problems from Realm
         problems = [Problem]()
-        for problem in realm.objects(Problem.self).sorted(byKeyPath: "id").filter("tags contains[c] %@", tag) {
+        for problem in realm.objects(Problem.self).sorted(byKeyPath: "id").filter("isTrashed == false and tags contains[c] %@", tag) {
             problems.append(problem)
         }
-        print("now reload data, has %@ problems", problems.count)
         
         tableView.reloadData()
     }

@@ -12,7 +12,7 @@ import Gifu
 
 class StartViewController: UIViewController {
     
-    let realm = try! Realm()
+    var realm: Realm! = nil
     let userdefault = UserDefaults.standard
     @IBOutlet weak var blurView: UIView!
     
@@ -49,7 +49,7 @@ class StartViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        
+        realm = try! Realm()
         // download from Firebase
         progressBar.progress = 0
         progressBar.barBorderColor = UIColor(red:0.35, green:0.80, blue:0.36, alpha:1.0)
