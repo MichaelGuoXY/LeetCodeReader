@@ -61,7 +61,7 @@ class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITabl
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        tabBarController?.tabBar.barTintColor = navigationController?.navigationBar.barTintColor
+//        tabBarController?.tabBar.barTintColor = navigationController?.navigationBar.barTintColor
         fetchSolutions()
     }
     

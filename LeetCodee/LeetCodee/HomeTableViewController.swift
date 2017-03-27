@@ -71,7 +71,7 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
         SideMenuManager.menuPresentMode = .viewSlideInOut
         
         // config navi bar color
-        navigationController?.navigationBar.barTintColor = UIColor(red: 85/255, green: 210/255, blue: 251/255, alpha: 0.9)
+        navigationController?.navigationBar.barTintColor = UIColor(red: 52/255, green: 51/255, blue: 57/255, alpha: 1.0)
         UINavigationBar.appearance().tintColor = .white
         navigationController?.navigationBar.tintColor = .white
         
@@ -89,8 +89,8 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
         super.viewWillAppear(animated)
         // reload tableview
         reloadTableView()
-        tabBarController?.tabBar.barTintColor = UIColor(red: 85/255, green: 210/255, blue: 251/255, alpha: 0.9)
-        tabBarController?.tabBar.tintColor = .white
+        //tabBarController?.tabBar.barTintColor = UIColor(red: 85/255, green: 210/255, blue: 251/255, alpha: 0.9)
+        tabBarController?.tabBar.tintColor = UIColor(red: 85/255, green: 210/255, blue: 251/255, alpha: 0.9)
     }
     
     func reloadTableView() {
@@ -209,7 +209,7 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
         if direction == MGSwipeDirection.leftToRight {
             expansionSettings.fillOnTrigger = true
             expansionSettings.threshold = 1.1
-            let color = UIColor.init(red:1.0, green:59/255.0, blue:50/255.0, alpha:1.0)
+            let color = UIColor.init(red:241/255.0, green:14/255.0, blue:97/255.0, alpha:1.0)
             let path = self.tableView.indexPath(for: cell)!
             
             return [
@@ -229,7 +229,7 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
         }
         else {
             expansionSettings.fillOnTrigger = false
-            expansionSettings.threshold = 1.0
+            expansionSettings.threshold = 1.1
             //let padding = 15
             let color = UIColor(red: 179/255, green: 136/255, blue: 250/255, alpha: 1.0)
             let path = self.tableView.indexPath(for: cell)!

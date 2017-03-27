@@ -5,7 +5,6 @@
 
 #import <UIKit/UIKit.h>
 
-
 @class MGSwipeTableCell;
 
 /** 

@@ -43,9 +43,12 @@ class TagSubTableViewController: UITableViewController, CustomSearchControllerDe
         super.viewWillAppear(animated)
         // reload tableview
         reloadTableView()
-        navigationController?.navigationBar.barTintColor = UIColor(red: 255/255, green: 162/255, blue: 81/255, alpha: 0.9)
-        tabBarController?.tabBar.barTintColor = UIColor(red: 255/255, green: 162/255, blue: 81/255, alpha: 0.9)
-        tabBarController?.tabBar.tintColor = .white
+        navigationController?.navigationBar.barTintColor = UIColor(red: 52/255, green: 51/255, blue: 57/255, alpha: 1.0)
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Chalkduster", size: 20)!, NSForegroundColorAttributeName: UIColor.white]
+
+//        tabBarController?.tabBar.barTintColor = UIColor(red: 255/255, green: 162/255, blue: 81/255, alpha: 0.9)
+        tabBarController?.tabBar.tintColor = UIColor(red: 85/255, green: 210/255, blue: 251/255, alpha: 0.9)
     }
     
     func reloadTableView() {
@@ -174,8 +177,8 @@ class TagSubTableViewController: UITableViewController, CustomSearchControllerDe
         
         if direction == MGSwipeDirection.leftToRight {
             expansionSettings.fillOnTrigger = true
-            expansionSettings.threshold = 1.5
-            let color = UIColor.init(red:1.0, green:59/255.0, blue:50/255.0, alpha:1.0)
+            expansionSettings.threshold = 1.1
+            let color = UIColor.init(red:241/255.0, green:14/255.0, blue:97/255.0, alpha:1.0)
             let path = self.tableView.indexPath(for: cell)!
             
             return [
@@ -195,7 +198,7 @@ class TagSubTableViewController: UITableViewController, CustomSearchControllerDe
         }
         else {
             expansionSettings.fillOnTrigger = false
-            expansionSettings.threshold = 1.0
+            expansionSettings.threshold = 1.1
             //let padding = 15
             let color = UIColor(red: 179/255, green: 136/255, blue: 250/255, alpha: 1.0)
             let path = self.tableView.indexPath(for: cell)!
