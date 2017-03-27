@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-class FavoriteProblemTVC: UITableViewController {
+class FavoriteProblemTVC: UITableViewController, MGSwipeTableCellDelegate {
     
     var problems: [Problem]!
     let realm = try! Realm()
@@ -70,42 +70,84 @@ class FavoriteProblemTVC: UITableViewController {
 
         // Configure the cell...
         cell.problem = problems[indexPath.row]
-
+        cell.delegate = self
+        
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, editActionsForRowAt: IndexPath) -> [UITableViewRowAction]? {
-        let more = UITableViewRowAction(style: .normal, title: "More") { action, index in
-            print("more button tapped")
-            // cell animation
-            tableView.setEditing(false, animated: true)
+    // MARK: -- MGSwipeTableCellDelegate
+    func swipeTableCell(_ cell: MGSwipeTableCell, canSwipe direction: MGSwipeDirection, from point: CGPoint) -> Bool {
+        if direction == .leftToRight {
+            return true
+        } else {
+            return false
         }
-        more.backgroundColor = .lightGray
-        
-        let delete = UITableViewRowAction(style: .normal, title: "Delete") { action, index in
-            print("delete button tapped")
-            // mark "isFavorite" field of problem with "id" in realm to be true
-            let id = self.problems[index.row].id
-            for problem in self.realm.objects(Problem.self).filter("id == %@", id) {
-                try! self.realm.write {
-                    problem.isFavorite = false
-                }
-            }
-            self.problems.remove(at: index.row)
-            // cell animation
-            tableView.deleteRows(at: [index], with: .fade)
-        }
-        delete.backgroundColor = .red
-        
-        let share = UITableViewRowAction(style: .normal, title: "Share") { action, index in
-            print("share button tapped")
-            // cell animation
-            tableView.setEditing(false, animated: true)
-        }
-        share.backgroundColor = UIColor(red: 51/255, green: 210/255, blue: 236/255, alpha: 1.0)
-        
-        return [share, delete, more]
     }
+    
+    func swipeTableCell(_ cell: MGSwipeTableCell, swipeButtonsFor direction: MGSwipeDirection, swipeSettings: MGSwipeSettings, expansionSettings: MGSwipeExpansionSettings) -> [UIView]? {
+        
+        swipeSettings.transition = .drag
+        expansionSettings.buttonIndex = 0
+        
+        if direction == MGSwipeDirection.leftToRight {
+            expansionSettings.fillOnTrigger = true
+            expansionSettings.threshold = 1.0
+            let color = UIColor(red: 179/255, green: 136/255, blue: 250/255, alpha: 1.0)
+            let path = self.tableView.indexPath(for: cell)!
+            
+            return [
+                MGSwipeButton(title: "Mark as unfavorite", backgroundColor: color, callback: { (cell) -> Bool in
+                    let id = self.problems[path.row].id
+                    for problem in self.realm.objects(Problem.self).filter("id == %@", id) {
+                        try! self.realm.write {
+                            problem.isFavorite = false
+                        }
+                    }
+                    self.problems.remove(at: path.row)
+                    self.tableView.deleteRows(at: [path], with: .right)
+                    
+                    return false //don't autohide to improve delete animation
+                })
+            ]
+        } else {
+            return [
+                MGSwipeButton()
+            ]
+        }
+    }
+    
+//    override func tableView(_ tableView: UITableView, editActionsForRowAt: IndexPath) -> [UITableViewRowAction]? {
+//        let more = UITableViewRowAction(style: .normal, title: "More") { action, index in
+//            print("more button tapped")
+//            // cell animation
+//            tableView.setEditing(false, animated: true)
+//        }
+//        more.backgroundColor = .lightGray
+//        
+//        let delete = UITableViewRowAction(style: .normal, title: "Delete") { action, index in
+//            print("delete button tapped")
+//            // mark "isFavorite" field of problem with "id" in realm to be true
+//            let id = self.problems[index.row].id
+//            for problem in self.realm.objects(Problem.self).filter("id == %@", id) {
+//                try! self.realm.write {
+//                    problem.isFavorite = false
+//                }
+//            }
+//            self.problems.remove(at: index.row)
+//            // cell animation
+//            tableView.deleteRows(at: [index], with: .fade)
+//        }
+//        delete.backgroundColor = .red
+//        
+//        let share = UITableViewRowAction(style: .normal, title: "Share") { action, index in
+//            print("share button tapped")
+//            // cell animation
+//            tableView.setEditing(false, animated: true)
+//        }
+//        share.backgroundColor = UIColor(red: 51/255, green: 210/255, blue: 236/255, alpha: 1.0)
+//        
+//        return [share, delete, more]
+//    }
     
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true

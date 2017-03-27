@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProblemTVCell: UITableViewCell {
+class ProblemTVCell: MGSwipeTableCell {
     @IBOutlet weak var id: UILabel!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var acceptance: UILabel!
@@ -16,6 +16,8 @@ class ProblemTVCell: UITableViewCell {
     @IBOutlet weak var firstNutImgView: UIImageView!
     @IBOutlet weak var secondNutImgView: UIImageView!
     @IBOutlet weak var thirdNutImgView: UIImageView!
+    @IBOutlet weak var tagView: UIView!
+    @IBOutlet weak var favoriteIndicatorImgView: UIImageView!
 
     var problem: Problem! {
         didSet {
@@ -62,6 +64,12 @@ class ProblemTVCell: UITableViewCell {
         id.text = "No." + String(problem.id)
         title.text = problem.title
         acceptance.text = String(format: "%.2f", problem.acceptance) + "%"
+        if problem.isFavorite {
+            favoriteIndicatorImgView.image = #imageLiteral(resourceName: "star")
+        } else {
+            favoriteIndicatorImgView.image = nil
+        }
+        
         switch problem.difficulty {
         case "Easy":
             firstNutImgView.image = #imageLiteral(resourceName: "difficultyIcon2")
@@ -74,6 +82,14 @@ class ProblemTVCell: UITableViewCell {
         default:
             firstNutImgView.image = #imageLiteral(resourceName: "difficultyIcon")
             secondNutImgView.image = #imageLiteral(resourceName: "difficultyIcon")
+        }
+    }
+    
+    func toggleFavorite() {
+        if favoriteIndicatorImgView.image == #imageLiteral(resourceName: "star") {
+            favoriteIndicatorImgView.image = nil
+        } else {
+            favoriteIndicatorImgView.image = #imageLiteral(resourceName: "star")
         }
     }
 }

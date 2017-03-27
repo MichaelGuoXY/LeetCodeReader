@@ -30,6 +30,8 @@
 		80D04A3B1E7FE6C30068124C /* GTProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D04A3A1E7FE6C30068124C /* GTProgressBar.swift */; };
 		80D04A3D1E7FF36D0068124C /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 80D04A3C1E7FF36D0068124C /* loading.gif */; };
 		80D04A411E804EC10068124C /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D04A401E804EC10068124C /* Reachability.swift */; };
+		80F37BF41E88F48F000BA86B /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F37BF11E88F48F000BA86B /* MGSwipeButton.m */; };
+		80F37BF51E88F48F000BA86B /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F37BF31E88F48F000BA86B /* MGSwipeTableCell.m */; };
 		80F666731E79E7450030FA1E /* DescriptionTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F666721E79E7450030FA1E /* DescriptionTVCell.swift */; };
 		80F666751E79E7E20030FA1E /* TitleTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F666741E79E7E20030FA1E /* TitleTVCell.swift */; };
 		80F666771E79E7F60030FA1E /* SolutionsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F666761E79E7F60030FA1E /* SolutionsTVCell.swift */; };
@@ -69,6 +71,11 @@
 		80D04A3A1E7FE6C30068124C /* GTProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTProgressBar.swift; sourceTree = "<group>"; };
 		80D04A3C1E7FF36D0068124C /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		80D04A401E804EC10068124C /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		80F37BE71E88F413000BA86B /* LeetCodee-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeetCodee-Bridging-Header.h"; sourceTree = "<group>"; };
+		80F37BF01E88F48F000BA86B /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
+		80F37BF11E88F48F000BA86B /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButton.m; sourceTree = "<group>"; };
+		80F37BF21E88F48F000BA86B /* MGSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeTableCell.h; sourceTree = "<group>"; };
+		80F37BF31E88F48F000BA86B /* MGSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeTableCell.m; sourceTree = "<group>"; };
 		80F666721E79E7450030FA1E /* DescriptionTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionTVCell.swift; sourceTree = "<group>"; };
 		80F666741E79E7E20030FA1E /* TitleTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleTVCell.swift; sourceTree = "<group>"; };
 		80F666761E79E7F60030FA1E /* SolutionsTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolutionsTVCell.swift; sourceTree = "<group>"; };
@@ -153,8 +160,21 @@
 				805D05371E784FAB00B8C682 /* LaunchScreen.storyboard */,
 				805D053A1E784FAB00B8C682 /* Info.plist */,
 				E0DBB09B1E81178D005A383F /* GoogleService-Info.plist */,
+				80F37BE71E88F413000BA86B /* LeetCodee-Bridging-Header.h */,
+				80F37BF61E88F494000BA86B /* MGSwipeTableCell */,
 			);
 			path = LeetCodee;
+			sourceTree = "<group>";
+		};
+		80F37BF61E88F494000BA86B /* MGSwipeTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				80F37BF01E88F48F000BA86B /* MGSwipeButton.h */,
+				80F37BF11E88F48F000BA86B /* MGSwipeButton.m */,
+				80F37BF21E88F48F000BA86B /* MGSwipeTableCell.h */,
+				80F37BF31E88F48F000BA86B /* MGSwipeTableCell.m */,
+			);
+			name = MGSwipeTableCell;
 			sourceTree = "<group>";
 		};
 		CE3B4EECB9BC2966C7787513 /* Pods */ = {
@@ -202,6 +222,7 @@
 					805D052A1E784FAB00B8C682 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = N74Z9L6N77;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -300,6 +321,7 @@
 				80FB739C1E7C7B9200D8396D /* OptionOneTableViewCell.swift in Sources */,
 				805D05451E78870000B8C682 /* FirebaseManager.swift in Sources */,
 				809D9C051E7B56540091D7D5 /* FavoriteProblemTVC.swift in Sources */,
+				80F37BF51E88F48F000BA86B /* MGSwipeTableCell.m in Sources */,
 				80BC12681E7C56C500AFE182 /* ProblemDetailViewController.swift in Sources */,
 				805E7F231E7FB7420075479F /* TagSubTableViewController.swift in Sources */,
 				805E7F2B1E7FD3AC0075479F /* StartViewController.swift in Sources */,
@@ -309,6 +331,7 @@
 				805E7F251E7FBFF50075479F /* RightMenuViewController.swift in Sources */,
 				805D05491E788FA300B8C682 /* Problem.swift in Sources */,
 				805D054B1E78B38E00B8C682 /* ProblemTVCell.swift in Sources */,
+				80F37BF41E88F48F000BA86B /* MGSwipeButton.m in Sources */,
 				805E7F271E7FC57F0075479F /* SendFeedbackTVCell.swift in Sources */,
 				80D04A411E804EC10068124C /* Reachability.swift in Sources */,
 				80D04A3B1E7FE6C30068124C /* GTProgressBar.swift in Sources */,
@@ -445,6 +468,7 @@
 			baseConfigurationReference = 67999FF3B4CBEBF2932AB27C /* Pods-LeetCodee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
@@ -454,6 +478,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "LeetCodee/LeetCodee-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -463,6 +489,7 @@
 			baseConfigurationReference = B8A0CF793844C9B96D73147C /* Pods-LeetCodee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
@@ -472,6 +499,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "LeetCodee/LeetCodee-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

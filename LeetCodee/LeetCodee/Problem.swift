@@ -19,6 +19,7 @@ class Problem: Object {
     dynamic var editorialLink: String!
     dynamic var problemLink: String!
     dynamic var isFavorite = false
+    dynamic var isTrashed = false
     var solutions = List<RString>()
     dynamic var tags: String!
     dynamic var timestamp: Double = 0.0

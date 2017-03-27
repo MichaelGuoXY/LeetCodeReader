@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 import SideMenu
 
-class HomeTableViewController: UITableViewController, CustomSearchControllerDelegate, LeftMenuDelegate, UpdateDataDelegate {
+class HomeTableViewController: UITableViewController, CustomSearchControllerDelegate, LeftMenuDelegate, UpdateDataDelegate, MGSwipeTableCellDelegate {
     @IBOutlet weak var leftMenuButton: UIBarButtonItem!
     @IBOutlet weak var rightMenuButton: UIBarButtonItem!
     
@@ -96,7 +96,7 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
     func reloadTableView() {
         // get all problems from Realm
         problems = [Problem]()
-        for problem in realm.objects(Problem.self).sorted(byKeyPath: "id") {
+        for problem in realm.objects(Problem.self).sorted(byKeyPath: "id").filter("isTrashed == false") {
             problems.append(problem)
         }
         self.tableView.reloadData()
@@ -195,47 +195,107 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
         } else {
             cell.problem = problems[indexPath.row]
         }
-        
-        
+        cell.delegate = self
         
         return cell
+    }
+    
+    // MARK: -- MGSwipeTableCellDelegate
+    func swipeTableCell(_ cell: MGSwipeTableCell, swipeButtonsFor direction: MGSwipeDirection, swipeSettings: MGSwipeSettings, expansionSettings: MGSwipeExpansionSettings) -> [UIView]? {
+        
+        swipeSettings.transition = .drag
+        expansionSettings.buttonIndex = 0
+        
+        if direction == MGSwipeDirection.leftToRight {
+            expansionSettings.fillOnTrigger = true
+            expansionSettings.threshold = 1.5
+            let color = UIColor.init(red:1.0, green:59/255.0, blue:50/255.0, alpha:1.0)
+            let path = self.tableView.indexPath(for: cell)!
+            
+            return [
+                MGSwipeButton(title: "Trash it", backgroundColor: color, callback: { (cell) -> Bool in
+                    let id = self.problems[path.row].id
+                    for problem in self.realm.objects(Problem.self).filter("id == %@", id) {
+                        try! self.realm.write {
+                            problem.isTrashed = true
+                        }
+                    }
+                    self.problems.remove(at: path.row)
+                    self.tableView.deleteRows(at: [path], with: .right)
+                    
+                    return false //don't autohide to improve delete animation
+                })
+            ]
+        }
+        else {
+            expansionSettings.fillOnTrigger = false
+            expansionSettings.threshold = 1.0
+            //let padding = 15
+            let color = UIColor(red: 179/255, green: 136/255, blue: 250/255, alpha: 1.0)
+            let path = self.tableView.indexPath(for: cell)!
+            let problemCell = cell as! ProblemTVCell
+            
+            return [
+                MGSwipeButton(title: readFavoriteStatus(cur: problemCell.problem.isFavorite), backgroundColor: color, callback: { (cell) -> Bool in
+                    let id = self.problems[path.row].id
+                    for problem in self.realm.objects(Problem.self).filter("id == %@", id) {
+                        try! self.realm.write {
+                            problem.isFavorite = !problem.isFavorite
+                        }
+                    }
+                    //problemCell.problem.isFavorite = !(problemCell.problem.isFavorite)
+                    problemCell.toggleFavorite()
+                    problemCell.refreshContentView()
+                    (cell.rightButtons[0] as! UIButton).setTitle(self.readFavoriteStatus(cur: problemCell.problem.isFavorite), for: UIControlState());
+                    return true
+                })
+            ]
+        }
+    }
+    
+    func readFavoriteStatus(cur: Bool) -> String {
+        if cur == true { // cur is favorite
+            return "Mark as unfavorite"
+        } else {
+            return "Mark as favorite"
+        }
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    override func tableView(_ tableView: UITableView, editActionsForRowAt: IndexPath) -> [UITableViewRowAction]? {
-        let more = UITableViewRowAction(style: .default, title: "More") { action, index in
-            print("more button tapped")
-            // cell animation
-            tableView.setEditing(false, animated: true)
-        }
-        more.backgroundColor = .lightGray
-        
-        let favorite = UITableViewRowAction(style: .normal, title: "Favorite") { action, index in
-            print("favorite button tapped")
-            // mark "isFavorite" field of problem with "id" in realm to be true
-            let id = self.problems[index.row].id
-            for problem in self.realm.objects(Problem.self).filter("id == %@", id) {
-                try! self.realm.write {
-                    problem.isFavorite = true
-                }
-            }
-            // cell animation
-            tableView.setEditing(false, animated: true)
-        }
-        favorite.backgroundColor = UIColor(red: 179/255, green: 136/255, blue: 250/255, alpha: 1.0)
-        
-        let share = UITableViewRowAction(style: .destructive, title: "Share") { action, index in
-            print("share button tapped")
-            // cell animation
-            tableView.setEditing(false, animated: true)
-        }
-        share.backgroundColor = UIColor(red: 51/255, green: 210/255, blue: 236/255, alpha: 1.0)
-        
-        return [share, favorite, more]
-    }
+//    override func tableView(_ tableView: UITableView, editActionsForRowAt: IndexPath) -> [UITableViewRowAction]? {
+//        let more = UITableViewRowAction(style: .default, title: "More") { action, index in
+//            print("more button tapped")
+//            // cell animation
+//            tableView.setEditing(false, animated: true)
+//        }
+//        more.backgroundColor = .lightGray
+//        
+//        let favorite = UITableViewRowAction(style: .normal, title: "Favorite") { action, index in
+//            print("favorite button tapped")
+//            // mark "isFavorite" field of problem with "id" in realm to be true
+//            let id = self.problems[index.row].id
+//            for problem in self.realm.objects(Problem.self).filter("id == %@", id) {
+//                try! self.realm.write {
+//                    problem.isFavorite = true
+//                }
+//            }
+//            // cell animation
+//            tableView.setEditing(false, animated: true)
+//        }
+//        favorite.backgroundColor = UIColor(red: 179/255, green: 136/255, blue: 250/255, alpha: 1.0)
+//        
+//        let share = UITableViewRowAction(style: .destructive, title: "Share") { action, index in
+//            print("share button tapped")
+//            // cell animation
+//            tableView.setEditing(false, animated: true)
+//        }
+//        share.backgroundColor = UIColor(red: 51/255, green: 210/255, blue: 236/255, alpha: 1.0)
+//        
+//        return [share, favorite, more]
+//    }
     
     
     /*
