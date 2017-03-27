@@ -127,13 +127,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="3iD-sr-bKc">
-                        <barButtonItem key="leftBarButtonItem" image="leftSideMenuIcon" style="plain" id="798-qB-7hn">
+                        <barButtonItem key="leftBarButtonItem" image="leftSideMenuIcon" id="798-qB-7hn">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="leftMenuBtnClicked:" destination="4ZQ-bP-mMJ" id="AnR-eV-5lJ"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="profileMenuIcon" style="plain" id="pBh-vB-QAx">
+                        <barButtonItem key="rightBarButtonItem" image="profileMenuIcon" id="pBh-vB-QAx">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="rightMenuBtnClicked:" destination="4ZQ-bP-mMJ" id="Pbd-Wq-s0D"/>
@@ -201,107 +201,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HAL-31-w3r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="473" y="2306"/>
-        </scene>
-        <!--Problem Detail Table View Controller-->
-        <scene sceneID="Fdx-Vp-B0G">
-            <objects>
-                <tableViewController id="wpN-VP-7Tj" customClass="ProblemDetailTableViewController" customModule="LeetCodee" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="176" sectionHeaderHeight="28" sectionFooterHeight="28" id="3Jl-2P-QQq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TitleTVCell" rowHeight="47" id="qDc-NH-mIE" customClass="TitleTVCell" customModule="LeetCodee" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="47"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qDc-NH-mIE" id="rt3-HI-Rih">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7Z-EG-zds">
-                                            <rect key="frame" x="13" y="13" width="349" height="20.5"/>
-                                            <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="e7Z-EG-zds" firstAttribute="leading" secondItem="rt3-HI-Rih" secondAttribute="leadingMargin" constant="5" id="KHK-1l-xWz"/>
-                                        <constraint firstItem="e7Z-EG-zds" firstAttribute="centerX" secondItem="rt3-HI-Rih" secondAttribute="centerX" id="LSR-VN-pbj"/>
-                                        <constraint firstItem="e7Z-EG-zds" firstAttribute="top" secondItem="rt3-HI-Rih" secondAttribute="topMargin" constant="5" id="anV-RP-2St"/>
-                                        <constraint firstItem="e7Z-EG-zds" firstAttribute="centerY" secondItem="rt3-HI-Rih" secondAttribute="centerY" id="oah-O0-2ly"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="titleLabel" destination="e7Z-EG-zds" id="c8c-Dg-r3I"/>
-                                </connections>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DescriptionTVCell" rowHeight="283" id="qrL-j4-Mka" customClass="DescriptionTVCell" customModule="LeetCodee" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="75" width="375" height="283"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qrL-j4-Mka" id="stW-KT-31P">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="282"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OlE-Bf-ksM">
-                                            <rect key="frame" x="18" y="18" width="339" height="246.5"/>
-                                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </webView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="OlE-Bf-ksM" firstAttribute="top" secondItem="stW-KT-31P" secondAttribute="topMargin" constant="10" id="4U7-WL-KRa"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="OlE-Bf-ksM" secondAttribute="trailing" constant="10" id="Kxg-Ag-aqg"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="OlE-Bf-ksM" secondAttribute="bottom" constant="10" id="N67-SW-nUd"/>
-                                        <constraint firstItem="OlE-Bf-ksM" firstAttribute="leading" secondItem="stW-KT-31P" secondAttribute="leadingMargin" constant="10" id="PzL-kq-LPk"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="descriptionWebView" destination="OlE-Bf-ksM" id="1dc-9s-n7m"/>
-                                </connections>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SolutionTVCell" rowHeight="310" id="afG-xg-YL0" customClass="SolutionsTVCell" customModule="LeetCodee" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="358" width="375" height="310"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="afG-xg-YL0" id="czQ-Gr-j2X">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="309"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n8c-is-4w4">
-                                            <rect key="frame" x="18" y="52.5" width="339" height="239"/>
-                                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </webView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hh-Pc-hnQ">
-                                            <rect key="frame" x="18" y="18" width="339" height="24.5"/>
-                                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="0hh-Pc-hnQ" firstAttribute="leading" secondItem="czQ-Gr-j2X" secondAttribute="leadingMargin" constant="10" id="FsM-PR-6hc"/>
-                                        <constraint firstItem="n8c-is-4w4" firstAttribute="leading" secondItem="czQ-Gr-j2X" secondAttribute="leadingMargin" constant="10" id="Llr-rb-hCR"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="0hh-Pc-hnQ" secondAttribute="trailing" constant="10" id="QgC-Gd-DPr"/>
-                                        <constraint firstItem="n8c-is-4w4" firstAttribute="top" secondItem="0hh-Pc-hnQ" secondAttribute="bottom" constant="10" id="dPU-wT-xDr"/>
-                                        <constraint firstItem="0hh-Pc-hnQ" firstAttribute="top" secondItem="czQ-Gr-j2X" secondAttribute="topMargin" constant="10" id="fqe-uh-bdL"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="n8c-is-4w4" secondAttribute="bottom" constant="10" id="iYl-nG-EKs"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="n8c-is-4w4" secondAttribute="trailing" constant="10" id="kLV-Re-yje"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="solutionTitleLabel" destination="0hh-Pc-hnQ" id="Cyf-tM-ZMs"/>
-                                    <outlet property="solutionWebView" destination="n8c-is-4w4" id="F3x-RR-teE"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="wpN-VP-7Tj" id="wu0-ng-HuU"/>
-                            <outlet property="delegate" destination="wpN-VP-7Tj" id="Goc-94-jZG"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hDM-BC-3er" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1289" y="878"/>
         </scene>
         <!--Problem Detail View Controller-->
         <scene sceneID="8Lp-Cn-AYH">

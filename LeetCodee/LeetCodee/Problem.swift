@@ -12,6 +12,7 @@ import RealmSwift
 
 class Problem: Object {
     dynamic var id: Int = 0
+    dynamic var idStr = ""
     dynamic var title: String!
     dynamic var acceptance: Float = 0.0
     dynamic var descriptionn: String!
@@ -27,6 +28,7 @@ class Problem: Object {
     
     func initialize(id: Int, title: String, acceptance: Float, description: String, difficulty: String, editorialLink: String, problemLink: String, solutions: NSArray, tags: String, timestamp: Double) {
         self.id = id
+        self.idStr = String(id)
         self.title = title
         self.acceptance = acceptance
         self.descriptionn = description

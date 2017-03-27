@@ -160,7 +160,7 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
     func didChangeSearchText(searchText: String) {
         // TODO filter
         filteredProblems = [Problem]()
-        for problem in realm.objects(Problem.self).sorted(byKeyPath: "id").filter("title contains[c] %@ or id == %@", searchText, Int(searchText) ?? 0) {
+        for problem in realm.objects(Problem.self).sorted(byKeyPath: "id").filter("title contains[c] %@ or idStr contains[c] %@", searchText, searchText) {
             filteredProblems.append(problem)
         }
         // ...
