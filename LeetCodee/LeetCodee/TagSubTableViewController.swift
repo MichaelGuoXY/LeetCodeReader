@@ -169,7 +169,7 @@ class TagSubTableViewController: UITableViewController, CustomSearchControllerDe
     // MARK: -- MGSwipeTableCellDelegate
     func swipeTableCell(_ cell: MGSwipeTableCell, swipeButtonsFor direction: MGSwipeDirection, swipeSettings: MGSwipeSettings, expansionSettings: MGSwipeExpansionSettings) -> [UIView]? {
         
-        swipeSettings.transition = .drag
+        swipeSettings.transition = .static
         expansionSettings.buttonIndex = 0
         
         if direction == MGSwipeDirection.leftToRight {
@@ -179,7 +179,7 @@ class TagSubTableViewController: UITableViewController, CustomSearchControllerDe
             let path = self.tableView.indexPath(for: cell)!
             
             return [
-                MGSwipeButton(title: "Trash it", backgroundColor: color, callback: { (cell) -> Bool in
+                MGSwipeButton(title: "  Trash it", icon: #imageLiteral(resourceName: "trash"), backgroundColor: color, callback: { (cell) -> Bool in
                     let id = self.problems[path.row].id
                     for problem in self.realm.objects(Problem.self).filter("id == %@", id) {
                         try! self.realm.write {
@@ -187,7 +187,7 @@ class TagSubTableViewController: UITableViewController, CustomSearchControllerDe
                         }
                     }
                     self.problems.remove(at: path.row)
-                    self.tableView.deleteRows(at: [path], with: .right)
+                    self.tableView.deleteRows(at: [path], with: .fade)
                     
                     return false //don't autohide to improve delete animation
                 })
@@ -200,9 +200,9 @@ class TagSubTableViewController: UITableViewController, CustomSearchControllerDe
             let color = UIColor(red: 179/255, green: 136/255, blue: 250/255, alpha: 1.0)
             let path = self.tableView.indexPath(for: cell)!
             let problemCell = cell as! ProblemTVCell
-            
+            let curLike = problemCell.problem.isFavorite
             return [
-                MGSwipeButton(title: readFavoriteStatus(cur: problemCell.problem.isFavorite), backgroundColor: color, callback: { (cell) -> Bool in
+                MGSwipeButton(title: readFavoriteStatus(cur: curLike), icon: curLike ? #imageLiteral(resourceName: "dislike") : #imageLiteral(resourceName: "like"), backgroundColor: color, callback: { (cell) -> Bool in
                     let id = self.problems[path.row].id
                     for problem in self.realm.objects(Problem.self).filter("id == %@", id) {
                         try! self.realm.write {
@@ -212,7 +212,8 @@ class TagSubTableViewController: UITableViewController, CustomSearchControllerDe
                     //problemCell.problem.isFavorite = !(problemCell.problem.isFavorite)
                     problemCell.toggleFavorite()
                     problemCell.refreshContentView()
-                    (cell.rightButtons[0] as! UIButton).setTitle(self.readFavoriteStatus(cur: problemCell.problem.isFavorite), for: UIControlState());
+                    (cell.rightButtons[0] as! UIButton).setTitle(self.readFavoriteStatus(cur: problemCell.problem.isFavorite), for: .normal)
+                    (cell.rightButtons[0] as! UIButton).setImage(problemCell.problem.isFavorite ? #imageLiteral(resourceName: "dislike") : #imageLiteral(resourceName: "like"), for: .normal)
                     return true
                 })
             ]
@@ -221,9 +222,9 @@ class TagSubTableViewController: UITableViewController, CustomSearchControllerDe
     
     func readFavoriteStatus(cur: Bool) -> String {
         if cur == true { // cur is favorite
-            return "Mark as unfavorite"
+            return "  Mark as unfavorite"
         } else {
-            return "Mark as favorite"
+            return "  Mark as favorite"
         }
     }
 

@@ -22,6 +22,7 @@
 		805E7F271E7FC57F0075479F /* SendFeedbackTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805E7F261E7FC57F0075479F /* SendFeedbackTVCell.swift */; };
 		805E7F291E7FC9EA0075479F /* SendFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805E7F281E7FC9EA0075479F /* SendFeedbackViewController.swift */; };
 		805E7F2B1E7FD3AC0075479F /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805E7F2A1E7FD3AC0075479F /* StartViewController.swift */; };
+		808320CA1E89A95000F488A2 /* TrashProblemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808320C91E89A95000F488A2 /* TrashProblemTableViewController.swift */; };
 		809D9C031E7B3B230091D7D5 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D9C021E7B3B230091D7D5 /* HomeTableViewController.swift */; };
 		809D9C051E7B56540091D7D5 /* FavoriteProblemTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D9C041E7B56540091D7D5 /* FavoriteProblemTVC.swift */; };
 		80BC12681E7C56C500AFE182 /* ProblemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BC12671E7C56C500AFE182 /* ProblemDetailViewController.swift */; };
@@ -63,6 +64,7 @@
 		805E7F261E7FC57F0075479F /* SendFeedbackTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendFeedbackTVCell.swift; sourceTree = "<group>"; };
 		805E7F281E7FC9EA0075479F /* SendFeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendFeedbackViewController.swift; sourceTree = "<group>"; };
 		805E7F2A1E7FD3AC0075479F /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		808320C91E89A95000F488A2 /* TrashProblemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrashProblemTableViewController.swift; sourceTree = "<group>"; };
 		809D9C021E7B3B230091D7D5 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		809D9C041E7B56540091D7D5 /* FavoriteProblemTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteProblemTVC.swift; sourceTree = "<group>"; };
 		80BC12671E7C56C500AFE182 /* ProblemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemDetailViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				805E7F241E7FBFF50075479F /* RightMenuViewController.swift */,
 				805E7F261E7FC57F0075479F /* SendFeedbackTVCell.swift */,
 				809D9C041E7B56540091D7D5 /* FavoriteProblemTVC.swift */,
+				808320C91E89A95000F488A2 /* TrashProblemTableViewController.swift */,
 				80C255791E7BBDE000842459 /* CustomSearchBar.swift */,
 				80C2557B1E7BC10300842459 /* CustomSearchController.swift */,
 				809D9C021E7B3B230091D7D5 /* HomeTableViewController.swift */,
@@ -223,7 +226,7 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = N74Z9L6N77;
 						LastSwiftMigration = 0820;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -316,6 +319,7 @@
 			files = (
 				80C2557C1E7BC10300842459 /* CustomSearchController.swift in Sources */,
 				80F666751E79E7E20030FA1E /* TitleTVCell.swift in Sources */,
+				808320CA1E89A95000F488A2 /* TrashProblemTableViewController.swift in Sources */,
 				80F666771E79E7F60030FA1E /* SolutionsTVCell.swift in Sources */,
 				805265EF1E80EB2E00307980 /* UpdateDataViewController.swift in Sources */,
 				80FB739C1E7C7B9200D8396D /* OptionOneTableViewCell.swift in Sources */,
@@ -470,14 +474,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = N74Z9L6N77;
 				INFOPLIST_FILE = LeetCodee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.michael.guo.apps.leetcodereader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "588a757d-512a-4cae-b0db-b75988da9d54";
+				PROVISIONING_PROFILE_SPECIFIER = guo;
 				SWIFT_OBJC_BRIDGING_HEADER = "LeetCodee/LeetCodee-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -491,14 +495,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = N74Z9L6N77;
 				INFOPLIST_FILE = LeetCodee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.michael.guo.apps.leetcodereader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "588a757d-512a-4cae-b0db-b75988da9d54";
+				PROVISIONING_PROFILE_SPECIFIER = guo;
 				SWIFT_OBJC_BRIDGING_HEADER = "LeetCodee/LeetCodee-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};

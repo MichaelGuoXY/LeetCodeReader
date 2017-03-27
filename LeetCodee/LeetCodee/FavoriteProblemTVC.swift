@@ -78,7 +78,7 @@ class FavoriteProblemTVC: UITableViewController, MGSwipeTableCellDelegate {
     // MARK: -- MGSwipeTableCellDelegate
     func swipeTableCell(_ cell: MGSwipeTableCell, swipeButtonsFor direction: MGSwipeDirection, swipeSettings: MGSwipeSettings, expansionSettings: MGSwipeExpansionSettings) -> [UIView]? {
         
-        swipeSettings.transition = .drag
+        swipeSettings.transition = .static
         expansionSettings.buttonIndex = 0
         
         if direction == MGSwipeDirection.leftToRight {
@@ -88,7 +88,7 @@ class FavoriteProblemTVC: UITableViewController, MGSwipeTableCellDelegate {
             let path = self.tableView.indexPath(for: cell)!
             
             return [
-                MGSwipeButton(title: "Trash it", backgroundColor: color, callback: { (cell) -> Bool in
+                MGSwipeButton(title: "  Trash it", icon: #imageLiteral(resourceName: "trash"), backgroundColor: color, callback: { (cell) -> Bool in
                     let id = self.problems[path.row].id
                     for problem in self.realm.objects(Problem.self).filter("id == %@", id) {
                         try! self.realm.write {
@@ -96,7 +96,7 @@ class FavoriteProblemTVC: UITableViewController, MGSwipeTableCellDelegate {
                         }
                     }
                     self.problems.remove(at: path.row)
-                    self.tableView.deleteRows(at: [path], with: .right)
+                    self.tableView.deleteRows(at: [path], with: .fade)
                     
                     return false //don't autohide to improve delete animation
                 })
@@ -110,7 +110,7 @@ class FavoriteProblemTVC: UITableViewController, MGSwipeTableCellDelegate {
             let path = self.tableView.indexPath(for: cell)!
             
             return [
-                MGSwipeButton(title: "Mark as unfavorite", backgroundColor: color, callback: { (cell) -> Bool in
+                MGSwipeButton(title: "  Mark as unfavorite", icon: #imageLiteral(resourceName: "dislike"), backgroundColor: color, callback: { (cell) -> Bool in
                     let id = self.problems[path.row].id
                     for problem in self.realm.objects(Problem.self).filter("id == %@", id) {
                         try! self.realm.write {
@@ -118,7 +118,7 @@ class FavoriteProblemTVC: UITableViewController, MGSwipeTableCellDelegate {
                         }
                     }
                     self.problems.remove(at: path.row)
-                    self.tableView.deleteRows(at: [path], with: .left)
+                    self.tableView.deleteRows(at: [path], with: .fade)
                     
                     return false
                 })
