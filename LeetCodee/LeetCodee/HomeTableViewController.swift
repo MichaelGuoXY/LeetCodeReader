@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 import SideMenu
 
-class HomeTableViewController: UITableViewController, CustomSearchControllerDelegate, LeftMenuDelegate, UpdateDataDelegate, MGSwipeTableCellDelegate {
+class HomeTableViewController: UITableViewController, CustomSearchControllerDelegate, LeftMenuDelegate, UpdateDataDelegate, MGSwipeTableCellDelegate, NightModeTVCellDelegate {
     @IBOutlet weak var leftMenuButton: UIBarButtonItem!
     @IBOutlet weak var rightMenuButton: UIBarButtonItem!
     
@@ -21,6 +21,7 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
     var searchController: CustomSearchController!
     
     let realm = try! Realm()
+    let userDefault = UserDefaults.standard
     
     @IBAction func leftMenuBtnClicked(_ sender: UIBarButtonItem) {
         present(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)
@@ -56,6 +57,7 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
         SideMenuManager.menuRightNavigationController = menuRightNavigationController
         let rightMenuVC = menuRightNavigationController.viewControllers[0] as! RightMenuViewController
         rightMenuVC.delegate = self
+        rightMenuVC.delegateForNightTVCell = self
         
         // Enable gestures. The left and/or right menus must be set up above for these to work.
         // Note that these continue to work on the Navigation Controller independent of the view controller it displays!
@@ -70,11 +72,6 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
         SideMenuManager.menuFadeStatusBar = false
         SideMenuManager.menuPresentMode = .viewSlideInOut
         
-        // config navi bar color
-        navigationController?.navigationBar.barTintColor = UIColor(red: 52/255, green: 51/255, blue: 57/255, alpha: 1.0)
-        UINavigationBar.appearance().tintColor = .white
-        navigationController?.navigationBar.tintColor = .white
-        
         // configure search controller
         if UIDevice.current.orientation.isLandscape {
             let width = view.frame.width > view.frame.height ? view.frame.width : view.frame.height
@@ -87,10 +84,12 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        // reload bar color if needed
+        reloadHomeViewForColor()
+        
         // reload tableview
-        reloadTableView()
-        //tabBarController?.tabBar.barTintColor = UIColor(red: 85/255, green: 210/255, blue: 251/255, alpha: 0.9)
-        tabBarController?.tabBar.tintColor = UIColor(red: 85/255, green: 210/255, blue: 251/255, alpha: 0.9)
+        // reloadTableView()
+        
     }
     
     func reloadTableView() {
@@ -100,6 +99,20 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
             problems.append(problem)
         }
         self.tableView.reloadData()
+    }
+    
+    // MARK: - NightModeTVCellDelegate
+    func reloadHomeViewForColor() {
+        // config navi bar color and tab bar
+        navigationController?.navigationBar.barTintColor = UIColor.init(red: CGFloat(userDefault.float(forKey: "red")), green: CGFloat(userDefault.float(forKey: "green")), blue: CGFloat(userDefault.float(forKey: "blue")), alpha: 0.9)
+        leftMenuButton.tintColor = userDefault.bool(forKey: "isNight") ? UIColor.white : UIColor.black
+        rightMenuButton.tintColor = userDefault.bool(forKey: "isNight") ? UIColor.white : UIColor.black
+        UINavigationBar.appearance().tintColor = .white
+        navigationController?.navigationBar.tintColor = .white
+        tabBarController?.tabBar.barTintColor = UIColor.init(red: CGFloat(userDefault.float(forKey: "red")), green: CGFloat(userDefault.float(forKey: "green")), blue: CGFloat(userDefault.float(forKey: "blue")), alpha: 0.9)
+        tabBarController?.tabBar.tintColor = .white
+        
+        reloadTableView()
     }
     
     override func didReceiveMemoryWarning() {

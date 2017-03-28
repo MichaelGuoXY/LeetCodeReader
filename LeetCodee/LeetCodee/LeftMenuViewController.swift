@@ -16,6 +16,7 @@ class LeftMenuViewController: UIViewController, UITableViewDelegate, UITableView
     var isEToH = false
     var isAToZ = false
     var delegate: LeftMenuDelegate!
+    let userDefault = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,12 @@ class LeftMenuViewController: UIViewController, UITableViewDelegate, UITableView
         
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 140
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        view.backgroundColor = userDefault.bool(forKey: "isNight") ? UIColor.lightGray : UIColor.white
+        tableView.backgroundColor = userDefault.bool(forKey: "isNight") ? UIColor.lightGray : UIColor.white
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,29 +53,35 @@ class LeftMenuViewController: UIViewController, UITableViewDelegate, UITableView
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "WelcomeTVCell") as! WelcomeTVCell
             cell.titleLabel.text = "Welcome"
+            cell.backgroundColor = .clear
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "WelcomeTVCell") as! WelcomeTVCell
             cell.titleLabel.text = "To"
+            cell.backgroundColor = .clear
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "WelcomeTVCell") as! WelcomeTVCell
             cell.titleLabel.text = "LeetCodee"
+            cell.backgroundColor = .clear
             return cell
         case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: "OptionTVCell") as! OptionOneTableViewCell
             cell.imgView.image = #imageLiteral(resourceName: "1to2")
             cell.titleLabel.text = "Sort by Problem #"
+            cell.backgroundColor = .clear
             return cell
         case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier: "OptionTVCell") as! OptionOneTableViewCell
             cell.imgView.image = #imageLiteral(resourceName: "HtoE")
             cell.titleLabel.text = "Sort by Problem Acceptance and Difficulty"
+            cell.backgroundColor = .clear
             return cell
         case 5:
             let cell = tableView.dequeueReusableCell(withIdentifier: "OptionTVCell") as! OptionOneTableViewCell
             cell.imgView.image = #imageLiteral(resourceName: "ZtoA")
             cell.titleLabel.text = "Sort by Problem Title"
+            cell.backgroundColor = .clear
             return cell
         default:
             return UITableViewCell()

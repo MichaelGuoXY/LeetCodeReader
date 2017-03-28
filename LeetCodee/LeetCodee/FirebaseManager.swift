@@ -96,19 +96,37 @@ class FirebaseManager: NSObject{
                 // this step allows UI updating, very important
                 RunLoop.main.run(until: NSDate(timeIntervalSinceNow: 0.01) as Date)
                 
-                // if realm already has this problem, then skip
+                
                 if realm.objects(Problem.self).filter("id == %@", id).count > 0 {
+                    // if realm already has this problem timestamp greater than this one's, then skip
                     if realm.objects(Problem.self).filter("id == %@", id)[0].timestamp - timestamp > -1 {
                         continue
+                    } else {
+                        // update old problem
+                        let oldProblem = realm.objects(Problem.self).filter("id == %@", id)[0]
+                        try! realm.write {
+                            oldProblem.title = title
+                            oldProblem.acceptance = acceptance
+                            oldProblem.descriptionn = description
+                            oldProblem.difficulty = difficulty
+                            oldProblem.editorialLink = editorialLink
+                            for solution in solutions {
+                                let solu = RString()
+                                solu.stringValue = solution as! String
+                                oldProblem.solutions.append(solu)
+                            }
+                            oldProblem.tags = tags
+                            oldProblem.timestamp = timestamp
+                        }
+                    }
+                } else {
+                    // insert new problem
+                    let problem = Problem()
+                    problem.initialize(id: id, title: title, acceptance: acceptance, description: description, difficulty: difficulty, editorialLink: editorialLink, problemLink: problemLink, solutions: solutions, tags: tags, timestamp: timestamp)
+                    try! realm.write {
+                        realm.add(problem)
                     }
                 }
-
-                let problem = Problem()
-                problem.initialize(id: id, title: title, acceptance: acceptance, description: description, difficulty: difficulty, editorialLink: editorialLink, problemLink: problemLink, solutions: solutions, tags: tags, timestamp: timestamp)
-                try! realm.write {
-                    realm.add(problem)
-                }
-                
             }
             //reloadTableView()
             progressBar.animateTo(progress: 1)

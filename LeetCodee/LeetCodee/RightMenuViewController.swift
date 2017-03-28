@@ -11,6 +11,8 @@ import UIKit
 class RightMenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var delegate: UpdateDataDelegate!
+    var delegateForNightTVCell: NightModeTVCellDelegate!
+    let userDefault = UserDefaults.standard
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -25,13 +27,19 @@ class RightMenuViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.estimatedRowHeight = 140
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        view.backgroundColor = userDefault.bool(forKey: "isNight") ? UIColor.lightGray : UIColor.white
+        tableView.backgroundColor = userDefault.bool(forKey: "isNight") ? UIColor.lightGray : UIColor.white
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 9
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -43,26 +51,42 @@ class RightMenuViewController: UIViewController, UITableViewDelegate, UITableVie
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "WelcomeTVCell") as! WelcomeTVCell
             cell.titleLabel.text = "Coming Soon"
+            cell.backgroundColor = .clear
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "WelcomeTVCell") as! WelcomeTVCell
             cell.titleLabel.text = "..."
+            cell.backgroundColor = .clear
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "WelcomeTVCell") as! WelcomeTVCell
             cell.titleLabel.text = ""
+            cell.backgroundColor = .clear
             return cell
         case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: "SendFeedbackTVCell") as! SendFeedbackTVCell
             cell.label.text = "Send Feedback"
+            cell.backgroundColor = .clear
             return cell
         case 5:
             let cell = tableView.dequeueReusableCell(withIdentifier: "SendFeedbackTVCell") as! SendFeedbackTVCell
             cell.label.text = "Update With Online Database"
             cell.label.textColor = .red
+            cell.backgroundColor = .clear
+            return cell
+        case 7:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "FantasticFontTVCell") as! FantasticFontTVCell
+            cell.backgroundColor = .clear
+            return cell
+        case 8:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "NightModeTVCell") as! NightModeTableViewCell
+            cell.delegate = delegateForNightTVCell
+            cell.backgroundColor = .clear
             return cell
         default:
-            return UITableViewCell()
+            let cell = UITableViewCell()
+            cell.backgroundColor = .clear
+            return cell
         }
     }
     

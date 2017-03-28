@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		801AE4FA1E8A4F02002F5B3D /* FantasticFontTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801AE4F91E8A4F02002F5B3D /* FantasticFontTVCell.swift */; };
+		801AE4FC1E8A5A32002F5B3D /* NightModeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801AE4FB1E8A5A32002F5B3D /* NightModeTableViewCell.swift */; };
 		805265EB1E80914A00307980 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805265EA1E80914A00307980 /* MainTabBarViewController.swift */; };
 		805265EF1E80EB2E00307980 /* UpdateDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805265EE1E80EB2E00307980 /* UpdateDataViewController.swift */; };
 		805D052F1E784FAB00B8C682 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805D052E1E784FAB00B8C682 /* AppDelegate.swift */; };
@@ -47,6 +49,8 @@
 /* Begin PBXFileReference section */
 		0FD46ACAA72717A9836A7C9D /* Pods_LeetCodee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeetCodee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67999FF3B4CBEBF2932AB27C /* Pods-LeetCodee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeetCodee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeetCodee/Pods-LeetCodee.debug.xcconfig"; sourceTree = "<group>"; };
+		801AE4F91E8A4F02002F5B3D /* FantasticFontTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FantasticFontTVCell.swift; sourceTree = "<group>"; };
+		801AE4FB1E8A5A32002F5B3D /* NightModeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NightModeTableViewCell.swift; sourceTree = "<group>"; };
 		805265EA1E80914A00307980 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		805265EE1E80EB2E00307980 /* UpdateDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateDataViewController.swift; sourceTree = "<group>"; };
 		805D052B1E784FAB00B8C682 /* LeetCodee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeetCodee.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +139,8 @@
 				80D04A401E804EC10068124C /* Reachability.swift */,
 				805D05481E788FA300B8C682 /* Problem.swift */,
 				805D05321E784FAB00B8C682 /* Main.storyboard */,
+				801AE4F91E8A4F02002F5B3D /* FantasticFontTVCell.swift */,
+				801AE4FB1E8A5A32002F5B3D /* NightModeTableViewCell.swift */,
 				805265EE1E80EB2E00307980 /* UpdateDataViewController.swift */,
 				805E7F281E7FC9EA0075479F /* SendFeedbackViewController.swift */,
 				805265EA1E80914A00307980 /* MainTabBarViewController.swift */,
@@ -318,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80C2557C1E7BC10300842459 /* CustomSearchController.swift in Sources */,
+				801AE4FC1E8A5A32002F5B3D /* NightModeTableViewCell.swift in Sources */,
 				80F666751E79E7E20030FA1E /* TitleTVCell.swift in Sources */,
 				808320CA1E89A95000F488A2 /* TrashProblemTableViewController.swift in Sources */,
 				80F666771E79E7F60030FA1E /* SolutionsTVCell.swift in Sources */,
@@ -338,6 +345,7 @@
 				80F37BF41E88F48F000BA86B /* MGSwipeButton.m in Sources */,
 				805E7F271E7FC57F0075479F /* SendFeedbackTVCell.swift in Sources */,
 				80D04A411E804EC10068124C /* Reachability.swift in Sources */,
+				801AE4FA1E8A4F02002F5B3D /* FantasticFontTVCell.swift in Sources */,
 				80D04A3B1E7FE6C30068124C /* GTProgressBar.swift in Sources */,
 				805E7F291E7FC9EA0075479F /* SendFeedbackViewController.swift in Sources */,
 				80FB739A1E7C7B8000D8396D /* WelcomeTVCell.swift in Sources */,

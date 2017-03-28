@@ -17,12 +17,13 @@ class SolutionsTVCell: UITableViewCell, UIWebViewDelegate{
             updateUI()
         }
     }
-    
+    let userDefault = UserDefaults.standard
     var delegate: SolutionReloadDelegate!
     var indexPath: IndexPath!
     
     func updateUI() {
-//        solutionWebView.scrollView.isScrollEnabled = false
+
+        solutionTitleLabel.font = UIFont(name: userDefault.string(forKey: "SolutionTitleLabelFont")!, size: 17)
         let arr = solutionOfProblem.components(separatedBy: "FORSPLITROF")
         if arr.count < 1 {return} // may have index out of bounds exception
         let title = arr[0]

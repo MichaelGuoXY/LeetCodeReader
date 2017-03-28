@@ -16,6 +16,7 @@ class TagViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     let tags = ["Array", "Hash Table", "Linked List", "Math", "Two Pointers", "String", "Binary Search", "Divide and Conquer", "Dynamic Programming", "Backtracking", "Stack", "Heap", "Greedy", "Sort", "Bit Manipulation", "Tree", "Depth-first Search", "Breadth-first Search", "Union Find", "Graph", "Design", "Topological Sort", "Trie", "Binary Indexed Tree", "Recursion", "Brainteaser", "Memoization", "Queue", "Minimax", "Reservoir Sampling", "\"Dynamic Programming\""]
     
     let realm = try! Realm()
+    let userDefault = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,12 +28,18 @@ class TagViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.view.backgroundColor = userDefault.bool(forKey: "isNight") ? UIColor.lightGray : UIColor.white
         navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Chalkduster", size: 20)!, NSForegroundColorAttributeName: UIColor.white]
         self.title = "Tags"
-        navigationController?.navigationBar.barTintColor = UIColor(red: 52/255, green: 51/255, blue: 57/255, alpha: 1.0)
+        navigationController?.navigationBar.barTintColor = tabBarController?.tabBar.barTintColor
         
-//        tabBarController?.tabBar.barTintColor = UIColor(red: 255/255, green: 162/255, blue: 81/255, alpha: 0.9)
-        tabBarController?.tabBar.tintColor = UIColor(red: 85/255, green: 210/255, blue: 251/255, alpha: 0.9)
+//        tabBarController?.tabBar.barTintColor = userDefault.object(forKey: "BarTintColor") as? UIColor
+        tabBarController?.tabBar.tintColor = .white
+        
+        tableView.tintColor = userDefault.bool(forKey: "isNight") ? UIColor.lightGray : UIColor.white
+        tableView.backgroundColor = userDefault.bool(forKey: "isNight") ? UIColor.lightGray : UIColor.white
+        // update fonts if needed
+        tableView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -50,11 +57,11 @@ class TagViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TagTVCell", for: indexPath)
-        cell.textLabel?.font = UIFont(name: "Chalkboard SE", size: 20)
-        cell.detailTextLabel?.font = UIFont(name: "Papyrus", size: 20)
+        cell.textLabel?.font = UIFont(name: userDefault.string(forKey: "TagViewCellTextLabelFont")!, size: 20)
+        cell.detailTextLabel?.font = UIFont(name: userDefault.string(forKey: "TagViewCellDetailLabelFont")!, size: 20)
         cell.textLabel?.text = tags[indexPath.row]
         cell.detailTextLabel?.text = String(countForTag(tag: tags[indexPath.row]))
-        
+        cell.backgroundColor = .clear
         return cell
     }
     

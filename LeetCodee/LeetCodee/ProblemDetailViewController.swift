@@ -23,6 +23,7 @@ class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITabl
     var heightForDescriptionCell: CGFloat!
     
     let sectionTitleArr = ["TITLE", "DESCRIPTION", "SOLUTIONS"]
+    let userDefault = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,10 +40,6 @@ class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITabl
         tableView.estimatedRowHeight = 140
         
         backToTopBtnConfig()
-        
-        // got back button config
-        
-        //        navigationController?.navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Chalkduster", size: 20)!], for: UIControlState.normal)
     }
     
     // config floating button over table view
@@ -61,7 +58,9 @@ class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITabl
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        tabBarController?.tabBar.barTintColor = navigationController?.navigationBar.barTintColor
+        self.view.backgroundColor = userDefault.bool(forKey: "isNight") ? UIColor.lightGray : UIColor.white
+//        tabBarController?.tabBar.barTintColor = UIColor(red: 85/255, green: 210/255, blue: 251/255, alpha: 0.9)
+        tableView.backgroundColor = userDefault.bool(forKey: "isNight") ? UIColor.lightGray : UIColor.white
         fetchSolutions()
     }
     
@@ -100,18 +99,21 @@ class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITabl
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "TitleTVCell", for: indexPath) as! TitleTVCell
             cell.titleOfProblem = curProblem.title
+            cell.contentView.backgroundColor = userDefault.bool(forKey: "isNight") ? UIColor.lightGray : UIColor.white
             return cell
         } else if indexPath.section == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "DescriptionTVCell", for: indexPath) as! DescriptionTVCell
             cell.descriptionOfProblem = curProblem.descriptionn
             cell.delegate = self
             cell.indexPath = indexPath
+            cell.contentView.backgroundColor = userDefault.bool(forKey: "isNight") ? UIColor.lightGray : UIColor.white
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "SolutionTVCell", for: indexPath) as! SolutionsTVCell
             cell.solutionOfProblem = solutions == nil ? "" : solutions[indexPath.row]
             cell.delegate = self
             cell.indexPath = indexPath
+            cell.contentView.backgroundColor = userDefault.bool(forKey: "isNight") ? UIColor.lightGray : UIColor.white
             return cell
         }
     }
@@ -129,7 +131,7 @@ class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITabl
         let label = UILabel(frame: CGRect(x: returnedView.bounds.width / 5, y: 0, width: tableView.bounds.width, height: 30))
         label.text = sectionTitleArr[section]
         label.textColor = .gray
-        label.font = UIFont(name: "Chalkduster", size: 20)
+        label.font = UIFont(name: userDefault.string(forKey: "ProblemDetailViewHeaderTextFont")!, size: 20)
         returnedView.addSubview(label)
         
         // section == 0: TITLE
@@ -141,9 +143,10 @@ class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITabl
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        if indexPath.section < 2 {return}
         let isUnExpanded = heightsForSolutionsCell[indexPath]?[0] as! Int == 1
         heightsForSolutionsCell[indexPath]?[0] = isUnExpanded ? 2 : 1
-        tableView.cellForRow(at: indexPath)?.backgroundColor = isUnExpanded ? UIColor(red: 204/255, green: 243/255, blue: 246/255, alpha: 1) : .white
+        tableView.cellForRow(at: indexPath)?.backgroundColor = isUnExpanded ? UIColor(red: 255/255, green: 217/255, blue: 255/255, alpha: 1) : .white
         tableView.beginUpdates()
         tableView.endUpdates()
     }

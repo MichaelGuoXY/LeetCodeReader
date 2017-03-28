@@ -47,7 +47,16 @@ class StartViewController: UIViewController {
     @IBOutlet weak var progressBar: GTProgressBar!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // set up for user default fonts
+        userdefault.set("ChalkboardSE-Bold", forKey: "SolutionTitleLabelFont")
+        userdefault.set("Chalkboard SE", forKey: "TagViewCellTextLabelFont")
+        userdefault.set("Papyrus", forKey: "TagViewCellDetailLabelFont")
+        userdefault.set("Chalkduster", forKey: "ProblemDetailViewHeaderTextFont")
+        // set up for bar color
+        userdefault.set(85/255.0, forKey: "red")
+        userdefault.set(210/255.0, forKey: "green")
+        userdefault.set(251/255.0, forKey: "blue")
+        userdefault.set(false, forKey: "isNight")
         // Do any additional setup after loading the view.
         realm = try! Realm()
         // download from Firebase

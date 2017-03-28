@@ -17,6 +17,7 @@ class TagSubTableViewController: UITableViewController, CustomSearchControllerDe
     var tag: String!
     var searchController: CustomSearchController!
     let realm = try! Realm()
+    let userDefault = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,12 +44,12 @@ class TagSubTableViewController: UITableViewController, CustomSearchControllerDe
         super.viewWillAppear(animated)
         // reload tableview
         reloadTableView()
-        navigationController?.navigationBar.barTintColor = UIColor(red: 52/255, green: 51/255, blue: 57/255, alpha: 1.0)
+        navigationController?.navigationBar.barTintColor = tabBarController?.tabBar.barTintColor
         navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Chalkduster", size: 20)!, NSForegroundColorAttributeName: UIColor.white]
 
-//        tabBarController?.tabBar.barTintColor = UIColor(red: 255/255, green: 162/255, blue: 81/255, alpha: 0.9)
-        tabBarController?.tabBar.tintColor = UIColor(red: 85/255, green: 210/255, blue: 251/255, alpha: 0.9)
+//        tabBarController?.tabBar.barTintColor = userDefault.object(forKey: "BarTintColor") as? UIColor
+        tabBarController?.tabBar.tintColor = .white
     }
     
     func reloadTableView() {

@@ -24,6 +24,7 @@ class ProblemTVCell: MGSwipeTableCell {
             updateUI()
         }
     }
+    let userDefault = UserDefaults.standard
     
 //    override func draw(_ rect: CGRect) {
 //        
@@ -61,6 +62,7 @@ class ProblemTVCell: MGSwipeTableCell {
 //        line.backgroundColor = UIColor(red: 17/255, green: 246/255, blue: 139/255, alpha: 1.0)
 //        contentView.addSubview(line)
         // update UI immediately after "problem" being set
+        self.contentView.backgroundColor = userDefault.bool(forKey: "isNight") ? UIColor.lightGray : UIColor.white
         id.text = "No." + String(problem.id)
         title.text = problem.title
         acceptance.text = String(format: "%.2f", problem.acceptance) + "%"
