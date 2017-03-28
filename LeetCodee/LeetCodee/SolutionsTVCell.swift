@@ -24,6 +24,8 @@ class SolutionsTVCell: UITableViewCell, UIWebViewDelegate{
     func updateUI() {
 
         solutionTitleLabel.font = UIFont(name: userDefault.string(forKey: "SolutionTitleLabelFont")!, size: 17)
+        solutionWebView.backgroundColor = userDefault.bool(forKey: "isNight") ? UIColor.lightGray : UIColor.white
+        solutionWebView.scrollView.backgroundColor = userDefault.bool(forKey: "isNight") ? UIColor.lightGray : UIColor.white
         let arr = solutionOfProblem.components(separatedBy: "FORSPLITROF")
         if arr.count < 1 {return} // may have index out of bounds exception
         let title = arr[0]

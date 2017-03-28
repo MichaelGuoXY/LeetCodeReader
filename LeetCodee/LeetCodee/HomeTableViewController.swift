@@ -103,6 +103,8 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
     
     // MARK: - NightModeTVCellDelegate
     func reloadHomeViewForColor() {
+        // config tableview background color
+        tableView.backgroundColor = userDefault.bool(forKey: "isNight") ? UIColor.lightGray : UIColor.white
         // config navi bar color and tab bar
         navigationController?.navigationBar.barTintColor = UIColor.init(red: CGFloat(userDefault.float(forKey: "red")), green: CGFloat(userDefault.float(forKey: "green")), blue: CGFloat(userDefault.float(forKey: "blue")), alpha: 0.9)
         leftMenuButton.tintColor = userDefault.bool(forKey: "isNight") ? UIColor.white : UIColor.black

@@ -11,7 +11,7 @@ import UIKit
 class DescriptionTVCell: UITableViewCell, UIWebViewDelegate {
 
     @IBOutlet weak var descriptionWebView: UIWebView!
-    
+    let userDefault = UserDefaults.standard
     var descriptionOfProblem: String! {
         didSet {
             updateUI()
@@ -25,6 +25,7 @@ class DescriptionTVCell: UITableViewCell, UIWebViewDelegate {
         // Initialization code
         descriptionWebView.delegate = self
         //descriptionWebView.scrollView.isScrollEnabled = false
+        descriptionWebView.backgroundColor = userDefault.bool(forKey: "isNight") ? UIColor.lightGray : UIColor.white
     }
 
     func loadDescriptionWebView() {

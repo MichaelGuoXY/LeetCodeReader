@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RightMenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class RightMenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, NightModeTVCellDelegateII {
     
     var delegate: UpdateDataDelegate!
     var delegateForNightTVCell: NightModeTVCellDelegate!
@@ -25,12 +25,12 @@ class RightMenuViewController: UIViewController, UITableViewDelegate, UITableVie
         
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 140
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        view.backgroundColor = userDefault.bool(forKey: "isNight") ? UIColor.lightGray : UIColor.white
-        tableView.backgroundColor = userDefault.bool(forKey: "isNight") ? UIColor.lightGray : UIColor.white
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -81,6 +81,7 @@ class RightMenuViewController: UIViewController, UITableViewDelegate, UITableVie
         case 8:
             let cell = tableView.dequeueReusableCell(withIdentifier: "NightModeTVCell") as! NightModeTableViewCell
             cell.delegate = delegateForNightTVCell
+            cell.delegateII = self
             cell.backgroundColor = .clear
             return cell
         default:
@@ -121,5 +122,10 @@ class RightMenuViewController: UIViewController, UITableViewDelegate, UITableVie
      }
      */
     
+    // MARK: - NightModeTVCellDelegateII
+    func reloadRightMenuTableView() {
+        view.backgroundColor = userDefault.bool(forKey: "isNight") ? UIColor.lightGray : UIColor.white
+        tableView.backgroundColor = userDefault.bool(forKey: "isNight") ? UIColor.lightGray : UIColor.white
+    }
 }
 

@@ -10,6 +10,7 @@ import UIKit
 
 class NightModeTableViewCell: UITableViewCell {
     var delegate: NightModeTVCellDelegate!
+    var delegateII: NightModeTVCellDelegateII!
     let userDefault = UserDefaults.standard
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,6 +25,7 @@ class NightModeTableViewCell: UITableViewCell {
             userDefault.set(20/255.0, forKey: "blue")
             userDefault.set(true, forKey: "isNight")
             delegate.reloadHomeViewForColor()
+            delegateII.reloadRightMenuTableView()
         } else {
             // night mode off
             userDefault.set(85/255.0, forKey: "red")
@@ -31,6 +33,7 @@ class NightModeTableViewCell: UITableViewCell {
             userDefault.set(251/255.0, forKey: "blue")
             userDefault.set(false, forKey: "isNight")
             delegate.reloadHomeViewForColor()
+            delegateII.reloadRightMenuTableView()
         }
     }
 
@@ -44,4 +47,8 @@ class NightModeTableViewCell: UITableViewCell {
 
 protocol NightModeTVCellDelegate {
     func reloadHomeViewForColor()
+}
+
+protocol NightModeTVCellDelegateII {
+    func reloadRightMenuTableView()
 }
