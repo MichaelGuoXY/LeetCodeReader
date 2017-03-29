@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-class TagViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class TagViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIViewControllerPreviewingDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -24,6 +24,15 @@ class TagViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
+        
+        // Check Force touch Capability
+        if traitCollection.forceTouchCapability == UIForceTouchCapability.available {
+            // register UIViewControllerPreviewingDelegate to enable Peek & Pop
+            registerForPreviewing(with: self, sourceView: view)
+        } else {
+            // 3D Touch Unavailable : present alertController or
+            // Provide alternatives such as touch and hold..
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -83,5 +92,30 @@ class TagViewController: UIViewController, UITableViewDelegate, UITableViewDataS
                 destController.tag = tags[indexPath.row]
             }
         }
+    }
+    
+    // MARK: - 3D Touch Implementation
+    
+    /// Called when the user has pressed a source view in a previewing view controller (Peek).
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+        
+        // Get indexPath for location (CGPoint) + cell (for sourceRect)
+        guard let indexPath = tableView.indexPathForRow(at: location),
+            let cell = tableView.cellForRow(at: indexPath) else { return nil }
+        
+        // Instantiate VC with Identifier (Storyboard ID)
+        guard let previewViewController = storyboard?.instantiateViewController(withIdentifier: "TagSubTVC") as? TagSubTableViewController else { return nil }
+        
+        previewViewController.tag = tags[indexPath.row]
+        
+        // Current context Source.
+        previewingContext.sourceRect = cell.frame
+        
+        return previewViewController
+    }
+    /// Called to let you prepare the presentation of a commit (Pop).
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
+        // Presents viewControllerToCommit in a primary context
+        show(viewControllerToCommit, sender: self)
     }
 }

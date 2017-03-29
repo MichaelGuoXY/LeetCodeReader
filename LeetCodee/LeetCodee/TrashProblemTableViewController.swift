@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-class TrashProblemTableViewController: UITableViewController, MGSwipeTableCellDelegate {
+class TrashProblemTableViewController: UITableViewController, MGSwipeTableCellDelegate, UIViewControllerPreviewingDelegate {
     
     var problems: [Problem]!
     let realm = try! Realm()
@@ -29,8 +29,15 @@ class TrashProblemTableViewController: UITableViewController, MGSwipeTableCellDe
         
         self.title = "Trash"
         navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Chalkduster", size: 20)!, NSForegroundColorAttributeName: UIColor.white]
-
         
+        // Check Force touch Capability
+        if traitCollection.forceTouchCapability == UIForceTouchCapability.available {
+            // register UIViewControllerPreviewingDelegate to enable Peek & Pop
+            registerForPreviewing(with: self, sourceView: view)
+        } else {
+            // 3D Touch Unavailable : present alertController or
+            // Provide alternatives such as touch and hold..
+        }
         
     }
     
@@ -42,7 +49,7 @@ class TrashProblemTableViewController: UITableViewController, MGSwipeTableCellDe
         navigationController?.navigationBar.tintColor = .white
         
         // tab bar color
-//        tabBarController?.tabBar.barTintColor = userDefault.object(forKey: "BarTintColor") as? UIColor
+        //        tabBarController?.tabBar.barTintColor = userDefault.object(forKey: "BarTintColor") as? UIColor
         tabBarController?.tabBar.tintColor = .white
         tableView.tintColor = userDefault.bool(forKey: "isNight") ? UIColor.lightGray : UIColor.white
         tableView.backgroundColor = userDefault.bool(forKey: "isNight") ? UIColor.lightGray : UIColor.white
@@ -205,6 +212,31 @@ class TrashProblemTableViewController: UITableViewController, MGSwipeTableCellDe
                 destController.curProblem = problem
             }
         }
+    }
+    
+    // MARK: - 3D Touch Implementation
+    
+    /// Called when the user has pressed a source view in a previewing view controller (Peek).
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+        
+        // Get indexPath for location (CGPoint) + cell (for sourceRect)
+        guard let indexPath = tableView.indexPathForRow(at: location),
+            let cell = tableView.cellForRow(at: indexPath) else { return nil }
+        
+        // Instantiate VC with Identifier (Storyboard ID)
+        guard let previewViewController = storyboard?.instantiateViewController(withIdentifier: "ProblemDetailVC") as? ProblemDetailViewController else { return nil }
+        
+        previewViewController.curProblem = problems[indexPath.row]
+        
+        // Current context Source.
+        previewingContext.sourceRect = cell.frame
+        
+        return previewViewController
+    }
+    /// Called to let you prepare the presentation of a commit (Pop).
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
+        // Presents viewControllerToCommit in a primary context
+        show(viewControllerToCommit, sender: self)
     }
     
 }

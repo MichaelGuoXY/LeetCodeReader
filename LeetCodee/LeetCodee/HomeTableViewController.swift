@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 import SideMenu
 
-class HomeTableViewController: UITableViewController, CustomSearchControllerDelegate, LeftMenuDelegate, UpdateDataDelegate, MGSwipeTableCellDelegate, NightModeTVCellDelegate {
+class HomeTableViewController: UITableViewController, CustomSearchControllerDelegate, LeftMenuDelegate, UpdateDataDelegate, MGSwipeTableCellDelegate, NightModeTVCellDelegate, UIViewControllerPreviewingDelegate {
     @IBOutlet weak var leftMenuButton: UIBarButtonItem!
     @IBOutlet weak var rightMenuButton: UIBarButtonItem!
     
@@ -79,6 +79,15 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
         } else {
             let width = view.frame.width > view.frame.height ? view.frame.height : view.frame.width
             configureSearchController(width: width * 0.65)
+        }
+        
+        // Check Force touch Capability
+        if traitCollection.forceTouchCapability == UIForceTouchCapability.available {
+            // register UIViewControllerPreviewingDelegate to enable Peek & Pop
+            registerForPreviewing(with: self, sourceView: view)
+        } else {
+            // 3D Touch Unavailable : present alertController or
+            // Provide alternatives such as touch and hold..
         }
     }
     
@@ -281,37 +290,37 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-//    override func tableView(_ tableView: UITableView, editActionsForRowAt: IndexPath) -> [UITableViewRowAction]? {
-//        let more = UITableViewRowAction(style: .default, title: "More") { action, index in
-//            print("more button tapped")
-//            // cell animation
-//            tableView.setEditing(false, animated: true)
-//        }
-//        more.backgroundColor = .lightGray
-//        
-//        let favorite = UITableViewRowAction(style: .normal, title: "Favorite") { action, index in
-//            print("favorite button tapped")
-//            // mark "isFavorite" field of problem with "id" in realm to be true
-//            let id = self.problems[index.row].id
-//            for problem in self.realm.objects(Problem.self).filter("id == %@", id) {
-//                try! self.realm.write {
-//                    problem.isFavorite = true
-//                }
-//            }
-//            // cell animation
-//            tableView.setEditing(false, animated: true)
-//        }
-//        favorite.backgroundColor = UIColor(red: 179/255, green: 136/255, blue: 250/255, alpha: 1.0)
-//        
-//        let share = UITableViewRowAction(style: .destructive, title: "Share") { action, index in
-//            print("share button tapped")
-//            // cell animation
-//            tableView.setEditing(false, animated: true)
-//        }
-//        share.backgroundColor = UIColor(red: 51/255, green: 210/255, blue: 236/255, alpha: 1.0)
-//        
-//        return [share, favorite, more]
-//    }
+    //    override func tableView(_ tableView: UITableView, editActionsForRowAt: IndexPath) -> [UITableViewRowAction]? {
+    //        let more = UITableViewRowAction(style: .default, title: "More") { action, index in
+    //            print("more button tapped")
+    //            // cell animation
+    //            tableView.setEditing(false, animated: true)
+    //        }
+    //        more.backgroundColor = .lightGray
+    //
+    //        let favorite = UITableViewRowAction(style: .normal, title: "Favorite") { action, index in
+    //            print("favorite button tapped")
+    //            // mark "isFavorite" field of problem with "id" in realm to be true
+    //            let id = self.problems[index.row].id
+    //            for problem in self.realm.objects(Problem.self).filter("id == %@", id) {
+    //                try! self.realm.write {
+    //                    problem.isFavorite = true
+    //                }
+    //            }
+    //            // cell animation
+    //            tableView.setEditing(false, animated: true)
+    //        }
+    //        favorite.backgroundColor = UIColor(red: 179/255, green: 136/255, blue: 250/255, alpha: 1.0)
+    //
+    //        let share = UITableViewRowAction(style: .destructive, title: "Share") { action, index in
+    //            print("share button tapped")
+    //            // cell animation
+    //            tableView.setEditing(false, animated: true)
+    //        }
+    //        share.backgroundColor = UIColor(red: 51/255, green: 210/255, blue: 236/255, alpha: 1.0)
+    //
+    //        return [share, favorite, more]
+    //    }
     
     
     /*
@@ -459,6 +468,35 @@ class HomeTableViewController: UITableViewController, CustomSearchControllerDele
     // MARK: - Update Data Delegate
     func reloadHomeViewController() {
         reloadTableView()
+    }
+    
+    // MARK: - 3D Touch Implementation
+    
+    /// Called when the user has pressed a source view in a previewing view controller (Peek).
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+        
+        // Get indexPath for location (CGPoint) + cell (for sourceRect)
+        guard let indexPath = tableView.indexPathForRow(at: location),
+            let cell = tableView.cellForRow(at: indexPath) else { return nil }
+        
+        // Instantiate VC with Identifier (Storyboard ID)
+        guard let previewViewController = storyboard?.instantiateViewController(withIdentifier: "ProblemDetailVC") as? ProblemDetailViewController else { return nil }
+        
+        if shouldShowSearchResults {
+            previewViewController.curProblem = filteredProblems[indexPath.row]
+        } else {
+            previewViewController.curProblem = problems[indexPath.row]
+        }
+        
+        // Current context Source.
+        previewingContext.sourceRect = cell.frame
+        
+        return previewViewController
+    }
+    /// Called to let you prepare the presentation of a commit (Pop).
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
+        // Presents viewControllerToCommit in a primary context
+        show(viewControllerToCommit, sender: self)
     }
 }
 

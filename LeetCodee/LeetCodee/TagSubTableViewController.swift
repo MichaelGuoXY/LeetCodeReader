@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-class TagSubTableViewController: UITableViewController, CustomSearchControllerDelegate, MGSwipeTableCellDelegate {
+class TagSubTableViewController: UITableViewController, CustomSearchControllerDelegate, MGSwipeTableCellDelegate, UIViewControllerPreviewingDelegate {
     
     var problems = [Problem]()
     var filteredProblems = [Problem]()
@@ -37,6 +37,15 @@ class TagSubTableViewController: UITableViewController, CustomSearchControllerDe
         } else {
             let width = view.frame.width > view.frame.height ? view.frame.height : view.frame.width
             configureSearchController(width: width * 0.65)
+        }
+        
+        // Check Force touch Capability
+        if traitCollection.forceTouchCapability == UIForceTouchCapability.available {
+            // register UIViewControllerPreviewingDelegate to enable Peek & Pop
+            registerForPreviewing(with: self, sourceView: view)
+        } else {
+            // 3D Touch Unavailable : present alertController or
+            // Provide alternatives such as touch and hold..
         }
     }
     
@@ -361,7 +370,34 @@ class TagSubTableViewController: UITableViewController, CustomSearchControllerDe
     }
     // END MARK
     
+    // MARK: - 3D Touch Implementation
     
+    /// Called when the user has pressed a source view in a previewing view controller (Peek).
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+        
+        // Get indexPath for location (CGPoint) + cell (for sourceRect)
+        guard let indexPath = tableView.indexPathForRow(at: location),
+            let cell = tableView.cellForRow(at: indexPath) else { return nil }
+        
+        // Instantiate VC with Identifier (Storyboard ID)
+        guard let previewViewController = storyboard?.instantiateViewController(withIdentifier: "ProblemDetailVC") as? ProblemDetailViewController else { return nil }
+        
+        if shouldShowSearchResults {
+            previewViewController.curProblem = filteredProblems[indexPath.row]
+        } else {
+            previewViewController.curProblem = problems[indexPath.row]
+        }
+        
+        // Current context Source.
+        previewingContext.sourceRect = cell.frame
+        
+        return previewViewController
+    }
+    /// Called to let you prepare the presentation of a commit (Pop).
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
+        // Presents viewControllerToCommit in a primary context
+        show(viewControllerToCommit, sender: self)
+    }
 }
 
 
