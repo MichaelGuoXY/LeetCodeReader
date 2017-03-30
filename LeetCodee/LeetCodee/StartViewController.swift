@@ -47,6 +47,10 @@ class StartViewController: UIViewController {
     @IBOutlet weak var progressBar: GTProgressBar!
     override func viewDidLoad() {
         super.viewDidLoad()
+        // set "have lauched" user default to true
+        if !userdefault.bool(forKey: "haveLauched") {
+            userdefault.set(true, forKey: "haveLauched")
+        }
         // set up for user default fonts
         userdefault.set("ChalkboardSE-Bold", forKey: "SolutionTitleLabelFont")
         userdefault.set("Chalkboard SE", forKey: "TagViewCellTextLabelFont")
@@ -113,6 +117,9 @@ class StartViewController: UIViewController {
      }
      */
     
+    override var prefersStatusBarHidden : Bool {
+        return false
+    }
 }
 
 
