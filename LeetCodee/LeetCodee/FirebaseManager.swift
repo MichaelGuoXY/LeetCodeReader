@@ -69,8 +69,48 @@ class FirebaseManager: NSObject{
     //        // END TODO
     //        // return solutions
     //    }
-    static func checkIfNeedsUpdate() {
-        
+    //    static func checkIfNeedsUpdate() {
+    //
+    //    }
+    /**
+     register and update current device onto Firebase
+     */
+    static func registerAndUpdateUser() -> () {
+        // get unique id of this device
+        let deviceUUID: String = (UIDevice.current.identifierForVendor?.uuidString)!
+        ref.child("users").child(deviceUUID).observeSingleEvent(of: .value, with: { (snapshot) in
+            // get cur time and format it with offset to UTC
+            let date = Date()
+            let formatter = DateFormatter()
+            formatter.locale = Locale(identifier: "en_US_POSIX")
+            formatter.dateFormat = "yyyy-MM-dd HH:mm:ss a ZZZ"
+            formatter.amSymbol = "AM"
+            formatter.pmSymbol = "PM"
+            let dateString = formatter.string(from: date)
+            if !snapshot.exists() {
+                // upload first registerd time for this device
+                ref.child("users").child(deviceUUID).child("registeredTime").setValue(dateString)
+            }
+            // upload last launch time for this device
+            ref.child("users").child(deviceUUID).child("lastLaunchTime").setValue(dateString)
+        })
+    }
+    /**
+     Update current device onto Firebase.
+     */
+    static func updateCurDeviceOntoFirebase() -> () {
+        // get cur time and format it with offset to UTC
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss a ZZZ"
+        formatter.amSymbol = "AM"
+        formatter.pmSymbol = "PM"
+        //formatter.timeZone = TimeZone(abbreviation: "UTC")
+        let dateString = formatter.string(from: date)
+        // get unique id of this device
+        let deviceUUID: String = (UIDevice.current.identifierForVendor?.uuidString)!
+        ref.child("users").child(deviceUUID).setValue(["lastLaunchTime": dateString])
     }
     
     static func fetchAllProblems(navigate: @escaping () -> (), progressBar: GTProgressBar, label: UILabel) {
