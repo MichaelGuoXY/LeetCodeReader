@@ -632,18 +632,18 @@
                                         <rect key="frame" x="0.0" y="28" width="406" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wQa-kc-ypW" id="XPe-LN-kdx">
-                                            <rect key="frame" x="0.0" y="0.0" width="406" height="43.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="406" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c0U-mV-VKu">
-                                                    <rect key="frame" x="15" y="11.999999999999998" width="33.333333333333336" height="20.333333333333332"/>
+                                                    <rect key="frame" x="15" y="11" width="34" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hr3-rb-y8K">
-                                                    <rect key="frame" x="347" y="11.999999999999998" width="44" height="20.333333333333332"/>
+                                                    <rect key="frame" x="347" y="11" width="44" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -1136,6 +1136,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Sz-HR-KUS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-380" y="1662"/>
+        </scene>
+        <!--Login Leetcode View Controller-->
+        <scene sceneID="GJZ-yG-4OV">
+            <objects>
+                <viewController storyboardIdentifier="LoginLeetcodeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="k1g-Rp-8gv" customClass="LoginLeetcodeViewController" customModule="LeetCodee" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sVo-M9-78C"/>
+                        <viewControllerLayoutGuide type="bottom" id="5e1-ph-W7d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mxf-ZE-YsI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NpH-Sm-mr5">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5e1-ph-W7d" firstAttribute="top" secondItem="NpH-Sm-mr5" secondAttribute="bottom" id="2G9-CG-B5f"/>
+                            <constraint firstItem="NpH-Sm-mr5" firstAttribute="leading" secondItem="Mxf-ZE-YsI" secondAttribute="leading" id="VSp-WH-s4g"/>
+                            <constraint firstAttribute="trailing" secondItem="NpH-Sm-mr5" secondAttribute="trailing" id="aiD-Wk-ntZ"/>
+                            <constraint firstItem="NpH-Sm-mr5" firstAttribute="top" secondItem="sVo-M9-78C" secondAttribute="bottom" constant="44" id="wfd-rj-fkT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="NpH-Sm-mr5" id="BOy-Cb-GZG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="omJ-e7-Jaf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5413" y="1661"/>
         </scene>
         <!--Right Menu View Controller-->
         <scene sceneID="jBB-1o-EAB">

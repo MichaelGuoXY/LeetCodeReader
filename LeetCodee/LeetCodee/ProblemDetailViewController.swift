@@ -40,6 +40,16 @@ class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITabl
         tableView.estimatedRowHeight = 140
         
         backToTopBtnConfig()
+        
+        // navi bar right button config
+        let rightBarBtnItem = UIBarButtonItem(title: "My Submissions", style: .plain, target: self, action: #selector(naviToMySubmissions(sender:)))
+        navigationItem.rightBarButtonItem = rightBarBtnItem
+    }
+    
+    func naviToMySubmissions(sender: UIBarButtonItem) {
+        let mySubmissionsVC = storyboard?.instantiateViewController(withIdentifier: "LoginLeetcodeVC") as! LoginLeetcodeViewController
+        mySubmissionsVC.url = URL(string: curProblem.problemLink + "/#/submissions")
+        present(mySubmissionsVC, animated: true, completion: nil)
     }
     
     // config floating button over table view

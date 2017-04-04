@@ -117,6 +117,7 @@ class FirebaseManager: NSObject{
         ref.child("problems").observeSingleEvent(of: .value, with: { (snapshot) in
             let val = snapshot.value as! NSDictionary
             let count = val.count
+            var counter = 0
             for (_, dict) in val {
                 let value = dict as! NSDictionary
                 let id = value["id"] as! Int
@@ -130,8 +131,9 @@ class FirebaseManager: NSObject{
                 let timestamp = value["timestamp"] as! Double
                 let solutions = value["solutions"] as! NSArray
                 
-                print(String(id) + " problem fetched")
-                label.text = "#" + String(id) + " problem fetched...😊"
+                //print(String(id) + " problem fetched")
+                counter += 1
+                label.text = String(counter) + "/" + String(count) + " problem fetched...😊"
                 progressBar.animateTo(progress: progressBar.progress + CGFloat(1.0 / Float(count)))
                 // this step allows UI updating, very important
                 RunLoop.main.run(until: NSDate(timeIntervalSinceNow: 0.01) as Date)

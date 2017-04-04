@@ -28,6 +28,7 @@
 		805E7F291E7FC9EA0075479F /* SendFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805E7F281E7FC9EA0075479F /* SendFeedbackViewController.swift */; };
 		805E7F2B1E7FD3AC0075479F /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805E7F2A1E7FD3AC0075479F /* StartViewController.swift */; };
 		808320CA1E89A95000F488A2 /* TrashProblemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808320C91E89A95000F488A2 /* TrashProblemTableViewController.swift */; };
+		808F08E21E93583900C25032 /* LoginLeetcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808F08E11E93583900C25032 /* LoginLeetcodeViewController.swift */; };
 		809D9C031E7B3B230091D7D5 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D9C021E7B3B230091D7D5 /* HomeTableViewController.swift */; };
 		809D9C051E7B56540091D7D5 /* FavoriteProblemTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D9C041E7B56540091D7D5 /* FavoriteProblemTVC.swift */; };
 		80BC12681E7C56C500AFE182 /* ProblemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BC12671E7C56C500AFE182 /* ProblemDetailViewController.swift */; };
@@ -75,6 +76,7 @@
 		805E7F281E7FC9EA0075479F /* SendFeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendFeedbackViewController.swift; sourceTree = "<group>"; };
 		805E7F2A1E7FD3AC0075479F /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		808320C91E89A95000F488A2 /* TrashProblemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrashProblemTableViewController.swift; sourceTree = "<group>"; };
+		808F08E11E93583900C25032 /* LoginLeetcodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginLeetcodeViewController.swift; sourceTree = "<group>"; };
 		809D9C021E7B3B230091D7D5 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		809D9C041E7B56540091D7D5 /* FavoriteProblemTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteProblemTVC.swift; sourceTree = "<group>"; };
 		80BC12671E7C56C500AFE182 /* ProblemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemDetailViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				80FB739B1E7C7B9200D8396D /* OptionOneTableViewCell.swift */,
 				80FB73971E7C798A00D8396D /* LeftMenuViewController.swift */,
 				805E7F241E7FBFF50075479F /* RightMenuViewController.swift */,
+				808F08E11E93583900C25032 /* LoginLeetcodeViewController.swift */,
 				805E7F261E7FC57F0075479F /* SendFeedbackTVCell.swift */,
 				809D9C041E7B56540091D7D5 /* FavoriteProblemTVC.swift */,
 				808320C91E89A95000F488A2 /* TrashProblemTableViewController.swift */,
@@ -335,6 +338,7 @@
 				80C2557C1E7BC10300842459 /* CustomSearchController.swift in Sources */,
 				801AE4FC1E8A5A32002F5B3D /* NightModeTableViewCell.swift in Sources */,
 				80F666751E79E7E20030FA1E /* TitleTVCell.swift in Sources */,
+				808F08E21E93583900C25032 /* LoginLeetcodeViewController.swift in Sources */,
 				808320CA1E89A95000F488A2 /* TrashProblemTableViewController.swift in Sources */,
 				80F666771E79E7F60030FA1E /* SolutionsTVCell.swift in Sources */,
 				805265EF1E80EB2E00307980 /* UpdateDataViewController.swift in Sources */,

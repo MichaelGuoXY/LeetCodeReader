@@ -39,7 +39,7 @@ class RightMenuViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 9
+        return 11
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -65,20 +65,27 @@ class RightMenuViewController: UIViewController, UITableViewDelegate, UITableVie
             return cell
         case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: "SendFeedbackTVCell") as! SendFeedbackTVCell
-            cell.label.text = "Send Feedback"
+            cell.label.text = "Log onto Leetcode"
+            cell.label.textColor = .blue
             cell.backgroundColor = .clear
             return cell
         case 5:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SendFeedbackTVCell") as! SendFeedbackTVCell
+            cell.label.text = "Send Feedback"
+            cell.label.textColor = .purple
+            cell.backgroundColor = .clear
+            return cell
+        case 7:
             let cell = tableView.dequeueReusableCell(withIdentifier: "SendFeedbackTVCell") as! SendFeedbackTVCell
             cell.label.text = "Update With Online Database"
             cell.label.textColor = .red
             cell.backgroundColor = .clear
             return cell
-        case 7:
+        case 9:
             let cell = tableView.dequeueReusableCell(withIdentifier: "FantasticFontTVCell") as! FantasticFontTVCell
             cell.backgroundColor = .clear
             return cell
-        case 8:
+        case 10:
             let cell = tableView.dequeueReusableCell(withIdentifier: "NightModeTVCell") as! NightModeTableViewCell
             cell.delegate = delegateForNightTVCell
             cell.delegateII = self
@@ -97,9 +104,13 @@ class RightMenuViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 3 {
+            let loginLeetcodeVC = storyboard?.instantiateViewController(withIdentifier: "LoginLeetcodeVC") as! LoginLeetcodeViewController
+            loginLeetcodeVC.url = URL(string: "https://leetcode.com/accounts/login/")
+            present(loginLeetcodeVC, animated: true, completion: nil)
+        } else if indexPath.row == 5 {
             let sendFeedbackVC = storyboard?.instantiateViewController(withIdentifier: "SendFeedbackVC") as! SendFeedbackViewController
             present(sendFeedbackVC, animated: true, completion: nil)
-        } else if indexPath.row == 5 {
+        } else if indexPath.row == 7 {
             let updateVC = storyboard?.instantiateViewController(withIdentifier: "UpdateDataVC") as! UpdateDataViewController
             updateVC.delegate = delegate
             present(updateVC, animated: true, completion: nil)
