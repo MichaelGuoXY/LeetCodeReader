@@ -106,6 +106,7 @@ class RightMenuViewController: UIViewController, UITableViewDelegate, UITableVie
         if indexPath.row == 3 {
             let loginLeetcodeVC = storyboard?.instantiateViewController(withIdentifier: "LoginLeetcodeVC") as! LoginLeetcodeViewController
             loginLeetcodeVC.url = URL(string: "https://leetcode.com/accounts/login/")
+            loginLeetcodeVC.isLogin = true
             present(loginLeetcodeVC, animated: true, completion: nil)
         } else if indexPath.row == 5 {
             let sendFeedbackVC = storyboard?.instantiateViewController(withIdentifier: "SendFeedbackVC") as! SendFeedbackViewController

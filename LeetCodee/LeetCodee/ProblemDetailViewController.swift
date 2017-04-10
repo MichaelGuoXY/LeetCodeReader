@@ -49,6 +49,7 @@ class ProblemDetailViewController: UIViewController, UITableViewDelegate, UITabl
     func naviToMySubmissions(sender: UIBarButtonItem) {
         let mySubmissionsVC = storyboard?.instantiateViewController(withIdentifier: "LoginLeetcodeVC") as! LoginLeetcodeViewController
         mySubmissionsVC.url = URL(string: curProblem.problemLink + "/#/submissions")
+        mySubmissionsVC.isLogin = false
         present(mySubmissionsVC, animated: true, completion: nil)
     }
     
